@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title', 'My Next Adventure')
 
 @section('header')
     @parent
@@ -15,8 +15,9 @@
 			<li data-target="#slides" data-slide-to="2"></li>
 		</ul>
 		<div class="carousel-inner">
+
 			<div class="carousel-item active">
-				<img src="/images/Guyane1.jpg">
+				<img src="/img/Guyane1.jpg">
 				<div class="carousel-caption">
 					<h1 class="display-2">Guyane</h1>
 					<h2>Plongez au coeur de la forêt amazonienne</h2>
@@ -25,7 +26,7 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img src="/images/Maroc1.jpg">
+				<img src="/img/Maroc1.jpg">
 					<div class="carousel-caption">
 						<h1 class="display-2">Maroc</h1>
 						<h2>L'antre des milles couleurs</h2>
@@ -34,7 +35,7 @@
 					</div>
 			</div>
 			<div class="carousel-item">
-				<img src="/images/Guyane1.jpg">
+				<img src="/img/Guyane1.jpg">
 					<div class="carousel-caption">
 						<h1 class="display-2">TBD</h1>
 						<h2>TBD</h2>

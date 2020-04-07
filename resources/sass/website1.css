@@ -1,3 +1,11 @@
+html,body{
+	color: #222;
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+
 .navbar {
 	position: relative;
 	padding: .3rem;
@@ -12,9 +20,10 @@
 
 
 .bloc{
-	background-image: url('C:/laravel-projects/website1/img/header4bis.png');
+	background-image: url('/img/header4bis.png');
 	background-size: 100%;
 }
+
 
 .bloc img{
 	position: relative;
@@ -22,14 +31,14 @@
 	float: right;
 }
 
-.dropdown1{
+.dropdown{
 	text-decoration: none;
 	position: relative;
 	display: inline-block;
 	z-index: 2;
 }
 
-.dropdown1 li.mainbutton1{
+.dropdown li.mainbutton1{
 	list-style-type: none;
 	font-size: 200%;
 	padding: 20px;
@@ -37,7 +46,7 @@
 	background-color: transparent;
 	cursor: pointer;
 }
-.dropdown1 li.mainbutton1:hover{
+.dropdown li.mainbutton1:hover{
 	background-color: #660000;
 	color: #fff;
 	transition: 0.2s all;
@@ -58,7 +67,7 @@
 	display : block;
 }
 
-.dropdown1:hover div.dropdown-child1{
+.dropdown:hover div.dropdown-child1{
 	display : block;
 	transition: 0.5s all;
 }
@@ -76,6 +85,13 @@
 	transform: translateY(-50%);
 }
 .carousel-caption h1{
+	font-size: 500%;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 15px #000;
+}
+.cyrille{
+	font-family: 'Poppins', sans-serif;
+	color: red;
 	font-size: 500%;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 15px #000;

@@ -1,14 +1,10 @@
 <html>
     <head>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <script src="{{ mix('/js/app.js') }}"></script>
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></link>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
-    
+   
         <title>@yield('title')</title>
     </head>
     <body>
@@ -48,15 +44,15 @@
             <!-- Menu déroulant-->
             <div class="menu menu-expand-md bg-light">
                 <div class="bloc text-center">
-                    <img src="/images/header4.png">
-                    <div class="dropdown1">
+                    <img src="/img/header4.png">
+                    <div class="dropdown">
                         <li class="mainbutton1">Gastronomie</li>
                             <div class="dropdown-child1">
                                 <a href="recette.html">Recettes</a>
                                 <a href="vin.html">Vin</a>
                             </div>
                     </div>
-                    <div class="dropdown1">
+                    <div class="dropdown">
                         <li class="mainbutton1">Guide Voyage</li>
                             <div class="dropdown-child1">
                                 <a href="maroc.html">Maroc</a>
@@ -64,7 +60,7 @@
                                 <a href="australie.html">Australie</a>
                             </div>
                     </div>
-                    <div class="dropdown1">
+                    <div class="dropdown">
                         <li class="mainbutton1">Expéditions</li>
                             <div class="dropdown-child1">
                                 <a href="iledefrance.html">Corse : GR20 </a>
@@ -72,7 +68,7 @@
                                 <a href="#.html">Matériel</a>
                             </div>
                     </div>
-                    <div class="dropdown1">
+                    <div class="dropdown">
                         <li class="mainbutton1">Randonnées</li>
                             <div class="dropdown-child1">
                                 <a href="iledefrance.html">Ile de France</a>
