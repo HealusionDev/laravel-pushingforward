@@ -10890,6 +10890,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.connect-box,
+.new-account {
+  position: absolute;
+}
+
 .navbar {
   position: relative;
   padding: 0.3rem;
@@ -11094,6 +11099,24 @@ body {
   font-weight: 500;
   line-height: 1.2;
   font-size: 1.5em;
+}
+
+.account-form-text {
+  margin-right: 3%;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.account-form-text {
+  text-decoration: none;
+  display: table-row;
+}
+
+.account-span {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 footer {

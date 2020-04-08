@@ -9,21 +9,20 @@
     </head>
     <body>
         @section('header')
-            <!-- Connexion -->
-            <form method="post">
-                <input class="connect" type="text" name="identifiant" id="identifiant" placeholder="Identifiant">
-                <input class="connect" type="text" name="password" id="password" placeholder="Password">
-                <input type="submit" name="Envoyer" id="formsend">
-            </form>
-
-            <!-- Création de compte -->
-            <div class="newaccount">
-                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="window.location.href='newaccount.php';">Créez votre compte</button>
-            </div>
-
+    
             <!-- Barre de navigation -->
             <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-                <div class="container-fluid">
+                <div class="connect-box col-md-5 pt-3">
+                    <form method="post">
+                        <input class="connect" type="text" name="identifiant" id="identifiant" placeholder="Identifiant">
+                        <input class="connect" type="text" name="password" id="password" placeholder="Password">
+                        <input type="submit" name="Envoyer" id="formsend">
+                    </form>
+                </div>
+                <div class="newaccount col-md-5" style="margin-left: 30%">
+                    <button type="button" class="btn btn-outline-secondary btn-sm" onclick="window.location.href='account';">Créez votre compte</button>
+                </div>
+                <div class="container-fluid p-0">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="home">Home</a>
