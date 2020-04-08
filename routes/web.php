@@ -21,6 +21,6 @@ Route::get('home', function () { #requete http avec address se terminant par /ho
     return view('home');
 });
 
-Route::get('/team', function () { #requete http avec address se terminant par /team
+Route::get('team', function () { #requete http avec address se terminant par /team
     return view('team');
 });
