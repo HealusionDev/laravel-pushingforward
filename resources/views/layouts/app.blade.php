@@ -26,13 +26,13 @@
                 <div class="container-fluid">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.php">Home</a>
+                                <a class="nav-link" href="home">Home</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="about.php">About</a>
+                                <a class="nav-link" href="#">About</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="team.php">Team</a>
+                                <a class="nav-link" href="team">Team</a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Contact</a>
@@ -44,42 +44,42 @@
             <!-- Menu déroulant-->
             <div class="menu menu-expand-md bg-light">
                 <div class="bloc text-center">
-                    <img src="/img/header4.png">
+                    <img class="imgheader" src="/img/header4.png">
                     <div class="dropdown">
-                        <li class="mainbutton1">Gastronomie</li>
-                            <div class="dropdown-child1">
-                                <a href="recette.html">Recettes</a>
-                                <a href="vin.html">Vin</a>
+                        <li class="mainbutton-menu">Gastronomie</li>
+                            <div class="dropdown-child">
+                                <a class="dropdown-child-link" href="recette.html">Recettes</a>
+                                <a class="dropdown-child-link" href="vin.html">Vin</a>
                             </div>
                     </div>
                     <div class="dropdown">
-                        <li class="mainbutton1">Guide Voyage</li>
-                            <div class="dropdown-child1">
-                                <a href="maroc.html">Maroc</a>
-                                <a href="guyane.html">Guyane</a>
-                                <a href="australie.html">Australie</a>
+                        <li class="mainbutton-menu">Guide Voyage</li>
+                            <div class="dropdown-child">
+                                <a class="dropdown-child-link" href="maroc.html">Maroc</a>
+                                <a class="dropdown-child-link" href="guyane.html">Guyane</a>
+                                <a class="dropdown-child-link" href="australie.html">Australie</a>
                             </div>
                     </div>
                     <div class="dropdown">
-                        <li class="mainbutton1">Expéditions</li>
-                            <div class="dropdown-child1">
-                                <a href="iledefrance.html">Corse : GR20 </a>
-                                <a href="kilimandjaro.html">Seven Summits</a>
-                                <a href="#.html">Matériel</a>
+                        <li class="mainbutton-menu">Expéditions</li>
+                            <div class="dropdown-child">
+                                <a class="dropdown-child-link" href="iledefrance.html">Corse : GR20 </a>
+                                <a class="dropdown-child-link"  href="kilimandjaro.html">Seven Summits</a>
+                                <a class="dropdown-child-link"  href="#.html">Matériel</a>
                             </div>
                     </div>
                     <div class="dropdown">
-                        <li class="mainbutton1">Randonnées</li>
-                            <div class="dropdown-child1">
-                                <a href="iledefrance.html">Ile de France</a>
-                                <a href="pyrenees.html">Pyrénées</a>
+                        <li class="mainbutton-menu">Randonnées</li>
+                            <div class="dropdown-child">
+                                <a class="dropdown-child-link" href="iledefrance.html">Ile de France</a>
+                                <a class="dropdown-child-link" href="pyrenees.html">Pyrénées</a>
                             </div>
                     </div>
                 </div>
             </div>  
         @show
 
-        <div class="container">
+        <div class="container-fluid p-0">
             @yield('content')
         </div>
 
@@ -87,9 +87,9 @@
         <!-- Pied de page -->
         <footer>
             <div class="container-fluid">
-                <div class="row copy text-center">
+                <div class="boxfooter text-center">
                     <div class="col-12">
-                        <h5 class="display-8">&copy; mynextadventure.fr</h5>
+                        <h5>&copy; mynextadventure.fr</h5>
                     </div>
                 </div>
             </div>

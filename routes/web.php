@@ -14,17 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () { #requete http avec address se terminant par /
-    return view('welcome');
-});
-
-Route::get('/test', function () { #requete http avec address se terminant par /test
-    return view('test');
-});
-
-Route::get('blade', function () { #requete http avec address se terminant par /test
-    return view('child');
-});
-
-Route::get('/home', function () { #requete http avec address se terminant par /test
     return view('home');
+});
+
+Route::get('home', function () { #requete http avec address se terminant par /home
+    return view('home');
+});
+
+Route::get('/team', function () { #requete http avec address se terminant par /team
+    return view('team');
 });
