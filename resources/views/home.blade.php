@@ -17,7 +17,7 @@
 		<div class="carousel-inner">
 
 			<div class="carousel-item active">
-				<img class="carouselimg d-block mx-auto" src="/img/Guyane1.jpg" data-holder-rendered="true">
+				<img class="carouselimg d-block mx-auto" src="/img/guyane1.jpg" data-holder-rendered="true">
 				<div class="carousel-caption">
 					<h1 class="carousel-titre1">Guyane</h1>
 					<h2 class="carousel-titre2">Plongez au coeur de la forêt amazonienne</h2>
@@ -26,7 +26,7 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="carouselimg d-block mx-auto" src="/img/Maroc1.jpg" data-holder-rendered="true">
+				<img class="carouselimg d-block mx-auto" src="/img/maroc1.jpg" data-holder-rendered="true">
 					<div class="carousel-caption">
 						<h1 class="carousel-titre1">Maroc</h1>
 						<h2 class="carousel-titre2">L'antre des milles couleurs</h2>
@@ -35,7 +35,7 @@
 					</div>
 			</div>
 			<div class="carousel-item">
-				<img class="carouselimg d-block mx-auto" src="/img/Guyane1.jpg" data-holder-rendered="true">
+				<img class="carouselimg d-block mx-auto" src="/img/guyane1.jpg" data-holder-rendered="true">
 					<div class="carousel-caption">
 						<h1 class="carousel-titre1">TBD</h1>
 						<h2 class="carousel-titre2">TBD</h2>
