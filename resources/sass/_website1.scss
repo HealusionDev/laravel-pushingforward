@@ -1,0 +1,237 @@
+html,body{
+	color: #222;
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.connect-account, .new-account{
+	position: absolute;
+}
+
+.navbar {
+	position: relative;
+	padding: .3rem;
+}
+.nav-item {
+	padding-right: 20px;
+}
+.nav-link {
+	font-size: 1.1rem;
+	color: #222;
+}
+
+.bloc {
+	background-image: url('/img/header4bis.png');
+	background-size: 100%;
+}
+
+.imgheader {
+	position: relative;
+	width: 100%;
+	float: right;
+}
+
+.dropdown{
+	text-decoration: none;
+	display: inline-block;
+	z-index: 2;
+}
+
+.mainbutton-menu{
+	list-style-type: none;
+	font-size: 200%;
+	padding: 20px;
+	color : #fff;
+	background-color: transparent;
+	cursor: pointer;
+}
+.mainbutton-menu:hover{
+	background-color: #660000;
+	color: #fff;
+	transition: 0.2s all;
+}
+
+.dropdown-child{
+	position: absolute;
+	display: none;
+	width: 100%;
+	text-decoration: none;
+	background-color: #846565;
+}
+.dropdown-child-link{
+	color: #fff;
+	padding: 15px;
+	font-size: 140%;
+	text-decoration: none;
+	display : block;
+}
+.dropdown-child-link:hover{
+	color: #fff;
+	background-color: #660000;
+	text-decoration: none;
+}
+
+.dropdown:hover div.dropdown-child{
+	display : block;
+	transition: 0.5s all;
+}
+
+.carouselimg {
+	position: relative;
+	height: 65%;
+	width: 65%;
+	box-sizing: border-box;
+}
+.carousel-caption{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.carousel-titre1{
+	font-size: 500%;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 15px #000;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+.carousel-titre2{
+	font-size: 200%;
+	font-weight: 500;
+	text-shadow: 1px 1px 10px #000;
+	padding-bottom: 1rem;
+}
+.btn-primary{
+	background-color: #6648b1;
+	border: 1px solid #563d7c;
+}
+.btn-primary:hover{
+	background-color: #563d7c;
+	border: 1px solid #563d7c;
+}
+.btn-outline-secondary:hover{
+	background-color: #999999;
+	color: #fff;
+}
+
+
+.jumbotron{
+	padding: 1rem;
+	border-radius: 0px;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.col-12{
+	margin-top: 10px;
+	text-align: center;
+}
+.movies-title{
+	font-size: 3.5rem;
+	font-weight: 300;
+	line-height: 1.2;
+	color: #2e2e2e;
+}
+.connect-title{
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1;
+	color: #2e2e2e;
+	text-transform: uppercase;
+}
+
+.style1 {
+	border-top: 2px solid #b4b4b4;
+	width: 250px;
+	margin-top: .3rem;
+	margin-bottom: 1rem;
+}
+.style2 {
+	border-top: 2px solid #b4b4b4;
+	width: 250px;
+	margin-top: .3rem;
+}
+
+
+.social-link{
+	font-size: 3rem;
+	padding: 3rem;
+}
+
+.fa-facebook{
+	color: #3b5998
+}
+.fa-instagram{
+	color: #517fa4;
+}
+.fa-youtube{
+	color: #bb0000;
+}
+.fa-facebook:hover{
+	color: #d5d5d5;
+}
+.fa-instagram:hover{
+	color: #d5d5d5;
+}
+.fa-youtube:hover{
+	color: #d5d5d5;
+}
+
+.team-title1{
+	font-size: 2.2rem;
+	font-weight: 500;
+	line-height: 1.2;
+	color: #2e2e2e;
+}
+.team-title2{
+	font-size: 2.5rem;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #2e2e2e;
+}
+
+.carte-title{
+	color: #2e2e2e;
+	font-weight: 500;
+	line-height: 1.2;
+	font-size: 1.5em;
+}
+
+
+
+footer{
+	background-color: #3f3f3f;
+	background-size: 100% 30%;
+}
+.boxfooter{
+	color: #fff;
+	padding: 10px;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 992px){
+	.social a{
+		font-size: 4rem;
+		padding: 2rem;
+	}
+}
+@media (max-width: 1092px){
+	.carousel-caption{
+		top: 48%;
+	}
+	.carousel-caption h1{
+		font-size: 350%;
+	}
+	.carousel-caption h2{
+		font-size: 140%;
+		font-weight: 400;
+		padding-bottom: .2rem;
+	}
+	.carousel-caption .btn{
+		font-size: 95%;
+		padding: 8px 14px;
+	}
+}

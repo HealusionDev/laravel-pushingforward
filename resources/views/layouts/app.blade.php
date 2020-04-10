@@ -11,33 +11,29 @@
         @section('header')
     
             <!-- Barre de navigation -->
-            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-                <div class="connect-box col-md-5 pt-3">
-                    <form method="post">
-                        <input class="connect" type="text" name="identifiant" id="identifiant" placeholder="Identifiant">
-                        <input class="connect" type="text" name="password" id="password" placeholder="Password">
-                        <input type="submit" name="Envoyer" id="formsend">
-                    </form>
+            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top p-0">
+                <div class="form-row align-items-center my-1">
+                    <div class="col-sm-4 pl-2 pr-5">
+                        <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='../user/connect';">S'identifier</button>
+                    </div>
+                    <div class="col-sm-8">
+                        <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='../user/new';">Créez votre compte</button>
+                    </div>
                 </div>
-                <div class="newaccount col-md-5" style="margin-left: 30%">
-                    <button type="button" class="btn btn-outline-secondary btn-sm" onclick="window.location.href='account';">Créez votre compte</button>
-                </div>
-                <div class="container-fluid p-0">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="home">Home</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="team">Team</a>
-                            </li>
-                            <li class="nav-item active">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../home">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../team">Team</a>
+                        </li>
+                        <li class="nav-item active">
                                 <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                </div>
+                        </li>
+                    </ul>
             </nav>
 
             <!-- Menu déroulant-->

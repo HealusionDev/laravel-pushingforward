@@ -41783,6 +41783,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 __webpack_require__(/*! @fortawesome/fontawesome-free/js/all.js */ "./node_modules/@fortawesome/fontawesome-free/js/all.js");
 
 __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js");
+/*require('../vendor/autoload.php');*/
 
 /***/ }),
 

@@ -25,6 +25,10 @@ Route::get('team', function () { #requete http avec address se terminant par /te
     return view('team');
 });
 
-Route::get('account', function () { #requete http avec address se terminant par /team
-    return view('account');
+Route::get('user/new', function () { #requete http avec address se terminant par /team
+    return view('newaccount');
+});
+
+Route::get('user/connect', function () { #requete http avec address se terminant par /team
+    return view('connect');
 });
