@@ -14,15 +14,15 @@
             <!-- Barre de navigation -->
             <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top p-0">
                 
-                <!-- <div class="form-row align-items-center my-1">
+                <div class="form-row align-items-center my-1">
                     <div class="col-md-4 pl-3 pr-3">
                         <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='../user/connect';">S'identifier</button>
                     </div>
                     <div class="col-md-8 pl-4">
                         <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='../user/new';">Rejoignez-nous</button>
                     </div>
-                </div> -->
-                <ul class="navbar-nav ml-auto">
+                </div>
+                <!-- <ul class="navbar-nav ml-auto">
                     @guest
                     <li  class="nav-item">
                         <a class="nav-link" href="{{ route('login') }}">{{ __('login') }}</a>
@@ -50,7 +50,9 @@
                     </li>
                     @endguest
                 </ul>
-
+                
+                 -->
+                 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="../home">Accueil</a>
