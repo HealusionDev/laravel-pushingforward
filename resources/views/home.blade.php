@@ -83,7 +83,7 @@
 				</p>
 			</div>
 			<div class="col-12 d-flex justify-content-center"> 
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/59QYI9U9I2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/59QYI9U9I2s" frameborder="0" samesite="none" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

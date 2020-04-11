@@ -32,3 +32,43 @@ Route::get('user/new', function () { #requete http avec address se terminant par
 Route::get('user/connect', function () { #requete http avec address se terminant par /team
     return view('connect');
 });
+
+Route::get('recettes', function () { #requete http avec address se terminant par /recettes
+    return view('recettes');
+});
+
+Route::get('vin', function () { #requete http avec address se terminant par /recettes
+    return view('vin');
+});
+
+Route::get('guide-maroc', function () { #requete http avec address se terminant par /recettes
+    return view('guide-maroc');
+});
+
+Route::get('guide-guyane', function () { #requete http avec address se terminant par /recettes
+    return view('guide-guyane');
+});
+
+Route::get('guide-australie', function () { #requete http avec address se terminant par /recettes
+    return view('guide-australie');
+});
+
+Route::get('corse-gr20', function () { #requete http avec address se terminant par /recettes
+    return view('expedition-corse');
+});
+
+Route::get('expedition-7summits', function () { #requete http avec address se terminant par /recettes
+    return view('kilimandjaro');
+});
+
+Route::get('conseil-materiel', function () { #requete http avec address se terminant par /recettes
+    return view('materiel');
+});
+
+Route::get('rando-idf', function () { #requete http avec address se terminant par /recettes
+    return view('rando-idf');
+});
+
+Route::get('rando-pyrenees', function () { #requete http avec address se terminant par /recettes
+    return view('rando-pyrenees');
+});

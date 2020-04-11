@@ -28,19 +28,19 @@
 	<nav class="nav justify-content-center pt-4">
 		<form>
 		  	<div class="form-inline">
-			    <label for="inputEmail" class="col-sm-4 col-form-label" style="justify-content: left;">Email :</label>
-			    <div class="col-sm-8">
+			    <label for="inputEmail" class="col-md-4 col-form-label" style="justify-content: left;">Email :</label>
+			    <div class="col-md-8">
 			      	<input type="email" class="form-control" id="inputEmail" placeholder="Email">
 			    </div>
 		  	</div>
 		  	<div class="form-inline pt-3">
-		    	<label for="inputPassword" class="col-sm-4 col-form-label" style="justify-content: left;">Password :</label>
+		    	<label for="inputPassword" class="col-sm-4 col-form-label" style="justify-content: left;">Mot de passe :</label>
 		   			 <div class="col-sm-8">
 		      			<input type="password" class="form-control" id="inputPassword" placeholder="Password">
 		    		</div>
 	  		</div>
 	  		<div class="form-inline pt-3">
-		    	<label for="inputPassword" class="col-sm-4 col-form-label" style="justify-content: left;">Confirmer Password :</label>
+		    	<label for="inputPassword" class="col-sm-4 col-form-label" style="justify-content: left;">Confirmer le mot de passe :</label>
 		   			 <div class="col-sm-8">
 		      			<input type="password" class="form-control" id="inputPassword" placeholder="Password">
 		    		</div>

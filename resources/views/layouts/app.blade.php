@@ -1,6 +1,7 @@
 <html>
     <head>
-        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+        <!-- <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet"> FOR WEB -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <script src="{{ mix('/js/app.js') }}"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,66 +13,101 @@
     
             <!-- Barre de navigation -->
             <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top p-0">
-                <div class="form-row align-items-center my-1">
-                    <div class="col-sm-4 pl-2 pr-5">
+                
+                <!-- <div class="form-row align-items-center my-1">
+                    <div class="col-md-4 pl-3 pr-3">
                         <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='../user/connect';">S'identifier</button>
                     </div>
-                    <div class="col-sm-8">
-                        <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='../user/new';">Créez votre compte</button>
+                    <div class="col-md-8 pl-4">
+                        <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='../user/new';">Rejoignez-nous</button>
                     </div>
-                </div>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="../home">Home</a>
+                </div> -->
+                <ul class="navbar-nav ml-auto">
+                    @guest
+                    <li  class="nav-item">
+                        <a class="nav-link" href="{{ route('login') }}">{{ __('login') }}</a>
+                    </li>
+                    @if (Route::has('register'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="../team">Team</a>
-                        </li>
-                        <li class="nav-item active">
-                                <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+                    @endif
+                @else
+                    <li  class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+                    
+
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="document.getElementById('logout-form').submit();">
+                                {{ __('Logout')}}
+                            </a>
+                            <form id="logout-form" action="{{ route ('logout') }}" method="POST" style="...">
+                                
+                            </form>
+                        </div>
+                    </li>
+                    @endguest
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../home">Accueil</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../team">Equipe</a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
             </nav>
 
             <!-- Menu déroulant-->
-            <div class="menu menu-expand-md bg-light">
-                <div class="bloc text-center">
-                    <img class="imgheader" src="/img/header4.png">
-                    <div class="dropdown">
-                        <li class="mainbutton-menu">Gastronomie</li>
-                            <div class="dropdown-child">
-                                <a class="dropdown-child-link" href="recette.html">Recettes</a>
-                                <a class="dropdown-child-link" href="vin.html">Vin</a>
+            
+             <!--   <img class="imgheader" src="/img/header5bis.png"> -->
+        
+
+            <div class="text-menu text-center d-flex align-items-end justify-content-center p-0" style="height: 14rem;">
+                <div class="dropdown">
+                    <li class="mainbutton-menu dropdown-toggle">Gastronomie</li>
+                        <div class="dropdown-child">
+                            <a class="dropdown-child-link" href="../recettes">Recettes</a>
+                            <div class="dropdown-divider m-0"></div>
+                            <a class="dropdown-child-link" href="../vin">Vin</a>
                             </div>
-                    </div>
-                    <div class="dropdown">
-                        <li class="mainbutton-menu">Guide Voyage</li>
-                            <div class="dropdown-child">
-                                <a class="dropdown-child-link" href="maroc.html">Maroc</a>
-                                <a class="dropdown-child-link" href="guyane.html">Guyane</a>
-                                <a class="dropdown-child-link" href="australie.html">Australie</a>
-                            </div>
-                    </div>
-                    <div class="dropdown">
-                        <li class="mainbutton-menu">Expéditions</li>
-                            <div class="dropdown-child">
-                                <a class="dropdown-child-link" href="iledefrance.html">Corse : GR20 </a>
-                                <a class="dropdown-child-link"  href="kilimandjaro.html">Seven Summits</a>
-                                <a class="dropdown-child-link"  href="#.html">Matériel</a>
-                            </div>
-                    </div>
-                    <div class="dropdown">
-                        <li class="mainbutton-menu">Randonnées</li>
-                            <div class="dropdown-child">
-                                <a class="dropdown-child-link" href="iledefrance.html">Ile de France</a>
-                                <a class="dropdown-child-link" href="pyrenees.html">Pyrénées</a>
-                            </div>
-                    </div>
+                        </div>
+                <div class="dropdown">
+                    <li class="mainbutton-menu dropdown-toggle">Guide Voyage</li>
+                        <div class="dropdown-child">
+                            <a class="dropdown-child-link" href="../guide-maroc">Maroc</a>
+                                <div class="dropdown-divider m-0"></div>
+                                <a class="dropdown-child-link" href="../guide-guyane">Guyane</a>
+                                <div class="dropdown-divider m-0"></div>
+                                <a class="dropdown-child-link" href="../guide-australie">Australie</a>
+                                </div>
+                        </div>
+                <div class="dropdown">
+                    <li class="mainbutton-menu dropdown-toggle">Expéditions</li>
+                        <div class="dropdown-child" style="width: text-size-adjust">
+                                <a class="dropdown-child-link" href="../corse-gr20">Corse : GR20 </a>
+                                <div class="dropdown-divider m-0"></div>
+                                <a class="dropdown-child-link"  href="../expedition-7summits">Seven Summits</a>
+                                <div class="dropdown-divider m-0"></div>
+                                <a class="dropdown-child-link"  href="../conseil-materiel">Matériel</a>
+                                </div>
+                        </div>
+                <div class="dropdown">
+                    <li class="mainbutton-menu dropdown-toggle">Randonnées</li>
+                        <div class="dropdown-child">
+                                <a class="dropdown-child-link" href="../rando-idf">Ile de France</a>
+                                <div class="dropdown-divider m-0"></div>
+                                <a class="dropdown-child-link" href="../rando-pyrenees">Pyrénées</a>
+                
+                        </div>
                 </div>
-            </div>  
+            </div>
         @show
 
         <div class="container-fluid p-0">
@@ -84,7 +120,7 @@
             <div class="container-fluid">
                 <div class="boxfooter text-center">
                     <div class="col-12">
-                        <h5>&copy; mynextadventure.fr</h5>
+                        <h5>&copy; nextadventure.fr</h5>
                     </div>
                 </div>
             </div>

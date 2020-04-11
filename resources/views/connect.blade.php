@@ -28,7 +28,7 @@
 			    </div>
 		  	</div>
 		  	<div class="form-inline pt-3">
-		    	<label for="inputPassword" class="col-sm-4 col-form-label" style="justify-content: left;">Password :</label>
+		    	<label for="inputPassword" class="col-sm-4 col-form-label" style="justify-content: left;">Mot de passe :</label>
 		   			 <div class="col-sm-8">
 		      			<input type="password" class="form-control" id="inputPassword" placeholder="Password">
 		    		</div>

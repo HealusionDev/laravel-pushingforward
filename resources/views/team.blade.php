@@ -12,7 +12,7 @@
 		<div class="row team-box text-center">
 			<div class="col-12">
 				<h1 class="team-title1">L'équipe</h1>
-				<h1 class="team-title2">My Next Adventure</h1>
+				<h1 class="team-title2">Next Adventure</h1>
 			</div>
 			<hr>
 		</div>
@@ -21,7 +21,7 @@
 	<div class="container-fluid pt-5">
 		<div class="row team">
 			<div class="col-md-4 d-flex justify-content-center">
-				<div class="carte" style="width: 70%;">
+				<div class="carte" style="width: 60%;">
 					<img class="card-img-top" src="/img/Cy.jpg">
 					<div class="carte-body text-center">
 						<h4 class="carte-title pt-3">Cyrille</h4>
@@ -31,7 +31,7 @@
 				</div>
 			</div>
 			<div class="col-md-4 d-flex justify-content-center">
-				<div class="carte" style="width: 70%;">
+				<div class="carte" style="width: 60%;">
 					<img class="card-img-top" src="/img/Rem.jpg">
 					<div class="carte-body text-center">
 						<h4 class="carte-title pt-3">Rémy</h4>
@@ -41,7 +41,7 @@
 				</div>
 			</div>
 			<div class="col-md-4 d-flex justify-content-center">
-				<div class="carte" style="width: 70%;">
+				<div class="carte" style="width: 60%;">
 					<img class="card-img-top" src="/img/Vinc.jpg">
 					<div class="carte-body text-center">
 						<h4 class="carte-title pt-3">Vincent</h4>
