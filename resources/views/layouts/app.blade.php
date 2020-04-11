@@ -1,7 +1,7 @@
 <html>
     <head>
-        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet"> <!-- FOR WEB -->
-        <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
+        <!-- <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet"> FOR WEB --> 
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <script src="{{ mix('/js/app.js') }}"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,36 +22,7 @@
                         <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='../user/new';">Rejoignez-nous</button>
                     </div>
                 </div>
-                <!-- <ul class="navbar-nav ml-auto">
-                    @guest
-                    <li  class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('login') }}</a>
-                    </li>
-                    @if (Route::has('register'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>>
-                        </li>
-                    @endif
-                @else
-                    <li  class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-                            {{ Auth::user()->name }} <span class="caret"></span>
-                        </a>
-                    
-
-                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="document.getElementById('logout-form').submit();">
-                                {{ __('Logout')}}
-                            </a>
-                            <form id="logout-form" action="{{ route ('logout') }}" method="POST" style="...">
-                                
-                            </form>
-                        </div>
-                    </li>
-                    @endguest
-                </ul>
                 
-                 -->
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
