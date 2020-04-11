@@ -1,7 +1,7 @@
 <html>
     <head>
-        <!-- <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet"> FOR WEB -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet"> <!-- FOR WEB -->
+        <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
         <script src="{{ mix('/js/app.js') }}"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +52,7 @@
                 </ul>
                 
                  -->
-                 
+
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="../home">Accueil</a>
