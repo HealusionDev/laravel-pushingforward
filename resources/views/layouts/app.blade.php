@@ -19,23 +19,37 @@
     <body>
         @section('header')
                 <div id="app">
-                    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-                        <div class="container">
-                            <a class="navbar-brand" href="{{ url('/') }}">
-                                {{ config('app.name', 'Laravel') }}
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                                
+    
+            <!-- Barre de navigation -->
+            <div id="app">
+                <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+                    <div class="container">
+                        <a class="navbar-brand" href="{{ url('/') }}">
+                            {{ config('app.name', 'Next Adventure') }}
+                                </a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <!-- Left Side Of Navbar -->
                                 <ul class="navbar-nav mr-auto">
-
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="../accueil">Accueil</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="../team">Equipe</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                            <a class="nav-link" href="../#">Contact</a>
+                                    </li>
                                 </ul>
-
+                   
+                                
                                 <!-- Right Side Of Navbar -->
-                                <ul class="navbar-nav ml-auto">
+                                <ul class="navbar-nav mr-auto">
                                     <!-- Authentication Links -->
                                     @guest
                                         <li class="nav-item">
@@ -71,37 +85,9 @@
             </nav>
         </div>
 
-    
-            <!-- Barre de navigation -->
-            <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
-                
-                <div class="form-row align-items-center my-1">
-                    <div class="col-md-4 pl-3 pr-3">
-                        <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='../user/connect';">S'identifier</button>
-                    </div>
-                    <div class="col-md-8 pl-4">
-                        <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='../user/new';">Rejoignez-nous</button>
-                    </div>
-                </div>
-                
+                    
+                </nav>
 
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../accueil">Accueil</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../team">Equipe</a>
-                    </li>
-                    <li class="nav-item active">
-                            <a class="nav-link" href="../#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Menu déroulant-->
-            
-             <!--   <img class="imgheader" src="/img/header5bis.png"> -->
-        
 
             <div class="text-menu text-center d-flex align-items-end justify-content-center p-0" style="height: 14rem;">
                 <div class="dropdown">
