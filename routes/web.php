@@ -17,7 +17,7 @@ Route::get('/', function () { #requete http avec address se terminant par /
     return view('home');
 });
 
-Route::get('home', function () { #requete http avec address se terminant par /home
+Route::get('accueil', function () { #requete http avec address se terminant par /home
     return view('home');
 });
 
@@ -75,4 +75,4 @@ Route::get('rando-pyrenees', function () { #requete http avec address se termina
 
 Auth::routes();
 
-Route::get('/login', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');

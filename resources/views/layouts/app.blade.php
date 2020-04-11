@@ -86,13 +86,13 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../home">Accueil</a>
+                        <a class="nav-link" href="../accueil">Accueil</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="../team">Equipe</a>
                     </li>
                     <li class="nav-item active">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="../#">Contact</a>
                     </li>
                 </ul>
             </nav>
