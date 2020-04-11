@@ -69,6 +69,7 @@
                     </div>
                 </div>
             </nav>
+        </div>
 
     
             <!-- Barre de navigation -->
