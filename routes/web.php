@@ -72,10 +72,7 @@ Route::get('rando-idf', function () { #requete http avec address se terminant pa
 Route::get('rando-pyrenees', function () { #requete http avec address se terminant par /recettes
     return view('rando-pyrenees');
 });
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/login', 'HomeController@index')->name('home');
