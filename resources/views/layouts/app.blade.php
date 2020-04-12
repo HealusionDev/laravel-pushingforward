@@ -116,12 +116,10 @@
                 </div>
             </div>
 
-            @section('content')
             <main class="container-fluid p-0">
                 @yield('content')
             </main>
 
-            @section('footer')
             <!-- Pied de page -->
             <footer>
                 <div class="container-fluid">
