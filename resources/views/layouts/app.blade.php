@@ -17,64 +17,62 @@
         <title>@yield('title')</title>
     </head>
 
-    <body>
-        @section('header')                        
-    
-            <!-- Barre de navigation -->
-            <div id="app">
-                <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
-                    <div class="container">             
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <!-- Left Side Of Navbar -->
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="../accueil">Accueil</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="../team">Equipe</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="../#">Contact</a>
-                                </li>
-                            </ul>
+    <body>                   
+        <!-- Barre de navigation -->
+        <div id="app">
+            <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+                <div class="container">             
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../accueil">Accueil</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../team">Equipe</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../#">Contact</a>
+                            </li>
+                        </ul>
                    
-                            <ul class="navbar-nav">
-                            <!-- Authentication Links -->
-                            @guest
+                        <ul class="navbar-nav">
+                        <!-- Authentication Links -->
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
+                            </li>
+                            @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Inscrivez-vous') }}</a>
                                 </li>
-                                @if (Route::has('register'))
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('register') }}">{{ __('Inscrivez-vous') }}</a>
-                                    </li>
-                                @endif
-                                @else
-                                <li class="nav-item dropdown">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        {{ Auth::user()->name }} <span class="caret"></span>
+                            @endif
+                            @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                                        {{ __('Se déconnecter') }}
                                     </a>
 
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();">
-                                            {{ __('Se déconnecter') }}
-                                        </a>
-
-                                        <a class="dropdown-item" href="{{ route('admin.users.index') }}">
-                                            Gestion des utilisateurs
-                                        </a>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            @csrf
-                                        </form>
-                                    </div>
-                                </li>
-                            @endguest
-                            </ul>
-                        </div>
+                                    <a class="dropdown-item" href="{{ route('admin.users.index') }}">
+                                        Gestion des utilisateurs
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                             </li>
+                         @endguest
+                        </ul>
                     </div>
-                </nav>
+                </div>
+            </nav>
             
 
 
@@ -117,28 +115,24 @@
                         </div>
                 </div>
             </div>
-        @show
-        @endsection
 
-        @section('content')
-        <main class="container-fluid p-0">
-            @yield('content')
-        </main>
-        @endsection
+            @section('content')
+            <main class="container-fluid p-0">
+                @yield('content')
+            </main>
 
-        @section('footer')
-        <!-- Pied de page -->
-        <footer>
-            <div class="container-fluid">
-                <div class="boxfooter text-center">
-                    <div class="col-12">
-                        <h5>&copy; nextadventure.fr</h5>
+            @section('footer')
+            <!-- Pied de page -->
+            <footer>
+                <div class="container-fluid">
+                    <div class="boxfooter text-center">
+                        <div class="col-12">
+                            <h5>&copy; nextadventure.fr</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        @show
-        @endsection
-    </div>
+            </footer>
+
+        </div>
     </body>
 </html>
