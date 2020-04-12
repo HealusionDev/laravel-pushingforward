@@ -27,7 +27,7 @@ class UsersController extends Controller
      */
     public function edit(User $user)
     {
-        //
+        return view(view: 'admin.users.index');
     }
 
     /**
