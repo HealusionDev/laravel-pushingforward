@@ -9,7 +9,9 @@
                             <div class="card-header">Users</div>
 
                             <div class="card-body">
-
+                                @foreach ($users as $user)
+                                    {{ $user->name }} - {{user->email}}
+                                @endforeach
                             </div>
                         </div>
                     </div>
