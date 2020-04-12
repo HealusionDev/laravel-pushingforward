@@ -76,3 +76,5 @@ Route::get('rando-pyrenees', function () { #requete http avec address se termina
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/admin/user','Admin\UsersController', ['except' => ['show', 'create', 'store']]);
