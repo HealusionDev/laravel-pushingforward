@@ -84,7 +84,7 @@
                                             {{ __('Se déconnecter') }}
                                         </a>
 
-                                        <a class="dropdown-item" href="{{ route('user.index') }}">
+                                        <a class="dropdown-item" href="{{ route('admin.users.index') }}">
                                             Gestion des utilisateurs
                                         </a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
