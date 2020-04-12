@@ -16,6 +16,7 @@
    
         <title>@yield('title')</title>
     </head>
+
     <body>
         @section('header')                        
     
@@ -74,7 +75,7 @@
                         </div>
                     </div>
                 </nav>
-            </div>
+            
 
 
             <div class="text-menu text-center d-flex align-items-end justify-content-center p-0" style="height: 14rem;">
@@ -117,10 +118,13 @@
                 </div>
             </div>
         @show
+        @endsection
 
-        <div class="container-fluid p-0">
+        @section('content')
+        <main class="container-fluid p-0">
             @yield('content')
-        </div>
+        </main>
+        @endsection
 
         @section('footer')
         <!-- Pied de page -->
@@ -134,6 +138,7 @@
             </div>
         </footer>
         @show
-
+        @endsection
+    </div>
     </body>
 </html>

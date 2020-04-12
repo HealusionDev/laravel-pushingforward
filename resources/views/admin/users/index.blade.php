@@ -1,10 +1,5 @@
 @extends ('layouts.app')
 
-@section('title', 'My Next Adventure')
-
-@section('header')
-    @parent
-@endsection
 
 @section('content')
             <div class="container">
