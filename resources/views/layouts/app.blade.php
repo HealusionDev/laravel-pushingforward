@@ -76,7 +76,7 @@
             
 
 
-            <div class="text-menu text-center d-flex align-items-end justify-content-center p-0">
+            <div class="text-menu text-center d-flex align-items-end justify-content-center p-0" style="height: 14rem;">
                 <div class="dropdown">
                     <li class="mainbutton-menu dropdown-toggle">Gastronomie</li>
                         <div class="dropdown-child">
