@@ -10977,6 +10977,12 @@ body {
   box-sizing: border-box;
 }
 
+
+.contenu{
+  display: flex;
+  flex-direction : column;
+  flex: 1;
+}
 .carousel-caption {
   position: absolute;
   top: 50%;
