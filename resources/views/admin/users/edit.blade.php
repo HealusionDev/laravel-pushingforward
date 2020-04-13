@@ -12,7 +12,7 @@
                                     @csrf
                                     @method('PUT')
 
-                                    @foreach($roles as $role)
+                                    @foreach($Roles as $role)
                                       <div class="form-check">
                                         <input type="checkbox" name="roles[]" value="{{ $role->id }}">
                                         <label>{{ $role->name }}</label>
