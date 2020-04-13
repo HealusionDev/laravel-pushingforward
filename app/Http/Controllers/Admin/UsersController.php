@@ -38,7 +38,11 @@ class UsersController extends Controller
     {
         $roles = Role::all();
 
-        return view('admin.users.edit')->with('users', $users);
+        return view('admin.users.edit')->with([
+            'users'=> $user,
+            'roles' => $roles
+
+        ]);
     }
 
     /**
