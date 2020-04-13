@@ -18,15 +18,15 @@
                                           <th scope="col">Action</th>
                                         </tr>
                                       </thead>
-                                      <tbody>\
+                                      <tbody>
                                         @foreach ($users as $user)
                                              <tr>
                                                 <th scope="row">{{ $user->id }}</th>
                                                 <td>{{ $user->name }}</td>
                                                 <td>{{ $user->email }}</td>
                                                 <td>
-                                                    <button type="button" class="btn btn-primary">Edit</button>
-                                                    <button type="button" class="btn btn-danger">Delete</button>
+                                                    <a href="{{ route('admin.users.edit', $user->id) }}"><button type="button" class="btn btn-primary">Edit</button></a>
+                                                    <a href="{{ route('admin.users.destroy', $user->id) }}"><button type="button" class="btn btn-danger">Delete</button></a>
                                                 </td>
                                             </tr>
                                         @endforeach
