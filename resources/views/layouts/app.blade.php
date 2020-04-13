@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <main class="container-fluid p-0" style="display: flex;flex: 1;">
+            <main class="container-fluid p-0" style="display: flex; flex-direction : column; flex: 1;">
                 @yield('content')
             </main>
 
