@@ -19,7 +19,7 @@
 
     <body>                   
         <!-- Barre de navigation -->
-        <div id="app" style="min-height: 100vh; display: flex; flex-direction: column; flex: 1; flex-grow: initial;">
+        <div id="app">
             <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
                 <div class="container">             
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -76,7 +76,7 @@
             
 
 
-            <div class="text-menu text-center d-flex align-items-end justify-content-center p-0" style="height: 14rem;">
+            <div class="text-menu text-center d-flex align-items-end justify-content-center p-0">
                 <div class="dropdown">
                     <li class="mainbutton-menu dropdown-toggle">Gastronomie</li>
                         <div class="dropdown-child">
@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <main class="container-fluid p-0" style="display: flex; flex-direction : column; flex: 1;">
+            <main class="contenu container-fluid p-0">
                 @yield('content')
             </main>
 
