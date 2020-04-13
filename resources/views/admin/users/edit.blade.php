@@ -9,7 +9,7 @@
                             <div class="card-header">Edit Users {{ $users->name }}</div>
 
                             <div class="card-body">
-                                <form action="{{ route('admin.users.update', $user) }}" method="POST">
+                                <form action="{{ route('admin.users.update', $users) }}" method="POST">
                                   @csrf
                                   {{ method_field('PUT')}}\
                                   @foreach($roles as $role)
