@@ -10,7 +10,7 @@
                               <div class="card-body">
                                   <form action="{{ route('admin.users.update', $users) }}" method="POST">
                                     @csrf
-                                    {{ method_field('PUT') }}
+                                    @method('PUT')
 
                                     @foreach($roles as $role)
                                       <div class="form-check">
