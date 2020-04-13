@@ -8,7 +8,7 @@
 
 @section('content')
 	<!-- L'équipe -->
-	<div class="container-fluid p-0">
+	<div class="container-fluid">
 		<div class="row team-box text-center">
 			<div class="col-12">
 				<h1 class="team-title1">L'équipe</h1>
