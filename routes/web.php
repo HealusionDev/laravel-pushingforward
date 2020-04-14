@@ -73,7 +73,7 @@ Route::get('rando-pyrenees', function () { #requete http avec address se termina
     return view('rando-pyrenees');
 });
 
-Auth::routes();
+Auth::routes('../');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
