@@ -34,12 +34,12 @@ class UsersController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $users)
+    public function edit(User $user)
     {
         $roles = Role::all();
 
         return view('admin.users.edit')->with([
-            'users'=> $users,
+            'user'=> $user,
             'roles' => $roles
         ]);
     }
