@@ -15,7 +15,7 @@
                                     @foreach($roles as $role)
                                       <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="roles[]" value="{{ $role->id }}">
-                                        <label class="form-check-label" >{{ $role->name }}</label>
+                                        <label class="form-check-label">{{ $role->name }}</label>
                                       </div>
                                     @endforeach
                                     <button type="submit" class="btn btn-primary">Update</button> 
