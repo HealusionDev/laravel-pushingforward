@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
 
         $adminRole = Role::where('name', 'admin')->first();
         $auteurRole = Role::where('name', 'auteur')->first();
-        $userRole = Role::where('name', 'user')->first();
+        $utilisateurRole = Role::where('name', 'user')->first();
 
         $admin = User::create([
         	'name' => 'Jacob',
@@ -36,7 +36,7 @@ class UsersTableSeeder extends Seeder
         	'password' => Hash::make('password'),
         ]);
 
-        $user = User::create([
+        $utilisateur = User::create([
         	'name' => 'Generic',
         	'email' => 'user@user.com',
         	'password' => Hash::make('password'),
@@ -44,6 +44,6 @@ class UsersTableSeeder extends Seeder
 
         $admin->roles()->attach($adminRole);
         $auteur->roles()->attach($auteurRole);
-        $user->roles()->attach($userRole);
+        $utilisateur->roles()->attach($userRole);
     }
 }

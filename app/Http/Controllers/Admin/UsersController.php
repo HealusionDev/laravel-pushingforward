@@ -24,7 +24,7 @@ class UsersController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('admin.users.index')->with('users', $users);
+        return view('admin.users.index')->with(['users', $users);
     }
 
 
@@ -41,7 +41,6 @@ class UsersController extends Controller
         return view('admin.users.edit')->with([
             'users'=> $user,
             'roles' => $roles
-
         ]);
     }
 
