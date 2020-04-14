@@ -12,9 +12,9 @@
                                     {{ csrf_field() }}
                                     {{ method_field('PUT') }}
 
-                                    @foreach($roles as $role)
+                                    @foreach($roles)
                                       <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="roles[]" value="{{ $role->id }}">
+                                        <input class="form-check-input" type="checkbox" name="roles[]" value="{{ $roles->id }}">
                                         <label class="form-check-label" >{{ $role->name }}</label>
                                       </div>
                                     @endforeach
