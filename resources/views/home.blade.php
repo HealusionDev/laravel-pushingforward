@@ -13,7 +13,6 @@
 		<ul class="carousel-indicators">
 			<li data-target="#slides" data-slide-to="0" class="active"></li>
 			<li data-target="#slides" data-slide-to="1"></li>
-			<li data-target="#slides" data-slide-to="2"></li>
 		</ul>
 		<div class="carousel-inner">
 
@@ -26,18 +25,10 @@
 					</div>
 			</div>
 			<div class="carousel-item">
-				<img class="carouselimg d-block mx-auto" src="/img/maroc1.jpg" data-holder-rendered="true">
+				<img class="carouselimg d-block mx-auto" src="/img/guyane2.jpg" data-holder-rendered="true">
 					<div class="carousel-caption">
-						<h1 class="carousel-titre1">Maroc</h1>
-						<h2 class="carousel-titre2">L'antre des milles couleurs</h2>
-						<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='../guide-maroc';">Lire le guide</button>
-					</div>
-			</div>
-			<div class="carousel-item">
-				<img class="carouselimg d-block mx-auto" src="/img/guyane1.jpg" data-holder-rendered="true">
-					<div class="carousel-caption">
-						<h1 class="carousel-titre1">TBD</h1>
-						<h2 class="carousel-titre2">TBD</h2>
+						<h1 class="carousel-titre1">Guyane</h1>
+						<h2 class="carousel-titre2">Sur les traces de Dreyfus</h2>
 						<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='../guide-guyane';">Lire le guide</button>
 					</div>
 			</div>
