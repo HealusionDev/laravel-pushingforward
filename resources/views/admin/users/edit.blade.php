@@ -49,8 +49,8 @@
                                               @if($user->roles->pluck('id')->contains($role->id)) checked @endif>
                                               <label class="form-check-label">{{ $role->name }}</label>
                                             </div>
-                                          </div>
-                                      @endforeach
+                                          @endforeach
+                                        </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Update</button> 
                                   </form> 
