@@ -60,12 +60,12 @@
                                         {{ __('Se déconnecter') }}
                                     </a>
 
-                                    @can('manage.users')
+                                    @can('manage-users')
                                     <a class="dropdown-item" href="{{ route('admin.users.index') }}">
                                         Gestion des utilisateurs
                                     </a>
                                     @endcan
-                                    
+
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
