@@ -75,7 +75,7 @@ class UsersController extends Controller
             return redirect(route('admin.users.index'));
         }
 
-        $user->roles->detach();
+        $user->roles()->detach();
         $user->delete();
 
         return redirect()->round('admin.users.index');
