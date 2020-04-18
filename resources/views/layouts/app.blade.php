@@ -120,6 +120,7 @@
             </div>
 
             <main class="contenu container-fluid p-0">
+                @include('partials.alerts')
                 @yield('content')
             </main>
 
