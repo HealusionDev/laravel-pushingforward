@@ -64,8 +64,8 @@ class UsersController extends Controller
         $user->email = $request->email;
         $user->save();
 
-        $request->session()->flash('sucess', $user->name . ' has been updated');
-        
+        $request->session()->flash('sucess', ' has been updated');
+
         if ($user->save()){
             $request->session()->flash('sucess', $user->name . ' has been updated');
         }else{
