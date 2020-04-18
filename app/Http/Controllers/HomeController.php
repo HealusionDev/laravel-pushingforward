@@ -21,10 +21,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index(Request $request, User $user)
+    public function index(Request $request)
     {
 
-        $request->session()->flash('sucess', $user->name . ' has been updated');
+        $request->session()->flash('sucess', ' has been updated');
 
         return view('home');
     }
