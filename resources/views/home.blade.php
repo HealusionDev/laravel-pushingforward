@@ -7,7 +7,6 @@
 @endsection
 
 @section('content')
-
     <!-- Image Slider -->
 	<div id="slides" class="carousel slide" data-ride="carousel">
 		<ul class="carousel-indicators">

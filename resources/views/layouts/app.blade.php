@@ -121,12 +121,12 @@
 
             <main class="contenu container-fluid p-0">
                 <div>
-                @include('partials.alerts')
-                @yield('content')
+                    @include('partials.alerts')
+                    @yield('content')
                 </div>
             </main>
 
-            <!-- Pied de page -->
+            <!-- Pied de page --> 
             <footer>
                 <div class="container-fluid">
                     <div class="boxfooter text-center">

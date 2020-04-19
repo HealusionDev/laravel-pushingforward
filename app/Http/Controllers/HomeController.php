@@ -24,7 +24,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
 
-        $request->session()->flash('sucess', ' has been updated');
+        $request->session()->flash('sucess', 'has been updated');
 
         return view('home');
     }
