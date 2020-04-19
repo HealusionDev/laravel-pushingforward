@@ -24,7 +24,7 @@
                 <div class="container">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                        <ul class="navbar-nav d-flex float-right">
+                        <ul class="navbar-nav mr-auto">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -64,7 +64,7 @@
 
 
                         <!-- Right side of the bar -->
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="../accueil">Accueil</a>
                             </li>
