@@ -36,7 +36,7 @@
                             </li>
                         </ul>
                    
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav d-flex float-right">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
