@@ -17,7 +17,7 @@
 			<hr>
 		</div>
 	</div>
-	<!-- Conteu -->
+	<!-- Contenu -->
 
 
 	<!-- Connect -->
