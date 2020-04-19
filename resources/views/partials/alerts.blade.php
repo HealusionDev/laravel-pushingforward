@@ -1,17 +1,17 @@
 @if(session('success'))
-	<div class="alert alert-success" role="alert" style="text-align: center; margin: 0; font-weight: 400;">
+	<div class="alert alert-success" role="alert" style="text-align: center; margin: 0; font-weight: 500;">
 	  {{ session('success') }}
 	</div>
 @endif
 
 @if(session('warning'))
-	<div class="alert alert-warning" role="alert">
+	<div class="alert alert-warning" role="alert" style="text-align: center; margin: 0; font-weight: 500;">
 	  {{ session('warning') }}
 	</div>
 @endif
 
 @if(session('error'))
-	<div class="alert alert-danger" role="alert">
+	<div class="alert alert-danger" role="alert" style="text-align: center; margin: 0; font-weight: 500;">
 	  {{ session('error') }}
 	</div>
 @endif
