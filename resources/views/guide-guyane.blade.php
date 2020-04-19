@@ -19,7 +19,7 @@
 	</div>
 	<!-- Contenu -->
 
-
+	
 	<!-- Connect -->
 	<div class="container-fluid p-3">
 		<div class="row connect text-center">

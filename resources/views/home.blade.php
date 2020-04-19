@@ -46,7 +46,7 @@
 	<div class="container-fluid p-0">
 		<div class="jumbotron">
 			<div class="col-12 d-flex justify-content-center">
-				<p class="lead text-center" style="width: 80%;">Parce que la nature et les bons mets de notre terroir sont des sources d'inspiration inépuisables.<br/><br/>
+				<p class="lead text-center" style="width: 70%;">Parce que la nature et les bons mets de notre terroir sont des sources d'inspiration inépuisables.<br/><br/>
 				Parce que le partage d'itinéaires de trekking, d'astuces voyages, de délicieuses recettes healthy et d'expériences oenologiques sont essentielles à notre épanouissement.
 				</p>
 			</div>
