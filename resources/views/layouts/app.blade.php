@@ -23,18 +23,6 @@
             <nav class="navbar navbar-expand-md navbar-light bg-light p-0">            
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="../accueil">Accueil</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="../team">Equipe</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="../#">Contact</a>
-                            </li>
-                        </ul>
-                   
                         <ul class="navbar-nav d-flex float-right">
                         <!-- Authentication Links -->
                         @guest
@@ -72,6 +60,21 @@
                              </li>
                          @endguest
                         </ul>
+
+
+                        <!-- Right side of the bar -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../accueil">Accueil</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../team">Equipe</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../#">Contact</a>
+                            </li>
+                        </ul>
+
                     </div>
             </nav>
             
