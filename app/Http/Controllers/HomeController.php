@@ -24,7 +24,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
 
-        $request->session()->flash('sucess', 'Connexion réussie!');
+        $request->session()->flash('success', 'Connexion réussie!');
 
         return view('home');
     }
