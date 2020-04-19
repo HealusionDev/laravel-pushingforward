@@ -20,8 +20,7 @@
     <body>                   
         <!-- Barre de navigation -->
         <div id="app" style="min-height: 100vh; display: flex; flex-direction: column; flex: 1; flex-grow: initial;">
-            <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
-                <div class="container">             
+            <nav class="navbar navbar-expand-md navbar-light bg-light p-0">            
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav">
@@ -74,7 +73,6 @@
                          @endguest
                         </ul>
                     </div>
-                </div>
             </nav>
             
 
