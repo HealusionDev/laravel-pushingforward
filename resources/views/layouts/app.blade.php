@@ -120,10 +120,8 @@
             </div>
 
             <main class="contenu container-fluid p-0">
-                <div>
-                    @include('partials.alerts')
-                    @yield('content')
-                </div>
+                @include('partials.alerts')
+                @yield('content')
             </main>
 
             <!-- Pied de page --> 
