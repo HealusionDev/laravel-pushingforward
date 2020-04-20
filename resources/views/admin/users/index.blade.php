@@ -21,6 +21,7 @@
                                       <tbody>
                                         @foreach ($users as $user)
                                              <tr>
+                                                <ol start="1">
                                                 <th scope="row">{{ $user->id }}</th>
                                                 <td>{{ $user->name }}</td>
                                                 <td>{{ $user->email }}</td>
@@ -37,11 +38,11 @@
                                                     </form>
                                                     @endcan
                                                 </td>
+                                              </ol>
                                             </tr>
                                         @endforeach
                                       </tbody>
                                     </table>
-                                
                             </div>
                         </div>
                     </div>
