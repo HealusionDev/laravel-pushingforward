@@ -234,9 +234,6 @@ html,body{
 		padding: 2rem;
 	}
 
-	.lead {
-		font-size: 0.8rem;
-	}
 }
 @media (max-width: 1092px){
 	.carousel-caption{
@@ -253,5 +250,8 @@ html,body{
 	.carousel-caption .btn{
 		font-size: 95%;
 		padding: 8px 14px;
+	}
+	.lead {
+		font-size: 1rem;
 	}
 }

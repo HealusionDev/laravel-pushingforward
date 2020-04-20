@@ -11120,9 +11120,8 @@ body {
     font-size: 4rem;
     padding: 2rem;
   }
-
-
 }
+
 @media (max-width: 1092px){
   .carousel-caption{
     top: 48%;
@@ -11143,3 +11142,4 @@ body {
   .lead {
     font-size: 1rem;
   }
+}
