@@ -11019,26 +11019,24 @@ body {
   color: #fff;
 }
 
-.jumbotron {
+.jumbotron{
   padding: 1rem;
   border-radius: 0px;
   width: 100%;
   margin-bottom: 1rem;
 }
 
-.col-12 {
+.col-12{
   margin-top: 10px;
   text-align: center;
 }
-
-.movies-title {
+.movies-title{
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
   color: #2e2e2e;
 }
-
-.connect-title {
+.connect-title{
   font-size: 2rem;
   font-weight: 500;
   line-height: 1;
@@ -11049,103 +11047,97 @@ body {
 .style1 {
   border-top: 2px solid #b4b4b4;
   width: 250px;
-  margin-top: 0.3rem;
+  margin-top: .3rem;
   margin-bottom: 1rem;
 }
-
 .style2 {
   border-top: 2px solid #b4b4b4;
   width: 250px;
-  margin-top: 0.3rem;
+  margin-top: .3rem;
 }
 
-.social-link {
+
+.social-link{
   font-size: 3rem;
   padding: 3rem;
 }
 
-.fa-facebook {
-  color: #3b5998;
+.fa-facebook{
+  color: #3b5998
 }
-
-.fa-instagram {
+.fa-instagram{
   color: #517fa4;
 }
-
-.fa-youtube {
+.fa-youtube{
   color: #bb0000;
 }
-
-.fa-facebook:hover {
+.fa-facebook:hover{
+  color: #d5d5d5;
+}
+.fa-instagram:hover{
+  color: #d5d5d5;
+}
+.fa-youtube:hover{
   color: #d5d5d5;
 }
 
-.fa-instagram:hover {
-  color: #d5d5d5;
-}
-
-.fa-youtube:hover {
-  color: #d5d5d5;
-}
-
-.team-title1 {
+.team-title1{
   font-size: 2.3rem;
   font-weight: 400;
   line-height: 1.2;
   color: #2e2e2e;
 }
-
-.team-title2 {
+.team-title2{
   font-size: 2.5rem;
   font-weight: 410;
   line-height: 1.2;
   color: #2e2e2e;
 }
 
-.carte-title {
+.carte-title{
   color: #2e2e2e;
   font-weight: 500;
   line-height: 1.2;
   font-size: 1.5em;
 }
 
-footer {
+
+
+.footer{
   background-color: #3f3f3f;
   background-size: 100% 30%;
 }
-
-.boxfooter {
+.boxfooter{
   color: #fff;
   padding: 10px;
 }
 
+
 /* Media Queries */
 
-@media (min-width: 992px) {
-  .social a {
+@media (min-width: 992px){
+  .social-link {
     font-size: 4rem;
     padding: 2rem;
   }
-}
 
-@media (max-width: 1092px) {
-  .carousel-caption {
+  .lead {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1092px){
+  .carousel-caption{
     top: 48%;
   }
-
-  .carousel-caption h1 {
+  .carousel-caption h1{
     font-size: 350%;
   }
-
-  .carousel-caption h2 {
+  .carousel-caption h2{
     font-size: 140%;
     font-weight: 400;
-    padding-bottom: 0.2rem;
+    padding-bottom: .2rem;
   }
-
-  .carousel-caption .btn {
+  .carousel-caption .btn{
     font-size: 95%;
     padding: 8px 14px;
   }
-}
-
