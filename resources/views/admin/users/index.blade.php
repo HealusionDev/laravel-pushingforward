@@ -33,7 +33,7 @@
                                                     <form action="{{ route('admin.users.destroy', $user) }}" method="POST" class="float-left">
                                                         @csrf
                                                         {{ method_field('DELETE') }}
-                                                        <button type="submit" class="btn btn-danger">Supprimer</button></a>
+                                                        <button type="submit" class="btn btn-danger">Supprimer</button>
                                                     </form>
                                                     @endcan
                                                 </td>
