@@ -46,7 +46,7 @@
 	<div class="container-fluid p-0">
 		<div class="jumbotron">
 			<div class="col-12 d-flex justify-content-center">
-				<p class="lead text-center" style="width: 70%;">Parce que la nature et les bons mets sont des sources d'inspiration inépuisables.<br/><br/>
+				<p class="lead text-center" style="width: 75%;">Parce que la nature et les bons mets sont des sources d'inspiration inépuisables.<br/><br/>
 				Parce que le partage d'itinéaires de trekking, d'astuces voyages, de délicieuses recettes et d'expériences oenologiques sont essentielles à notre épanouissement.
 				</p>
 			</div>
@@ -64,8 +64,8 @@
 				<hr class="style1">
 			</div>
 			
-			<div class="col-12 d-flex justify-content-center">
-				<p class="lead text-center" style="width: 70%;">
+			<div class="col-12 d-flex justify-content-center p-3">
+				<p class="lead text-center" style="width: 75%;">
 					La dernière expédition en date remonte à l'année 2019 lors de mon voyage en Guyane.<br/>
 					Pour un contenu vidéo il faudra revenir à l'aventure Australienne en 2017.<br/>
 				</p>
@@ -83,7 +83,7 @@
 				<h2 class="connect-title">Connect</h2>
 				<hr class="style2">
 			</div>
-			<div class="social-link d-flex justify-content-center p-3">
+			<div class="col-12 social p-3">
 				<a href="https://www.facebook.com/cyrille.gayraud.0"><i class="fab fa-facebook"></i></a>
 				<a href="https://www.instagram.com/cyrgrd/"><i class="fab fa-instagram"></i></a>
 				<a href="https://www.youtube.com/channel/UCJ6nesNo0936uP7NhfiI96w?view_as=public"><i class="fab fa-youtube"></i></a>

@@ -8,7 +8,7 @@
 
 @section('content')
 	<!-- L'équipe -->
-	<div class="container-fluid">
+	<div class="container-fluid pt-3">
 		<div class="row team-box text-center">
 			<div class="col-12">
 				<h1 class="team-title1">L'équipe</h1>
@@ -25,7 +25,7 @@
 					<img class="card-img-top" src="/img/Cy.jpg">
 					<div class="carte-body text-center">
 						<h4 class="carte-title pt-3">Cyrille</h4>
-						<p class="carte-texte">Passionné d'aventures et de découvertes en tout genre, Cyrille vous emmenera sur des terrains encore inexplorés</p>
+						<p class="carte-text">Passionné d'aventures et de découvertes en tout genre, Cyrille vous emmenera sur des terrains encore inexplorés</p>
 					</div>
 
 				</div>
@@ -61,7 +61,7 @@
 				<h2 class="connect-title">Connect</h2>
 				<hr class="style2">
 			</div>
-			<div class="col-12 social p-3">
+			<div class="social-link d-flex justify-content-center p-3">
 				<a href="https://www.facebook.com/cyrille.gayraud.0"><i class="fab fa-facebook"></i></a>
 				<a href="https://www.instagram.com/cyrgrd/"><i class="fab fa-instagram"></i></a>
 				<a href="https://www.youtube.com/channel/UCJ6nesNo0936uP7NhfiI96w?view_as=public"><i class="fab fa-youtube"></i></a>
