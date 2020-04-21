@@ -166,13 +166,13 @@ html,body{
 }
 
 
-.social-link a{
+.social-link {
 	font-size: 3rem;
 	padding: 3rem;
 }
 
 .fa-facebook{
-	color: #3b5998
+	color: #3b5998;
 }
 .fa-instagram{
 	color: #517fa4;
@@ -210,8 +210,6 @@ html,body{
 	font-size: 1.5em;
 }
 
-
-
 .footer{
 	background-color: #3f3f3f;
 	background-size: 100% 30%;
@@ -226,7 +224,7 @@ html,body{
 
 @media (min-width: 992px){
 	.social-link {
-		font-size: 4rem;
+		font-size: 2rem;
 		padding: 2rem;
 	}
 

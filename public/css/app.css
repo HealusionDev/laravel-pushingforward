@@ -11060,7 +11060,7 @@ body {
   margin-top: .3rem;
 }
 
-.social-link a {
+.social-link {
   font-size: 3rem;
   padding: 3rem;
 }
@@ -11124,7 +11124,7 @@ body {
 
 @media (min-width: 992px) {
   .social-link {
-    font-size: 4rem;
+    font-size: 2rem;
     padding: 2rem;
   }
 }
