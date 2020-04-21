@@ -50,7 +50,7 @@
 				Parce que le partage d'itinéaires de trekking, d'astuces voyages, de délicieuses recettes et d'expériences oenologiques sont essentielles à notre épanouissement.
 				</p>
 			</div>
-			<div class="col-12">
+			<div class="col-12 d-flex justify-content-center">
 				<button type="button" class="btn btn-outline-secondary btn-lg" onclick="window.location.href='about.html';">En savoir plus</button>
 			</div>
 		</div>
@@ -83,10 +83,10 @@
 				<h2 class="connect-title">Connect</h2>
 				<hr class="style2">
 			</div>
-			<div class="col-12 social p-1.5">
-				<a class="social-link" href="https://www.facebook.com/cyrille.gayraud.0"><i class="fab fa-facebook"></i></a>
-				<a class="social-link" href="https://www.instagram.com/cyrgrd/"><i class="fab fa-instagram"></i></a>
-				<a class="social-link" href="https://www.youtube.com/channel/UCJ6nesNo0936uP7NhfiI96w?view_as=public"><i class="fab fa-youtube"></i></a>
+			<div class="social-link d-flex justify-content-center p-3">
+				<a href="https://www.facebook.com/cyrille.gayraud.0"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.instagram.com/cyrgrd/"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.youtube.com/channel/UCJ6nesNo0936uP7NhfiI96w?view_as=public"><i class="fab fa-youtube"></i></a>
 			</div>
 		</div>
 	</div>
@@ -94,8 +94,4 @@
 
 @section('footer')
     @parent
-@endsection
-
-@section('content')
-
 @endsection

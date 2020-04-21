@@ -107,7 +107,7 @@ html,body{
 .carousel-titre1{
 	font-size: 450%;
 	text-transform: uppercase;
-	text-shadow: 1px 1px 15px #000;
+	text-shadow: 1px 3px 15px #000;
 	font-weight: 300;
 	line-height: 1.2;
 }
@@ -139,10 +139,6 @@ html,body{
 	margin-bottom: 1rem;
 }
 
-.col-12{
-	margin-top: 10px;
-	text-align: center;
-}
 .movies-title{
 	font-size: 3.5rem;
 	font-weight: 300;
@@ -170,7 +166,7 @@ html,body{
 }
 
 
-.social-link{
+.social-link a{
 	font-size: 3rem;
 	padding: 3rem;
 }
@@ -226,7 +222,7 @@ html,body{
 }
 
 
-/* Media Queries 
+/* Media Queries */
 
 @media (min-width: 992px){
 	.social-link {
@@ -251,4 +247,7 @@ html,body{
 		font-size: 95%;
 		padding: 8px 14px;
 	}
-}*/
+	.lead {
+		font-size: 1rem;
+	}
+}

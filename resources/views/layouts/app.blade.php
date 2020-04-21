@@ -131,9 +131,7 @@
             <footer>
                 <div class="container-fluid">
                     <div class="boxfooter text-center">
-                        <div class="col-12">
-                            <h5>&copy; nextadventure.fr</h5>
-                        </div>
+                        <h5 class="footertext text-center" style="margin-top: 10px;">&copy; nextadventure.fr</h5>
                     </div>
                 </div>
             </footer>
