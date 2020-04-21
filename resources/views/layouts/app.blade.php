@@ -3,7 +3,7 @@
 
     <head>
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">  
-         <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet"> --> 
+        <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --> 
         <script src="{{ mix('js/app.js') }}"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -129,9 +129,9 @@
 
             <!-- Pied de page --> 
             <footer>
-                <div class="container-fluid">
-                    <div class="boxfooter text-center">
-                        <h5 class="footertext text-center" style="margin-top: 10px; ">&copy; nextadventure.fr</h5>
+                <div class="container-fluid p-0 m-0">
+                    <div class="boxfooter text-center" style="margin-top: 10px; ">
+                        <h5 class="footertext text-center">&copy; next-adventure.herokuapp.com</h5>
                     </div>
                 </div>
             </footer>

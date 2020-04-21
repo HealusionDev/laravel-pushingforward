@@ -169,6 +169,13 @@ html,body{
 	margin-top: .3rem;
 }
 
+.social-link{
+	font-size: 3.5rem;
+}
+.social-link a{
+	padding: 1rem;
+}
+
 .fa-facebook{
 	color: #3b5998;
 }
@@ -210,25 +217,36 @@ html,body{
 	font-size: 1rem;
 }
 
-.footer{
+.footer {
+	margin: 0;
+	padding: 0;
+}
+.boxfooter{
 	background-color: #3f3f3f;
 	background-size: 100% 30%;
 }
-.boxfooter{
+
+.footertext {
 	color: #fff;
 	padding: 10px;
+	margin: 0;
 }
 
+.card-header{
+	font-weight: 600;
+}
 
-/* Media Queries 
-
+/* Media Queries */
+ 
 @media (min-width: 992px){
-	.social-link {
-		font-size: 2rem;
+	.social-link{
+		font-size: 4rem;
+	}
+	.social-link a{
 		padding: 2rem;
 	}
 
-}*/
+}
 @media (max-width: 1092px){
 	.carousel-caption{
 		top: 48%;

@@ -24,7 +24,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $users = User::all();
+        $users = User::all()->sortBy('id');
         return view('admin.users.index')->with('users', $users);
     }
 
