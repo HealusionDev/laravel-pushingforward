@@ -73,6 +73,10 @@ Route::get('rando-pyrenees', function () { #requete http avec address se termina
     return view('rando-pyrenees');
 });
 
+Route::get('createarticles', function () { #requete http avec address se terminant par /recettes
+    return view('../textedit/createarticles');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -80,3 +84,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
     Route::resource('users','UsersController', ['except' => ['show', 'create', 'store']]);
 });
+
+Route::get('summernoteeditor',array('as'=>'summernoteeditor.get','uses'=>'SummernotefileController@getSummernoteeditor'));
+
+Route::post('summernoteeditor',array('as'=>'summernoteeditor.post','uses'=>'SummernotefileController@postSummernoteeditor'));
