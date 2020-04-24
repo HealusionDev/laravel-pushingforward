@@ -25,7 +25,8 @@
 	</div>
 	<div class="col-12 d-flex justify-content-center">
 		@can('manage-users')
-			<a href="../createarticles"><button type="button" class="btn btn-primary float-left">Texte modification</button></a>
+			<a href="{{ route('admin.articles.create') }}"><button type="button" class="btn btn-primary float-left">Texte modification</button></a>
+			<a href="../create-articles"><button type="button" class="btn btn-primary float-left">Texte modification</button></a>
 		@endcan
 	</div>
 

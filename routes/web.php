@@ -25,13 +25,6 @@ Route::get('team', function () { #requete http avec address se terminant par /te
     return view('team');
 });
 
-Route::get('user/new', function () { #requete http avec address se terminant par /team
-    return view('newaccount');
-});
-
-Route::get('user/connect', function () { #requete http avec address se terminant par /team
-    return view('connect');
-});
 
 Route::get('recettes', function () { #requete http avec address se terminant par /recettes
     return view('recettes');
@@ -73,8 +66,8 @@ Route::get('rando-pyrenees', function () { #requete http avec address se termina
     return view('rando-pyrenees');
 });
 
-Route::get('createarticles', function () { #requete http avec address se terminant par /recettes
-    return view('../textedit/createarticles');
+Route::get('create-articles', function(){
+    return view('admin/articles/create');
 });
 
 Auth::routes();
@@ -85,6 +78,10 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:mana
     Route::resource('users','UsersController', ['except' => ['show', 'create', 'store']]);
 });
 
-Route::get('summernoteeditor',array('as'=>'summernoteeditor.get','uses'=>'SummernotefileController@getSummernoteeditor'));
+Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
+    Route::resource('articles','ArticlesController');
+});
 
-Route::post('summernoteeditor',array('as'=>'summernoteeditor.post','uses'=>'SummernotefileController@postSummernoteeditor'));
+Route::get('edit','ArticlesController@edit');
+
+Route::post('create','ArticlesController@create');

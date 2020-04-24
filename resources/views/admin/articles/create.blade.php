@@ -14,14 +14,14 @@
 		            <div class="card">
 		                <div class="card-header">Création d'article</div>
 							<div class="card-body">
-								<form method="POST" action="{{ route('summernoteeditor.post') }}">
+								<form method="GET" action="{{ route('admin.articles.create') }}">
 									
 									<div class="form-group">
-										<input type="text" name="title" placeholder="Titre de l'article" class="form-control summernote">
+										<input type="text" name="title" placeholder="Titre de l'article" class="form-control detail">
 									</div>
 
 									<div class="form-group">
-										<textarea name="summernote" id="summernote" class="form-control" placeholder="Contenu de l'article..." cols="30" rows="40"></textarea>
+										<textarea name="detail" id="detail" class="form-control" placeholder="Contenu de l'article..." cols="30" rows="40"></textarea>
 									</div>
 									<div class="form-group d-flex justify-content-center">
 								       <input type="submit" name="send" id="send" class="btn btn-success mr-3" value="Publier">
@@ -38,14 +38,14 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#summernote').summernote({
+			$('#detail').summernote({
 				height: '200px',
 				placeholder: 'Contenu...',
 			})
 		})
 
 		$('#clear').on('click',function(){
-			$('#summernote').summernote('code',null);
+			$('#detail').summernote('code',null);
 		})
 	</script>
 	

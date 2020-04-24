@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSummernoteeditorTable extends Migration
+class CreateArticlesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateSummernoteeditorTable extends Migration
      */
     public function up()
     {
-        Schema::create('summernoteeditor', function (Blueprint $table) {
+        Schema::create('articles', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('title');
             $table->longText('detail');
-            $table->string('feature');
+            $table->timestamp('date_creation')->useCurrent();
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ class CreateSummernoteeditorTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('summernoteeditor');
+        Schema::dropIfExists('articles');
     }
 }
