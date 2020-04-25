@@ -20,15 +20,24 @@
 	<!-- Contenu -->
 
 	<div class="col-12 d-flex justify-content-center">
+		@can('manage-users')
+			<a href="../create-articles"><button type="button" class="btn btn-success float-left">Texte modification</button></a>
+		@endcan
+	</div>
+
+	<div class="col-12 d-flex justify-content-center">
 		<p class="lead text-center" style="width: 70%;">
 		La Guyane, vaste territoire Français situé au coeur de l'amazonie propose mille et une richesses. Ce guide, construit et enrichit par Vincent Taconnat, vous présente les lieux remarquables de cette contrée sauvage et vous propose l'essentiel des activités à réaliser.</p>
 	</div>
-	<div class="col-12 d-flex justify-content-center">
-		@can('manage-users')
-			<a href="{{ route('admin.articles.create') }}"><button type="button" class="btn btn-primary float-left">Texte modification</button></a>
-			<a href="../create-articles"><button type="button" class="btn btn-primary float-left">Texte modification</button></a>
-		@endcan
+	
+	<div class="row justify-content-center">
+		<div class="col-md-8">
+			@for($article->id = 1)
+				{{ $article->detail }}
+			@endfor
+		</div>
 	</div>
+	
 
 
 <!-- Connect -->

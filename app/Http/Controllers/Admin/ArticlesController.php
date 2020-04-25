@@ -56,10 +56,10 @@ class ArticlesController extends Controller
 
         $dom->loadHtml($detail, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
 
-        /*
+    
 
-       $images = $dom->getElementsByTagName('img');
-       foreach($images as $k => $img){
+        $images = $dom->getElementsByTagName('img');
+        foreach($images as $k => $img){
             $data = $img->getAttribute('src');
             list($type, $data) = explode(';', $data);
             list(, $data)      = explode(',', $data);
@@ -71,7 +71,7 @@ class ArticlesController extends Controller
             $img->removeAttribute('src');
             $img->setAttribute('src', $image_name);
         }
-        */
+    
         $detail = $dom->saveHTML();
         $article = new Article;
         $article->title = $title;
@@ -79,10 +79,7 @@ class ArticlesController extends Controller
         
         $article->save();
 
-        return view('admin.articles.index')->with([
-            'title' => $request['title'],
-            'detail' => $request['article'],
-        ]);
+        return redirect()->route('admin.articles.index');
     }
 
     /**
@@ -129,12 +126,14 @@ class ArticlesController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Article $article)
+    public function destroy(Article $article, User $user)
     {
         if(Gate::denies('delete-users', $user)){
             return redirect(route('admin.users.index'));
         }
+        
+        $article->destroy($article->id);
 
-        /*$('#article').summernote('destroy');*/
+        return redirect()->route('admin.articles.index');
     }
 }
