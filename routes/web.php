@@ -85,3 +85,5 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:mana
 Route::get('edit','ArticlesController@edit');
 
 Route::get('create','ArticlesController@create');
+
+Route::get('show','ArticlesController@create');

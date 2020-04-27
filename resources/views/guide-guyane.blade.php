@@ -30,14 +30,7 @@
 		La Guyane, vaste territoire Français situé au coeur de l'amazonie propose mille et une richesses. Ce guide, construit et enrichit par Vincent Taconnat, vous présente les lieux remarquables de cette contrée sauvage et vous propose l'essentiel des activités à réaliser.</p>
 	</div>
 	
-	<div class="row justify-content-center">
-		<div class="col-md-8">
-			@for($article->id = 1)
-				{{ $article->detail }}
-			@endfor
-		</div>
-	</div>
-	
+		
 
 
 <!-- Connect -->

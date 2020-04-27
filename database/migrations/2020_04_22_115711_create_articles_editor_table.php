@@ -13,12 +13,9 @@ class CreateArticlesEditorTable extends Migration
      */
     public function up()
     {
-        Schema::create('articleseditor', function (Blueprint $table) {
+        Schema::create('articles_editor', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
-            $table->longText('detail');
-            $table->timestamp('date_creation')->useCurrent();
-            $table->timestamps();
+            $table->bigInteger('article_id')->unsigned();
         });
     }
 

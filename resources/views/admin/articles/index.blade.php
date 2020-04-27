@@ -3,7 +3,7 @@
 @section('content')
             <div class="container py-4">
                 <div class="row justify-content-center">
-                    <div class="col-md-8">
+                    <div class="col-md-10">
                         <div class="card">
                             <div class="card-header">Articles</div>
 
@@ -13,7 +13,7 @@
                                         <tr>
                                           <th scope="col">#</th>
                                           <th scope="col">Title</th>
-                                          <th scope="col">Date de création</th>
+                                          <th scope="col">Detail</th>
                                           <th scope="col">Action</th>
                                         </tr>
                                       </thead>
@@ -22,8 +22,9 @@
                                              <tr>
                                                 <th scope="row">{{ $article->id }}</th>
                                                 <td>{{ $article->title }}</td>
-                                                <td>{{ $article->date_creation }}</td>
+                                                <td>{{ $article->detail }}</td>
                                                 <td>
+                                                    <a href="{{ route('admin.articles.show', $article->id) }}"><button type="button" class="btn btn-success float-left">Publier</button></a>
                                                     <a href="{{ route('admin.articles.edit', $article->id) }}"><button type="button" class="btn btn-primary float-left">Modifier</button></a>
                                                     
                                                     <form action="{{ route('admin.articles.destroy', $article->id) }}" method="POST" class="float-left">

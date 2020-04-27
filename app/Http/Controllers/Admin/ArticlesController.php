@@ -35,9 +35,10 @@ class ArticlesController extends Controller
             return redirect(route('admin.articles.index'));
         }
 
-        return view('admin.articles.index')->with([
-            'title' => $request['title'],
-            'detail' => $request['article'],
+        $articles = Article::all();
+
+        return view('admin.articles.edit')->with([
+            'article'=> $article
         ]);
     }
 
@@ -52,22 +53,26 @@ class ArticlesController extends Controller
         $title=$request->input('title');
         $detail=$request->input('detail');
 
+        libxml_use_internal_errors(true);
+
         $dom = new \DomDocument();
 
         $dom->loadHtml($detail, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
 
-    
-
         $images = $dom->getElementsByTagName('img');
-        foreach($images as $k => $img){
-            $data = $img->getAttribute('src');
-            list($type, $data) = explode(';', $data);
-            list(, $data)      = explode(',', $data);
-            $data = base64_decode($data);
+
+        foreach($images as $count => $image){
+            $src = $img->getAttribute('src');
+
+            list($type, $src) = explode(';', $src);
+            list(, $src) = explode(',', $src);
+
+            $src = base64_decode($src);
             $image_name= "#" . time().$k.'.png';
             $path = public_path() . $image_name;
 
-            file_put_contents($path, $data);
+            file_put_contents($path, $src);
+
             $img->removeAttribute('src');
             $img->setAttribute('src', $image_name);
         }
@@ -95,7 +100,7 @@ class ArticlesController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -109,15 +114,34 @@ class ArticlesController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function show(Articles $article)
+    public function show(Article $article, User $user)
     {
-        //
-    }
+        if(Gate::denies('edit-users', $user)){
+            return redirect(route('admin.articles.index'));
+        }
+
+        $articles = Article::all();
+
+        return view('admin.articles.show')->with([
+            'article'=> $article
+        ]);
+   }
 
     
     public function update(Request $request, Article $article)
     {
-        //
+        $article->title = $request->title;
+        $article->detail = $request->detail;
+        $article->save();
+
+        if ($article->save()){
+            $request->session()->flash('success', $article->title . ' a été mis à jour');
+        }else{
+            $request->session()->flash('error', 'Erreur pendant la mise à jour');
+        }
+        
+
+        return redirect()->route('admin.articles.index');
     }
 
     /**
