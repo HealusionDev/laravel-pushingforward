@@ -9,9 +9,6 @@
                               <div class="card-body">
                                 {!! $article->detail !!}
                               </div>
-                              <div class="modifier">
-                                <a href="{{ route('admin.articles.edit', $article->id) }}"><button type="button" class="btn btn-primary float-left">Modifier</button></a>
-                              </div>
                       </div>
                 </div>
             </div>

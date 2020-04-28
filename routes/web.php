@@ -19,7 +19,7 @@ Route::get('/', function () { #requete http avec address se terminant par /
 
 Route::get('accueil', function () { #requete http avec address se terminant par /home
     return view('home');
-});
+})->name('accueil');
 
 Route::get('team', function () { #requete http avec address se terminant par /team
     return view('team');
@@ -86,4 +86,6 @@ Route::get('edit','ArticlesController@edit');
 
 Route::get('create','ArticlesController@create');
 
-Route::get('show','ArticlesController@create');
+Route::get('show','ArticlesController@show');
+
+Route::get('/showpublic/{id}','ArticlesPublicController@showpublic')->name('showpublic');

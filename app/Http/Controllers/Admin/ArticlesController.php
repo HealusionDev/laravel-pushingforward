@@ -24,7 +24,7 @@ class ArticlesController extends Controller
 
     public function index()
     {
-        $articles = Article::all()->sortBy('id');
+        $articles = Article::orderBy('id')->paginate(5);
         return view('admin.articles.index')->with('articles', $articles);
     }
 
@@ -114,13 +114,11 @@ class ArticlesController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function show(Article $article, User $user)
-    {
-        if(Gate::denies('edit-users', $user)){
-            return redirect(route('admin.articles.index'));
-        }
 
-        $articles = Article::all();
+    public function show(Article $article)
+    {
+
+        $articles = Article::find($article->id);
 
         return view('admin.articles.show')->with([
             'article'=> $article

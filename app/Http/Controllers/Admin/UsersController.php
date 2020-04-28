@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use App\User;
 use App\Role;
 use Gate;
@@ -24,7 +25,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $users = User::all()->sortBy('id');
+        $users = User::orderBy('id')->paginate(5);
+
         return view('admin.users.index')->with('users', $users);
     }
 

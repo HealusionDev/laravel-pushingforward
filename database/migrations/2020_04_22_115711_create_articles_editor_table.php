@@ -26,6 +26,6 @@ class CreateArticlesEditorTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articleseditor');
+        Schema::dropIfExists('articles_editor');
     }
 }

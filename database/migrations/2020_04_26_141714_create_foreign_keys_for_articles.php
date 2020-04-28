@@ -26,7 +26,7 @@ class CreateForeignKeysForArticles extends Migration
     public function down()
     {
         Schema::table('articles_editor', function (Blueprint $table){
-            $table->dropForeign('articles_editor_articles_id_foreign');
+            $table->dropForeign('articles_editor_article_id_foreign');
         });
     }
 }
