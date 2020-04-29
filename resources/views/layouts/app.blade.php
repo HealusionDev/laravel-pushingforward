@@ -71,10 +71,10 @@
                                 <a class="nav-link" href="{{ route('accueil') }}">Accueil</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="../team">Equipe</a>
+                                <a class="nav-link" href="{{ route('team') }}">Equipe</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="../#">Contact</a>
+                                <a class="nav-link" href="{{ route('accueil') }}">Contact</a>
                             </li>
                         </ul>
 
@@ -88,37 +88,37 @@
                 <div class="dropdown">
                     <li class="mainbutton-menu dropdown-toggle">Gastronomie</li>
                         <div class="dropdown-child">
-                            <a class="dropdown-child-link" href="../recettes">Recettes</a>
+                            <a class="dropdown-child-link" href="{{ route('recettes') }}">Recettes</a>
                             <div class="dropdown-divider m-0"></div>
-                            <a class="dropdown-child-link" href="../vin">Vin</a>
+                            <a class="dropdown-child-link" href="{{ route('vin') }}">Vin</a>
                             </div>
                         </div>
                 <div class="dropdown">
                     <li class="mainbutton-menu dropdown-toggle">Guide Voyage</li>
                         <div class="dropdown-child">
-                            <a class="dropdown-child-link" href="../guide-maroc">Maroc</a>
+                            <a class="dropdown-child-link" href="{{ route('guide-maroc') }}">Maroc</a>
                                 <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-child-link" href="../guide-guyane">Guyane</a>
+                                <a class="dropdown-child-link" href="{{ route('guide-guyane') }}">Guyane</a>
                                 <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-child-link" href="../guide-australie">Australie</a>
+                                <a class="dropdown-child-link" href="{{ route('guide-australie') }}">Australie</a>
                                 </div>
                         </div>
                 <div class="dropdown">
                     <li class="mainbutton-menu dropdown-toggle">Expéditions</li>
                         <div class="dropdown-child" style="width: text-size-adjust">
-                                <a class="dropdown-child-link" href="../corse-gr20">Corse : GR20 </a>
+                                <a class="dropdown-child-link" href="{{ route('corse-gr20') }}">Corse : GR20 </a>
                                 <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-child-link"  href="../expedition-7summits">Seven Summits</a>
+                                <a class="dropdown-child-link"  href="{{ route('expedition-7summits') }}">Seven Summits</a>
                                 <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-child-link"  href="../conseil-materiel">Matériel</a>
+                                <a class="dropdown-child-link"  href="{{ route('conseil-materiel') }}">Matériel</a>
                                 </div>
                         </div>
                 <div class="dropdown">
                     <li class="mainbutton-menu dropdown-toggle">Randonnées</li>
                         <div class="dropdown-child">
-                                <a class="dropdown-child-link" href="../rando-idf">Ile de France</a>
+                                <a class="dropdown-child-link" href="{{ route('rando-idf') }}">Ile de France</a>
                                 <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-child-link" href="../rando-pyrenees">Pyrénées</a>
+                                <a class="dropdown-child-link" href="{{ route('rando-pyrenees') }}">Pyrénées</a>
                 
                         </div>
                 </div>

@@ -23,52 +23,52 @@ Route::get('accueil', function () { #requete http avec address se terminant par 
 
 Route::get('team', function () { #requete http avec address se terminant par /team
     return view('team');
-});
+})->name('team');
 
 
 Route::get('recettes', function () { #requete http avec address se terminant par /recettes
     return view('recettes');
-});
+})->name('recettes');
 
 Route::get('vin', function () { #requete http avec address se terminant par /recettes
     return view('vin');
-});
+})->name('vin');
 
 Route::get('guide-maroc', function () { #requete http avec address se terminant par /recettes
     return view('guide-maroc');
-});
+})->name('guide-maroc');
 
 Route::get('guide-guyane', function () { #requete http avec address se terminant par /recettes
     return view('guide-guyane');
-});
+})->name('guide-guyane');
 
 Route::get('guide-australie', function () { #requete http avec address se terminant par /recettes
     return view('guide-australie');
-});
+})->name('guide-australie');
 
 Route::get('corse-gr20', function () { #requete http avec address se terminant par /recettes
     return view('expedition-corse');
-});
+})->name('corse-gr20');
 
 Route::get('expedition-7summits', function () { #requete http avec address se terminant par /recettes
     return view('kilimandjaro');
-});
+})->name('expedition-7summits');
 
 Route::get('conseil-materiel', function () { #requete http avec address se terminant par /recettes
     return view('materiel');
-});
+})->name('conseil-materiel');
 
 Route::get('rando-idf', function () { #requete http avec address se terminant par /recettes
     return view('rando-idf');
-});
+})->name('rando-idf');
 
 Route::get('rando-pyrenees', function () { #requete http avec address se terminant par /recettes
     return view('rando-pyrenees');
-});
+})->name('rando-pyrenees');
 
 Route::get('create-articles', function(){
     return view('admin/articles/create');
-});
+})->name('create-articles');
 
 Auth::routes();
 

@@ -20,11 +20,11 @@ class ArticlesPublicController extends Controller
         //
     }
 
-    public function showpublic(Article $id)
+    public function showpublic(Integer $id)
     {
         $articles = Article::all();
         $article = $articles->find($id);
-        
+
         /* $articles = App\Article::where('active', 1)->get();*/
 
         return view('showpublic')->with([

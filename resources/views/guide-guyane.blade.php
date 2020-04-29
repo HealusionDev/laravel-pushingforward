@@ -21,7 +21,7 @@
 
 	<div class="col-12 d-flex justify-content-center">
 		@can('manage-users')
-			<a href="../create-articles"><button type="button" class="btn btn-success float-left">Texte modification</button></a>
+			<a href="{{ route('create-articles') }}"><button type="button" class="btn btn-success float-left">Texte modification</button></a>
 		@endcan
 	</div>
 
@@ -30,7 +30,7 @@
 		La Guyane, vaste territoire Français situé au coeur de l'amazonie propose mille et une richesses. Ce guide, construit et enrichit par Vincent Taconnat, vous présente les lieux remarquables de cette contrée sauvage et vous propose l'essentiel des activités à réaliser.</p>
 	</div>
 	
-	<a href="{{ route('showpublic', ['id' => 2]) }}"><button type="button" class="btn btn-success float-left">Publier</button></a>
+	<a href="{{ route('showpublic', ['id' => 2]) }}"><button type="button" class="btn btn-success float-left">Découvrir</button></a>
 
 	<!-- Connect -->
 	<div class="container-fluid pt-5">

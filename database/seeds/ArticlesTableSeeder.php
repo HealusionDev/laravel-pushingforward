@@ -15,14 +15,10 @@ class ArticlesTableSeeder extends Seeder
     {
         Article::truncate();
 
-        $article1 = Article::create([
+        $articletest = Article::create([
         	'title' => 'Article Test',
-            'detail' => 'Bla bla',
+            'detail' => 'Test',
         ]);
 
-        $article2 = Article::create([
-            'title' => 'Article Test 2',
-            'detail' => 'Bla bla bla',
-        ]);
     }
 }
