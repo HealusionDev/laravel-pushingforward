@@ -10,7 +10,7 @@
 	<body>
 		<div class="container py-4">
 		    <div class="row justify-content-center">
-		        <div class="col-md-8">
+		        <div class="col-12">
 		            <div class="card">
 		                <div class="card-header">Création d'article</div>
 							<div class="card-body">
@@ -38,11 +38,10 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#detail').summernote({
-				height: '200px',
+				height: '350px',
 				placeholder: 'Contenu...',
-			})
-		})
-
+            });
+        });
 		$('#clear').on('click',function(){
 			$('#detail').summernote('code',null);
 		})

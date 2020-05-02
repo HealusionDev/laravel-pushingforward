@@ -22,7 +22,7 @@
                                             <tr>
                                               <th scope="row">{{ $article->id }}</th>
                                               <td>{{ $article->title }}</td>
-                                              <td>{!! $article->detail !!}</td>
+                                              <td>{{ $article->date_creation }}</td>
                                               <td>
                                                   <a href="{{ route('admin.articles.show', $article->id) }}"><button type="button" class="btn btn-success float-left">Afficher</button></a>
                                                   <a href="{{ route('admin.articles.edit', $article->id) }}"><button type="button" class="btn btn-primary float-left">Modifier</button></a>

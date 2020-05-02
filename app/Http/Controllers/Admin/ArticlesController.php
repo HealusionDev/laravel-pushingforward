@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image::class;
 use App\Article;
 use App\User;
 use App\Role;
@@ -19,7 +20,8 @@ class ArticlesController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middlew*963.
+        are('auth');
     }
 
     public function index()
@@ -49,38 +51,46 @@ class ArticlesController extends Controller
             'title' => 'required',
             'detail' => 'required',
         ]);
-        
+
         $title=$request->input('title');
         $detail=$request->input('detail');
 
-        libxml_use_internal_errors(true);
-
+        $article = new Article;
         $dom = new \DomDocument();
 
-        $dom->loadHtml($detail, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
+        $dom->loadHtml(mb_convert_encoding($detail, 'HTML-ENTITIES', "UTF-8"), LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
 
         $images = $dom->getElementsByTagName('img');
 
-        foreach($images as $count => $image){
+        foreach($images as $img){
             $src = $img->getAttribute('src');
-
-            list($type, $src) = explode(';', $src);
-            list(, $src) = explode(',', $src);
-
-            $src = base64_decode($src);
-            $image_name= "#" . time().$k.'.png';
-            $path = public_path() . $image_name;
-
-            file_put_contents($path, $src);
-
-            $img->removeAttribute('src');
-            $img->setAttribute('src', $image_name);
-        }
+            
+            // if the img source is 'data-url'
+            if(preg_match('/data:image/', $src)){
+                
+                // get the mimetype
+                preg_match('/data:image\/(?<mime>.*?)\;/', $src, $groups);
+                $mimetype = $groups['mime'];
+                
+                // Generating a random filename
+                $filename = uniqid();
+                $filepath = "/img/$filename . '.' . $mimetype";
     
-        $detail = $dom->saveHTML();
-        $article = new Article;
+                // @see http://image.intervention.io/api/
+                $image = Image::make($src)
+                  // resize if required
+                  ->resize(300, 200)
+                  ->encode($mimetype, 100)  // encode file to the specified mimetype
+                  ->save(public_path($filepath));
+                
+                $new_src = asset($filepath);
+                $img->removeAttribute('src');
+                $img->setAttribute('src', $new_src);
+            }
+        } 
+    
+        $article->detail = $dom->saveHTML();
         $article->title = $title;
-        $article->detail = $detail;
         
         $article->save();
 

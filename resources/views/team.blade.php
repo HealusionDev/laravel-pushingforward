@@ -22,7 +22,7 @@
 		<div class="row team">
 			<div class="col-md-4 d-flex justify-content-center">
 				<div class="carte" style="width: 60%;">
-					<img class="card-img-top" src="/img/Cy.jpg">
+					<img class="card-img-top" style="border-radius: 5px; border: 1px solid #AFAFAF;" src="/img/Cy.jpg">
 					<div class="carte-body text-center">
 						<h4 class="carte-title pt-3">Cyrille</h4>
 						<p class="carte-text">Passionné d'aventures et de découvertes en tout genre, Cyrille vous emmenera sur des terrains encore inexplorés</p>
@@ -32,7 +32,7 @@
 			</div>
 			<div class="col-md-4 d-flex justify-content-center">
 				<div class="carte" style="width: 60%;">
-					<img class="card-img-top" src="/img/Rem.jpg">
+					<img class="card-img-top" style="border-radius: 5px; border: 1px solid #AFAFAF;" src="/img/Rem.jpg">
 					<div class="carte-body text-center">
 						<h4 class="carte-title pt-3">Rémy</h4>
 						<p class="carte-text">Aventurier gastronomique sans frontières, Rémy partagera avec vous ses meilleures découvertes culinaires et viticoles</p>
@@ -42,7 +42,7 @@
 			</div>
 			<div class="col-md-4 d-flex justify-content-center">
 				<div class="carte" style="width: 60%;">
-					<img class="card-img-top" src="/img/Vinc.jpg">
+					<img class="card-img-top" style="border-radius: 5px; border: 1px solid #AFAFAF;" src="/img/Vinc.jpg">
 					<div class="carte-body text-center">
 						<h4 class="carte-title pt-3">Vincent</h4>
 						<p class="carte-text">Barroudeur de l'extrême, Vincent n'hésitera pas un seul instant pour vous proposer des itinéraires toujours plus fous!</p>
