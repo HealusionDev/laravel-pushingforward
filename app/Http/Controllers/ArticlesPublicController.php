@@ -9,18 +9,8 @@ use Gate;
 
 class ArticlesPublicController extends Controller
 {
-    /**
-     * Handle the incoming request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function __invoke(Request $request)
-    {
-        //
-    }
 
-    public function showpublic(Integer $id)
+    public function showpublic($id)
     {
         $articles = Article::all();
         $article = $articles->find($id);

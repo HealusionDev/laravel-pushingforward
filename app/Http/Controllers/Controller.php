@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\User;
 use App\Role;
+use App\Article;
 use Gate;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;

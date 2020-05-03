@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
 use App\Article;
 use App\User;
 use App\Role;
@@ -32,7 +31,7 @@ class ArticlesController extends Controller
 
     public function edit(Article $article, User $user, Request $request)
     {
-        if(Gate::denies('edit-users', $user)){
+        if(Gate::denies('update-articles', $user)){
             return redirect(route('admin.articles.index'));
         }
 
@@ -98,33 +97,6 @@ class ArticlesController extends Controller
         return redirect()->route('admin.articles.index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function insert()
-    {
-        //    
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Article  $article
-     * @return \Illuminate\Http\Response
-     */
 
     public function show(Article $article)
     {
@@ -137,8 +109,12 @@ class ArticlesController extends Controller
    }
 
     
-    public function update(Request $request, Article $article)
+    public function update(Request $request, Article $article, User $user)
     {
+        if(Gate::denies('update-articles', $user)){
+            return redirect(route('admin.articles.index'));
+        }
+
         $article->title = $request->title;
         $article->detail = $request->detail;
         $article->save();
@@ -161,7 +137,7 @@ class ArticlesController extends Controller
      */
     public function destroy(Article $article, User $user)
     {
-        if(Gate::denies('delete-users', $user)){
+        if(Gate::denies('delete-articles', $user)){
             return redirect(route('admin.users.index'));
         }
         

@@ -7,7 +7,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10">
                         <div class="card">
-                          <div class="card-header">Edit article : {{ $article->title }}</div>
+                          <div class="card-header">Modifier un article : {{ $article->title }}</div>
                           <div class="card-body">
                             <form action="{{ route('admin.articles.update', $article) }}" method="POST">
                               <div class="form-group">
