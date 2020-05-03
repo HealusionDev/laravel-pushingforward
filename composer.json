@@ -49,7 +49,6 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "intervention/image": "dev-master",
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
