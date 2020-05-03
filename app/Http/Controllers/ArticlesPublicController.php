@@ -15,8 +15,6 @@ class ArticlesPublicController extends Controller
         $articles = Article::all();
         $article = $articles->find($id);
 
-        /* $articles = App\Article::where('active', 1)->get();*/
-
         return view('showpublic')->with([
             'article'=> $article
         ]);

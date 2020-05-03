@@ -25,7 +25,6 @@ Route::get('team', function () { #requete http avec address se terminant par /te
     return view('team');
 })->name('team');
 
-
 Route::get('recettes', function () { #requete http avec address se terminant par /recettes
     return view('recettes');
 })->name('recettes');
@@ -70,15 +69,15 @@ Route::get('create-articles', function(){
     return view('admin/articles/create');
 })->name('create-articles');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
+Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware(['can:manage-users','verified'])->group(function(){
     Route::resource('users','UsersController', ['except' => ['show', 'create', 'store']]);
 });
 
-Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
+Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware(['can:manage-users','verified'])->group(function(){
     Route::resource('articles','ArticlesController');
 });
 

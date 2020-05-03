@@ -9,6 +9,7 @@ use App\Role;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Mail;
 
 class RegisterController extends Controller
 {
@@ -71,9 +72,15 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
 
+        // Send register Email
+        $email = $data['email'];
+        $messageData = ['email' => $data['email'],'name' => $data['name']];
+        Mail::send('email.register',$messageData,function($message) use($email){
+            $message->to($email)->subject('Création de compte Next Adventure');
+        });
+        
         $role = Role::select('id')->where('name', 'utilisateur')->first();
-
-        $user->roles()->attach($role);
+        $user->roles()->attach($role);  
 
         return $user;
     }
