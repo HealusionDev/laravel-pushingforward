@@ -1,4 +1,8 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/js/manifest.js": "/js/manifest.js",
+    "/js/summernote_create.js": "/js/summernote_create.js",
+    "/js/summernote_edit.js": "/js/summernote_edit.js",
+    "/js/vendor.js": "/js/vendor.js"
 }

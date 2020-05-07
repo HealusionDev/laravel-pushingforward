@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use App\Article;
 use App\User;
 use App\Role;
@@ -43,7 +44,7 @@ class ArticlesController extends Controller
     }
 
     
-    public function create(Request $request, Article $article)
+    public function store(Request $request, Article $article)
     {
         $this->validate($request, [
             'title' => 'required',
@@ -56,7 +57,7 @@ class ArticlesController extends Controller
         $article = new Article;
         $dom = new \DomDocument();
 
-        $dom->loadHtml(mb_convert_encoding($detail, 'HTML-ENTITIES', "UTF-8"), LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
+        $dom->loadHtml($detail, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
 
         
         $images = $dom->getElementsByTagName('img');
@@ -119,13 +120,12 @@ class ArticlesController extends Controller
         $article->detail = $request->detail;
         $article->save();
 
-        if ($article->save()){
+        if ($article->save()){ 
             $request->session()->flash('success', $article->title . ' a été mis à jour');
         }else{
             $request->session()->flash('error', 'Erreur pendant la mise à jour');
         }
         
-
         return redirect()->route('admin.articles.index');
     }
 

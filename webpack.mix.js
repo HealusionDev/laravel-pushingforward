@@ -14,4 +14,7 @@ const mix = require('laravel-mix');
 mix.copyDirectory('resources/img', 'public/img');
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+	.js('resources/js/summernote_create.js','public/js')
+	.js('resources/js/summernote_edit.js','public/js')
+		.extract(['bootstrap','jquery','popper.js'])
+   			.sass('resources/sass/app.scss', 'public/css');

@@ -3,7 +3,9 @@
 
     <head>
         <!-- <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">   -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet"> 
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <script src="{{ mix('js/manifest.js') }}"></script>
+        <script src="{{ mix('js/vendor.js') }}"></script>
         <script src="{{ mix('js/app.js') }}"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,12 +43,6 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
-                                        {{ __('Se déconnecter') }}
-                                    </a>
-
                                     @can('manage-users')
                                     <a class="dropdown-item" href="{{ route('admin.users.index') }}">
                                         Gestion des utilisateurs
@@ -55,6 +51,12 @@
                                         Gestion des articles
                                     </a>
                                     @endcan
+
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                                        {{ __('Se déconnecter') }}
+                                    </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
@@ -96,30 +98,29 @@
                 <div class="dropdown">
                     <li class="mainbutton-menu dropdown-toggle">Guide Voyage</li>
                         <div class="dropdown-child">
+                            <a class="dropdown-child-link" href="{{ route('guide-australie') }}">Australie</a>
+                            <div class="dropdown-divider m-0"></div>
+                            <a class="dropdown-child-link" href="{{ route('guide-guyane') }}">Guyane</a>
+                            <div class="dropdown-divider m-0"></div>
                             <a class="dropdown-child-link" href="{{ route('guide-maroc') }}">Maroc</a>
-                                <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-child-link" href="{{ route('guide-guyane') }}">Guyane</a>
-                                <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-child-link" href="{{ route('guide-australie') }}">Australie</a>
-                                </div>
                         </div>
+                </div>
                 <div class="dropdown">
                     <li class="mainbutton-menu dropdown-toggle">Expéditions</li>
                         <div class="dropdown-child" style="width: text-size-adjust">
-                                <a class="dropdown-child-link" href="{{ route('corse-gr20') }}">Corse : GR20 </a>
-                                <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-child-link"  href="{{ route('expedition-7summits') }}">Seven Summits</a>
-                                <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-child-link"  href="{{ route('conseil-materiel') }}">Matériel</a>
-                                </div>
+                            <a class="dropdown-child-link" href="{{ route('corse-gr20') }}">Corse : GR20 </a>
+                            <div class="dropdown-divider m-0"></div>
+                            <a class="dropdown-child-link"  href="{{ route('expedition-7summits') }}">Seven Summits</a>
+                            <div class="dropdown-divider m-0"></div>
+                            <a class="dropdown-child-link"  href="{{ route('conseil-materiel') }}">Matériel</a>
                         </div>
+                </div>
                 <div class="dropdown">
                     <li class="mainbutton-menu dropdown-toggle">Randonnées</li>
                         <div class="dropdown-child">
-                                <a class="dropdown-child-link" href="{{ route('rando-idf') }}">Ile de France</a>
-                                <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-child-link" href="{{ route('rando-pyrenees') }}">Pyrénées</a>
-                
+                            <a class="dropdown-child-link" href="{{ route('rando-idf') }}">Ile de France</a>
+                            <div class="dropdown-divider m-0"></div>
+                            <a class="dropdown-child-link" href="{{ route('rando-pyrenees') }}">Pyrénées</a>
                         </div>
                 </div>
             </div>
