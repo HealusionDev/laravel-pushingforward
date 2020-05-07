@@ -13,8 +13,8 @@ window.jQuery=window.$=$;
 
 $(document).ready(function() {
 	$('#detail').summernote({
-		height: '75vh',
-		maxHeight: '75vh',
+		height: '68vh',
+		maxHeight: '68vh',
 		focus: true,
 		placeholder: 'Contenu...',
 		toolbar: [

@@ -10199,8 +10199,8 @@ __webpack_require__.r(__webpack_exports__);
 window.jQuery = window.$ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
 jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_1___default()('#detail').summernote({
-    height: '75vh',
-    maxHeight: '75vh',
+    height: '68vh',
+    maxHeight: '68vh',
     focus: true,
     placeholder: 'Contenu...',
     toolbar: [['style', ['bold', 'italic', 'underline', 'clear']], ['font', ['strikethrough', 'superscript', 'subscript']], ['misc', ['undo', 'redo', 'fullscreen', 'help', 'codeview']], ['fontsize', ['fontsize']], ['fontname', ['fontname']], ['color', ['color']], ['para', ['ul', 'ol', 'paragraph']], ['height', ['height']], ['insert', ['link', 'picture', 'video']]]

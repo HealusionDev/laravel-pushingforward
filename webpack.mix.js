@@ -15,6 +15,6 @@ mix.copyDirectory('resources/img', 'public/img');
 
 mix.js('resources/js/app.js', 'public/js')
 	.js('resources/js/summernote_create.js','public/js')
-	.js('resources/js/summernote_edit.js','public/js')
+	.js('resources/js/toast.js','public/js')
 		.extract(['bootstrap','jquery','popper.js'])
    			.sass('resources/sass/app.scss', 'public/css');

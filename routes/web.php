@@ -81,10 +81,4 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware(['can:man
     Route::resource('articles','ArticlesController');
 });
 
-// Route::put('edit','ArticlesController@edit');
-
-// Route::post('create','ArticlesController@create');
-
-// Route::get('show','ArticlesController@show');
-
 Route::get('/showpublic/{id}','ArticlesPublicController@showpublic')->name('showpublic');

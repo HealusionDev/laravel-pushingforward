@@ -6,11 +6,11 @@ import $ from 'jquery';
 //window.jQuery = require('jquery');
 
 import 'bootstrap';
-import 'summernote/dist/summernote-bs4.js';
 
 window.jQuery=window.$=$;
 
-
-
+$(document).ready(function(){
+    $("#myToast").toast('show');
+});
 
 

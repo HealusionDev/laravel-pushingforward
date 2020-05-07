@@ -3,6 +3,6 @@
     "/css/app.css": "/css/app.css",
     "/js/manifest.js": "/js/manifest.js",
     "/js/summernote_create.js": "/js/summernote_create.js",
-    "/js/summernote_edit.js": "/js/summernote_edit.js",
+    "/js/toast.js": "/js/toast.js",
     "/js/vendor.js": "/js/vendor.js"
 }
