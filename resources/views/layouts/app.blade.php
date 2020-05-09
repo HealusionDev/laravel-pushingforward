@@ -86,7 +86,7 @@
             
 
 
-            <div class="text-menu text-center d-flex align-items-end justify-content-center p-0" style="height: 14rem;">
+            <div class="text-menu text-center d-flex align-items-end justify-content-center p-0" style="height: 12rem;">
                 <div class="dropdown">
                     <li class="mainbutton-menu dropdown-toggle">Gastronomie</li>
                         <div class="dropdown-child">
@@ -134,7 +134,7 @@
             <footer>
                 <div class="container-fluid p-0 m-0">
                     <div class="boxfooter text-center" style="margin-top: 10px; ">
-                        <h5 class="footertext text-center">&copy; next-adventure.herokuapp.com</h5>
+                        <h5 class="footertext text-center">&copy; pushing-forward.herokuapp.com</h5>
                     </div>
                 </div>
             </footer>

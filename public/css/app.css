@@ -11207,7 +11207,7 @@ body {
 }
 
 .text-menu {
-  background-image: url("/img/header5.png");
+  background-image: url("/img/Pushing Forward.png");
   background-size: cover;
   background-position: center center;
 }
@@ -11532,6 +11532,58 @@ body {
 
   .lead {
     width: 90%;
+  }
+}
+
+@media (max-width: 540px) {
+  .dropdown {
+    text-decoration: none;
+    display: inline-block;
+    z-index: 2;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .mainbutton-menu {
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .mainbutton-menu:hover {
+    background-color: #660000;
+    color: #fff;
+    transition: 0.2s all;
+  }
+
+  .dropdown-child {
+    position: absolute;
+    display: none;
+    width: 100%;
+    text-decoration: none;
+    background-color: #846565;
+  }
+
+  .dropdown-child-link {
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-child-link:hover {
+    color: #fff;
+    background-color: #660000;
+    text-decoration: none;
+  }
+
+  .dropdown:hover div.dropdown-child {
+    display: block;
+    transition: 0.5s all;
   }
 }
 

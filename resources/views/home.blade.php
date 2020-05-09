@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'My Next Adventure')
+@section('title', 'Pushing Forward')
 
 @section('header')
     @parent
@@ -46,7 +46,8 @@
 	<div class="container-fluid p-0">
 		<div class="jumbotron">
 			<div class="col-12 d-flex justify-content-center">
-				<p class="lead text-center" style="width: 75%;">Parce que la nature et les bons mets sont des sources d'inspiration inépuisables.<br/><br/>
+				<p class="lead text-center" style="width: 75%;">Pushing Forward est une phylosophie nous invitant à repousser nos limites et à toujours découvrir davantage.</br></br>
+				Parce que la nature et les bons mets sont des sources d'inspiration inépuisables.<br/><br/>
 				Parce que le partage d'itinéaires de trekking, d'astuces voyages, de délicieuses recettes et d'expériences oenologiques sont essentielles à notre épanouissement.
 				</p>
 			</div>
