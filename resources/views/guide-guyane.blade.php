@@ -16,8 +16,7 @@
 	<div class="container-fluid pt-3">
 		<div class="row team-box text-center">
 			<div class="col-12 p-0">
-				<h1 class="article-title1">Guyane</h1>
-				<h1 class="article-title2 pt-2">Le Guide</h1>
+				<h1 class="article-title1 pb-5">Guyane</h1>
 			</div>
 			<hr>
 		</div>
@@ -30,7 +29,7 @@
 	</div>
 	
 	<div class="container-fluid">
-		<div class="row team align-top pt-5">
+		<div class="row team align-top pt-3">
 			<div class="col-md-4 d-flex justify-content-center">
 				<div class="carte pt-5" style="width: 60%;">
 					<a href="{{ route('showpublic', ['id' => 2]) }}">

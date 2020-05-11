@@ -30,11 +30,6 @@ html,body{
 	float: right;
 }
 
-.text-menu {
-	background-image: url('/img/Pushing Forward.png');
-	background-size: cover;
-	background-position: center center;
-}
 
 .imgheader {
 	position: relative;
@@ -54,14 +49,14 @@ html,body{
 	list-style-type: none;
 	font-size: 1.2rem;
 	padding: 0.8rem;
-	color : #fff;
+	color : #343434;
 	background-color: transparent;
 	cursor: pointer;
 }
 .mainbutton-menu:hover{
 	background-color: #660000;
 	color: #fff;
-	transition: 0.2s all;
+	transition: 0.6s all;
 }
 
 .dropdown-child{
@@ -285,7 +280,7 @@ html,body{
 	}
 }
 
-@media (max-width: 740px){
+@media (max-width: 790px){
 	.carousel-caption{
 		top: 40%;
 	}
