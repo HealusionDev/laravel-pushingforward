@@ -2,16 +2,16 @@
 
 
 @section('content')
-    <hr class="style3">    
-    <div class="row">
-        <div class="col-xs-12 col-md-3">
-            <div class="article-chapter"></div>
+    <hr class="style3">
+    <h1 class="article-title1 text-center">{{ $article->title }}</h1>    
+    <div class="row p-0 m-0">
+        <div class="col-md-3 p-0 m-0">
+            <div class="article-chapter p-0 m-0"></div>
         </div>
-        <div class="col-xs-12 col-md-9">
-            <h1 class="article-title1 text-center">{{ $article->title }}</h1>
-              <div class="card-body">
+        <div class="col-md-9 p-0 m-0">
+            <div class="card-body p-0 m-0">
                 {!! $article->detail !!}
-              </div>
+            </div>
         </div>
     </div>
 @endsection
