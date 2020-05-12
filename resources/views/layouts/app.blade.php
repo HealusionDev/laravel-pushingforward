@@ -2,8 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
     <head>
-        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-        <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet">  -->   
+        <!-- <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">  --> 
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">  
         <script src="{{ mix('js/manifest.js') }}"></script>
         <script src="{{ mix('js/vendor.js') }}"></script>
         <script src="{{ mix('js/app.js') }}"></script>
@@ -74,14 +74,14 @@
 
                             <!-- Right side of the bar -->
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="{{ route('accueil') }}">Accueil</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="{{ route('team') }}">Equipe</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="{{ route('accueil') }}">Contact</a>
+                                <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>À propos<span class="caret"></span>
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('team') }}">Equipe</a>
+                                        <a class="dropdown-item" href="{{ route('projet') }}">Projet Pushing Forward</a>
+                                    </div>
                                 </li>
                             </ul>
 
@@ -131,7 +131,7 @@
                 </div>
             </div>
 
-            <main class="contenu container-fluid justify-content-center p-0">
+            <main class="contenu container-fluid p-0" style="position: relative;">
                 @include('partials.alerts')
                 @yield('content')
             </main>

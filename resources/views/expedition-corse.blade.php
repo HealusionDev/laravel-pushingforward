@@ -7,6 +7,7 @@
 @endsection
 
 @section('content')
+	<hr class="style3" style="position: absolute; top: 0px; left: 50%; transform: translate(-50%, 0%);">
 	<!-- L'équipe -->
 	<div class="container-fluid pt-3">
 		<div class="row team-box text-center">

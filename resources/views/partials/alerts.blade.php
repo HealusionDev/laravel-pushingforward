@@ -1,5 +1,5 @@
 @if(session('success'))
-<div class="toast alert-success" id="myToast" role="alert" data-delay="5000" data-autohide="true" data-animation="true" style="position: absolute; top: 8vh; right: 3vh; height: 11vh; width: 25vh;">
+<div class="toast alert-success" id="myToast" role="alert" data-delay="5000" data-autohide="true" data-animation="true" style="position: absolute; top: 5vh; right: 3vh; height: 11vh; width: 25vh;">
 	<div class="toast-header">
 		<strong class="mr-auto">Succès</strong>
 		<small>à l'instant</small>

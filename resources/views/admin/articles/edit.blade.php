@@ -2,6 +2,7 @@
 
 
 @section('content')
+          <hr class="style3" style="position: absolute; top: 0px; left: 50%; transform: translate(-50%, 0%);">
           <body>
             <div class="container py-4">
                 <div class="row justify-content-center">

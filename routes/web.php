@@ -65,6 +65,11 @@ Route::get('rando-pyrenees', function () { #requete http avec address se termina
     return view('rando-pyrenees');
 })->name('rando-pyrenees');
 
+Route::get('projet', function () { #requete http avec address se terminant par /recettes
+    return view('projet');
+})->name('projet');
+
+
 Route::get('create-articles', function(){
     return view('admin/articles/create');
 })->name('create-articles');
