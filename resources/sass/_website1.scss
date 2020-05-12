@@ -19,6 +19,7 @@ html,body{
 }
 .nav-item {
 	padding-right: 20px;
+	text-align: right;
 }
 .nav-link {
 	font-size: 1.1rem;
@@ -88,6 +89,7 @@ html,body{
 	display: flex;
 	flex-direction : column;
 	flex: 1;
+	height: 100%;
 }
 .carouselimg {
 	position: relative;
@@ -164,6 +166,12 @@ html,body{
 	width: 250px;
 	margin-top: .3rem;
 }
+.style3 {
+	border-top: 2px solid #b4b4b4;
+	width: 450px;
+	margin-top: .3rem;
+}
+
 
 .social-link{
 	font-size: 3.5rem;
@@ -212,6 +220,10 @@ html,body{
 .carte-text {
 	font-size: 1rem;
 }
+.carte-text-article {
+	font-size: 1rem;
+	justify-content: left;
+}
 
 .footer {
 	margin: 0;
@@ -246,6 +258,42 @@ html,body{
 .card-img-top:hover{
 	opacity: 70%;
 	transition: 0.5s all;
+}
+
+.register{
+	position: relative;
+	flex-grow: 1;
+
+	&::before {
+		content:'';
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		background-image: url('/img/guyane-ce2.jpg');
+		background-size: cover;
+		background-position: bottom right;
+		opacity: 0.5;
+	}
+}
+
+.login{
+	position: relative;
+	flex-grow: 1;
+
+	&::before {
+		content:'';
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		background-image: url('/img/guyane-ce2.jpg');
+		background-size: cover;
+		background-position: bottom right;
+		opacity: 0.5;
+	}
 }
 
 /* Media Queries */

@@ -7,6 +7,7 @@
 @endsection
 
 @section('content')
+	<hr class="style3">	
 	<!-- L'équipe -->
 	<div class="container-fluid pt-3">
 		<div class="row team-box text-center">

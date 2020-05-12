@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container py-4">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+<div class="register container-fluid d-flex justify-content-center align-items-center m-0">
+        <div class="col-lg-6">
             <div class="card">
                 <div class="card-header">{{ __('Inscription') }}</div>
 
@@ -72,6 +71,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    
 </div>
 @endsection

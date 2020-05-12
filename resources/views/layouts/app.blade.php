@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
     <head>
-        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet"> 
         <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet">   --> 
         <script src="{{ mix('js/manifest.js') }}"></script>
         <script src="{{ mix('js/vendor.js') }}"></script>
@@ -20,14 +20,16 @@
     <body>                   
         <!-- Barre de navigation -->
         <div id="app" style="min-height: 100vh; display: flex; flex-direction: column; flex: 1; flex-grow: initial;">
-            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top p-0">            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-0">            
                 <div class="container-fluid" style="background-color: #e9ecef">
-                    <a href="{{ route('accueil') }}"><img class="img-fluid p-1" src="/img/pflogo2.png"></a>
+                    <a href="{{ route('accueil') }}"><img class="img-fluid sticky-top" src="/img/pflogo2.png" style="position: absolute;"></a>
                     <div class="container pl-0">
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
                         <!-- Left Side Of Navbar -->
-                            <ul class="navbar-nav mr-auto">
+                            <ul class="navbar-nav mr-auto" style="margin-left: 145px;">
                             <!-- Authentication Links -->
                             @guest
                                 <li class="nav-item">
@@ -129,7 +131,7 @@
                 </div>
             </div>
 
-            <main class="contenu container-fluid p-0">
+            <main class="contenu container-fluid justify-content-center p-0">
                 @include('partials.alerts')
                 @yield('content')
             </main>
@@ -137,7 +139,7 @@
             <!-- Pied de page --> 
             <footer>
                 <div class="container-fluid p-0 m-0">
-                    <div class="boxfooter text-center" style="margin-top: 10px; ">
+                    <div class="boxfooter text-center">
                         <h5 class="footertext text-center">&copy; pushing-forward.herokuapp.com</h5>
                     </div>
                 </div>
