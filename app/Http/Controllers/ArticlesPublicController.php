@@ -19,4 +19,5 @@ class ArticlesPublicController extends Controller
             'article'=> $article
         ]);
    }
+
 }

@@ -10199,12 +10199,45 @@ __webpack_require__.r(__webpack_exports__);
 window.jQuery = window.$ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
 jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_1___default()('#detail').summernote({
+    callbacks: {
+      onImageUpload: function onImageUpload(files) {
+        for (var i = 0; i < files.length; i++) {
+          jquery__WEBPACK_IMPORTED_MODULE_1___default.a.upload(files[i]);
+        }
+      }
+    },
     height: '68vh',
     maxHeight: '68vh',
     focus: true,
     placeholder: 'Contenu...',
-    toolbar: [['style', ['bold', 'italic', 'underline', 'clear']], ['font', ['strikethrough', 'superscript', 'subscript']], ['misc', ['undo', 'redo', 'fullscreen', 'help', 'codeview']], ['fontsize', ['fontsize']], ['fontname', ['fontname']], ['color', ['color']], ['para', ['ul', 'ol', 'paragraph']], ['height', ['height']], ['insert', ['link', 'picture', 'video']]]
+    fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '26', '32', '36', '48', '64'],
+    toolbar: [['style', ['style']], ['font', ['bold', 'italic', 'underline', 'clear', 'strikethrough', 'superscript', 'subscript']], ['misc', ['undo', 'redo', 'fullscreen', 'help', 'codeview']], ['fontsize', ['fontsize']], ['fontname', ['fontname']], ['color', ['color']], ['para', ['ul', 'ol', 'paragraph']], ['height', ['height']], ['insert', ['link', 'picture', 'video']]]
   });
+
+  jquery__WEBPACK_IMPORTED_MODULE_1___default.a.upload = function (file) {
+    var out = new FormData();
+    out.append('file', file, file.name);
+    jquery__WEBPACK_IMPORTED_MODULE_1___default.a.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': jquery__WEBPACK_IMPORTED_MODULE_1___default()('meta[name="csrf-token"]').attr('content')
+      }
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_1___default.a.ajax({
+      method: 'POST',
+      url: '/uploadimg',
+      contentType: false,
+      cache: false,
+      processData: false,
+      data: out,
+      success: function success(img) {
+        jquery__WEBPACK_IMPORTED_MODULE_1___default()('#detail').summernote('insertImage', img);
+      },
+      error: function error(jqXHR, textStatus, errorThrown) {
+        console.error(textStatus + " " + errorThrown);
+      }
+    });
+  };
+
   jquery__WEBPACK_IMPORTED_MODULE_1___default()([document.documentElement, document.body]).animate({
     scrollTop: jquery__WEBPACK_IMPORTED_MODULE_1___default()(".article-wrapper").offset().top
   }, 1000);

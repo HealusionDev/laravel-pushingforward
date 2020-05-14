@@ -93,25 +93,25 @@ html,body{
 }
 .carouselimg {
 	position: relative;
-	height: 65%;
-	width: 65%;
+	height: auto;
+	width: 100%;
 	box-sizing: border-box;
 }
 .carousel-caption{
 	position: absolute;
-	top: 55%;
+	top: 52%;
 	transform: translateY(-50%);
 }
 .carousel-titre1{
 	font-size: 450%;
 	text-transform: uppercase;
 	text-shadow: 1px 3px 15px #000;
-	font-weight: 300;
-	line-height: 1.2;
+	font-weight: 400;
+	line-height: 1.4;
 }
 
 .carousel-titre2{
-	font-size: 180%;
+	font-size: 200%;
 	font-weight: 500;
 	text-shadow: 1px 1px 10px #000;
 	padding-bottom: 1rem;
@@ -330,7 +330,7 @@ html,body{
 
 @media (max-width: 790px){
 	.carousel-caption{
-		top: 40%;
+		top: 45%;
 	}
 	.carousel-caption h1{
 		font-size: 280%;
@@ -349,7 +349,7 @@ html,body{
 
 @media (max-width: 540px){
 	.carousel-caption{
-		top: 30%;
+		top: 40%;
 	}
 	.carousel-caption h1{
 		font-size: 220%;
@@ -366,51 +366,3 @@ html,body{
 	}
 }
 
-@media (max-width: 540px){
-	.dropdown{
-	text-decoration: none;
-	display: inline-block;
-	z-index: 2;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-	}
-
-	.mainbutton-menu{
-		list-style-type: none;
-		font-size: 1.2rem;
-		padding: 0.8rem;
-		color : #fff;
-		background-color: transparent;
-		cursor: pointer;
-	}
-	.mainbutton-menu:hover{
-		background-color: #660000;
-		color: #fff;
-		transition: 0.2s all;
-	}
-
-	.dropdown-child{
-		position: absolute;
-		display: none;
-		width: 100%;
-		text-decoration: none;
-		background-color: #846565;
-	}
-	.dropdown-child-link{
-		color: #fff;
-		padding: 0.5rem;
-		font-size: 1rem;
-		text-decoration: none;
-		display : block;
-	}
-	.dropdown-child-link:hover{
-		color: #fff;
-		background-color: #660000;
-		text-decoration: none;
-	}
-
-	.dropdown:hover div.dropdown-child{
-		display : block;
-		transition: 0.5s all;
-	}
-}

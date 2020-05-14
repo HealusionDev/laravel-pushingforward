@@ -6,7 +6,7 @@
           <body>
             <div class="container py-4">
                 <div class="row justify-content-center">
-                    <div class="col-md-10">
+                    <div class="col-12">
                         <div class="card">
                           <div class="card-header article-wrapper">Modifier un article : {{ $article->title }}</div>
                           <div class="card-body">

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Intervention\Image\ImageManagerStatic as Image;
+use Illuminate\Support\Facades\Storage;
 use App\Article;
 use App\User;
 use App\Role;
@@ -57,11 +59,12 @@ class ArticlesController extends Controller
         $article = new Article;
         $dom = new \DomDocument();
 
-        $dom->loadHtml($detail, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
+        $dom->loadHtml(mb_convert_encoding($detail, 'HTML-ENTITIES', "UTF-8"), LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
 
         
         $images = $dom->getElementsByTagName('img');
-        /*
+
+        
         foreach($images as $img){
             $src = $img->getAttribute('src');
             
@@ -74,12 +77,12 @@ class ArticlesController extends Controller
                 
                 // Generating a random filename
                 $filename = uniqid();
-                $filepath = "/img/$filename . '.' . $mimetype";
+                $filepath = "/img/articles/$filename . '.' . $mimetype";
     
                 // @see http://image.intervention.io/api/
                 $image = Image::make($src)
                   // resize if required
-                    ->resize(300, 200)
+                  //->resize(300, 200)
                     ->encode($mimetype, 100)  // encode file to the specified mimetype
                     ->save(public_path($filepath));
                 
@@ -88,8 +91,7 @@ class ArticlesController extends Controller
                 $img->setAttribute('src', $new_src);
             }
         } 
-        */
-    
+            
         $article->detail = $dom->saveHTML();
         $article->title = $title;
         
@@ -97,7 +99,6 @@ class ArticlesController extends Controller
 
         return redirect()->route('admin.articles.index');
     }
-
 
     public function show(Article $article)
     {

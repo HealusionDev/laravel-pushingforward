@@ -16,7 +16,7 @@
 		<div class="carousel-inner">
 
 			<div class="carousel-item active">
-				<img class="carouselimg d-block mx-auto" src="/img/guyane1.jpg" data-holder-rendered="true">
+				<img class="carouselimg d-block mx-auto" src="/img/guyane3.jpg" data-holder-rendered="true">
 					<div class="carousel-caption">
 						<h1 class="carousel-titre1">Guyane</h1>
 						<h2 class="carousel-titre2">Plongez au coeur de la forêt amazonienne</h2>
@@ -24,7 +24,7 @@
 					</div>
 			</div>
 			<div class="carousel-item">
-				<img class="carouselimg d-block mx-auto" src="/img/guyane2.jpg" data-holder-rendered="true">
+				<img class="carouselimg d-block mx-auto" src="/img/guyane4.jpg" data-holder-rendered="true">
 					<div class="carousel-caption">
 						<h1 class="carousel-titre1">Guyane</h1>
 						<h2 class="carousel-titre2">Sur les traces de Dreyfus</h2>

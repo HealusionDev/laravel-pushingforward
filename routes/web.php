@@ -69,7 +69,6 @@ Route::get('projet', function () { #requete http avec address se terminant par /
     return view('projet');
 })->name('projet');
 
-
 Route::get('create-articles', function(){
     return view('admin/articles/create');
 })->name('create-articles');
@@ -87,3 +86,9 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware(['can:man
 });
 
 Route::get('/showpublic/{id}','ArticlesPublicController@showpublic')->name('showpublic');
+
+Route::get('upload', function(){
+    return view('upload');
+});
+
+Route::post('uploadimg','ImageController@uploadimage')->name('img');

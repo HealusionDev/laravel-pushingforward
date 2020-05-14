@@ -15,7 +15,7 @@
 		            <div class="card">
 		                <div class="card-header article-wrapper">Création d'article</div>
 							<div class="card-body">
-								<form method="POST" action="{{ route('admin.articles.store') }}">
+								<form method="POST" action="{{ route('admin.articles.store') }}" files="true">
 									@csrf
 									{{ method_field('POST') }}
 									<div class="form-group">
@@ -39,5 +39,5 @@
 	</body>
 
 	<script src="{{ mix('js/summernote_create.js') }}"></script>
-	
+
 @endsection
