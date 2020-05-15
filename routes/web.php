@@ -87,8 +87,4 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware(['can:man
 
 Route::get('/showpublic/{id}','ArticlesPublicController@showpublic')->name('showpublic');
 
-Route::get('upload', function(){
-    return view('upload');
-});
-
 Route::post('uploadimg','ImageController@uploadimage')->name('img');

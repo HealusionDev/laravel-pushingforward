@@ -2,6 +2,7 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/js/manifest.js": "/js/manifest.js",
+    "/js/searchbar.js": "/js/searchbar.js",
     "/js/summernote_create.js": "/js/summernote_create.js",
     "/js/toast.js": "/js/toast.js",
     "/js/vendor.js": "/js/vendor.js"
