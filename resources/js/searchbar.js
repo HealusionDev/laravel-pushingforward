@@ -19,7 +19,7 @@ $(document).ready(function(){
                 $this.css({
                     position: 'fixed',
                     top: '8vh',
-                    left: '9.4vw'
+                    left: '9.45vw'
                 });
             } else {
                 $this.css({

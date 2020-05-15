@@ -11501,13 +11501,6 @@ body {
   width: 11vw !important;
 }
 
-.menufixe {
-  display: flex;
-  position: absolute;
-  top: 8vh !important;
-  left: 0.8vw !important;
-}
-
 /* Media Queries */
 
 @media (min-width: 992px) {

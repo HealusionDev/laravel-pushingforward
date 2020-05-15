@@ -7,7 +7,7 @@
     <div class="row p-0 m-0">
         <div class="col-md-2 pt-3 ml-auto" style="background-color: #6a6a6a; padding: 0.1rem;">
             <div class="article-chapter p-0 m-0">
-                <form class="form-inline" id="menufixe">
+                <form class="form-inline" id="menufixe" style="position: absolute; top: 8vh; left: 1.2vw;">
                     <input class="form-control mr-sm-0" type="search" placeholder="Rechercher" aria-label="Search" id="article-search-form">
                     <button class="btn btn-dark my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
                 </form>
