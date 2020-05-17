@@ -13,12 +13,8 @@
         "@fortawesome/fontawesome-free": "^5.13.0",
         "axios": "^0.19",
         "bootstrap": "^4.0.0",
-<<<<<<< HEAD
         "jquery": "^3.5.1",
-=======
         "cross-env": "^7.0",
-        "jquery": "^3.2",
->>>>>>> ac21a93691bdf7d6a91fba9f11f50e01f505d24c
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.13",
         "popper.js": "^1.12",
@@ -33,10 +29,6 @@
     "dependencies": {
         "codemirror": "^5.53.2",
         "mbstring": "^0.1.2",
-<<<<<<< HEAD
         "node-sass": "^4.14.1"
-=======
-        "node-sass": "^4.13.1"
->>>>>>> ac21a93691bdf7d6a91fba9f11f50e01f505d24c
     }
 }

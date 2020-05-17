@@ -63,8 +63,5 @@
             "@php artisan key:generate --ansi"
         ]
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ac21a93691bdf7d6a91fba9f11f50e01f505d24c
+

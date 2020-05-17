@@ -9770,13 +9770,8 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
       row: 10
     },
     // By default, dialogs are attached in container.
-<<<<<<< HEAD
     dialogsInBody: false,
     dialogsFade: false,
-=======
-    dialogsInBody: true,
-    dialogsFade: true,
->>>>>>> ac21a93691bdf7d6a91fba9f11f50e01f505d24c
     maximumImageFileSize: null,
     callbacks: {
       onBeforeCommand: null,
@@ -10260,11 +10255,7 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__(/*! C:\website-project\laravel-pushingforward-master\resources\js\summernote_create.js */"./resources/js/summernote_create.js");
-=======
-module.exports = __webpack_require__(/*! C:\laravel-projects\website1\resources\js\summernote_create.js */"./resources/js/summernote_create.js");
->>>>>>> ac21a93691bdf7d6a91fba9f11f50e01f505d24c
 
 
 /***/ })

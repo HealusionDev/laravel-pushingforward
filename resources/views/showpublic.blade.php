@@ -10,7 +10,7 @@
                 <form class="form-inline" id="menufixe" style="position: absolute; top: 8vh; left: 1.2vw;">
                     <input class="form-control mr-sm-0" type="search" placeholder="Rechercher" aria-label="Search" id="article-search-form">
                     <button class="btn btn-dark my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-                </form>
+                    </form>
             </div>
         </div>
         <div class="col-md-8 pt-3 mr-auto" style="background-color: #f1f1f1">

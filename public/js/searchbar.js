@@ -85,11 +85,7 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__(/*! C:\website-project\laravel-pushingforward-master\resources\js\searchbar.js */"./resources/js/searchbar.js");
-=======
-module.exports = __webpack_require__(/*! C:\laravel-projects\website1\resources\js\searchbar.js */"./resources/js/searchbar.js");
->>>>>>> ac21a93691bdf7d6a91fba9f11f50e01f505d24c
 
 
 /***/ })
