@@ -1,4 +1,5 @@
 //window._ = require('lodash');
+window.jQuery=window.$=$;
 
 import 'popper.js';
 //window.Popper = require('popper.js').default;
@@ -8,7 +9,6 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'summernote/dist/summernote-bs4.js';
 
-window.jQuery=window.$=$;
 
 $(document).ready(function() {
 	$('#detail').summernote({
@@ -65,6 +65,7 @@ $(document).ready(function() {
 	$('#clear').on('click',function(){
 		$('#detail').summernote('code',null);
 	})
+
 })
 
 

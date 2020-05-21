@@ -19,7 +19,7 @@
 
     <body>                   
         <!-- Barre de navigation -->
-        <div id="app" style="min-height: 100vh; display: flex; flex-direction: column; flex: 1; flex-grow: initial;">
+        <div id="app">
             <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-0">            
                 <div class="container-fluid" style="background-color: #e9ecef">
                     <a href="{{ route('accueil') }}"><img class="img-fluid sticky-top" src="/img/pflogo2.png" style="position: absolute;"></a>

@@ -40,28 +40,25 @@ module.exports = g;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var popper_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_0__);
 //window._ = require('lodash');
- //window.Popper = require('popper.js').default;
+//import 'popper.js';
+window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js")["default"]; //import $ from 'jquery';
 
- //window.jQuery = require('jquery');
+window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+ //window.jQuery=window.$=$;
 
-
-window.jQuery = window.$ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
-jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_1___default.a.fn.followTo = function (pos) {
+$(document).ready(function () {
+  $.fn.followTo = function (pos) {
     var $this = this,
-        $window = jquery__WEBPACK_IMPORTED_MODULE_1___default()(window);
+        $window = $(window);
     $window.scroll(function (e) {
       if ($window.scrollTop() > pos) {
         $this.css({
           position: 'fixed',
           top: '8vh',
-          left: '9.45vw'
+          left: '13.6vw'
         });
       } else {
         $this.css({
@@ -73,7 +70,41 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
     });
   };
 
-  jquery__WEBPACK_IMPORTED_MODULE_1___default()('#menufixe').followTo(212);
+  $('#menufixe').followTo(212);
+
+  $.fn.followTo = function (pos) {
+    var $this = this,
+        $window = $(window);
+    $window.scroll(function (e) {
+      if ($window.scrollTop() > pos) {
+        $this.css({
+          position: 'fixed',
+          top: '0vh',
+          left: '12.4vw'
+        });
+      } else {
+        $this.css({
+          position: 'absolute',
+          top: '0vh',
+          left: '0vw'
+        });
+      }
+    });
+  };
+
+  $('#chapitre-article').followTo(212);
+
+  if (document.location.href.indexOf('showpublic/2') > -1) {
+    document.getElementById("chapitre-article-g1").style.visibility = "visible";
+    $("#article-search-form").on("keyup", function () {
+      var value = $(this).val().toLowerCase();
+      $("#chapitre-article-g1 li").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+      });
+    });
+  } else {
+    document.getElementById("chapitre-article-g1").style.visibility = "hidden";
+  }
 });
 
 /***/ }),

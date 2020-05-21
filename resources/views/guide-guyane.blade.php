@@ -35,7 +35,7 @@
 				<div class="carte pt-5" style="width: 70%;">
 					<div class="text-center">
 						<a href="{{ route('showpublic', ['id' => 2]) }}">
-							<img class="card-img-top" style="border-radius: 5px; border: 1px solid #AFAFAF; width: 85%;" src="/img/guyane-ce.jpg">
+							<img class="card-img-top" style="border-radius: 2px; border: 1px solid #AFAFAF; width: 85%;" src="/img/guyane-ce.jpg">
 						</a>
 					</div>
 					<div class="carte-body">
@@ -51,7 +51,7 @@
 				<div class="carte pt-5" style="width: 70%;">
 					<div class="text-center">
 						<a href="{{ route('showpublic', ['id' => 3]) }}">
-							<img class="card-img-top" style="border-radius: 5px; border: 1px solid #AFAFAF; width: 85%;" src="/img/guyane-ke.jpg">
+							<img class="card-img-top" style="border-radius: 2px; border: 1px solid #AFAFAF; width: 85%;" src="/img/guyane-ke.jpg">
 						</a>
 					</div>
 					<div class="carte-body">
@@ -67,7 +67,7 @@
 				<div class="carte pt-5" style="width: 70%;">
 					<div class="text-center">
 						<a href="{{ route('showpublic', ['id' => 4]) }}">
-							<img class="card-img-top" style="border-radius: 5px; border: 1px solid #AFAFAF; width: 85%;" src="/img/guyane-saul.jpg">
+							<img class="card-img-top" style="border-radius: 2px; border: 1px solid #AFAFAF; width: 85%;" src="/img/guyane-saul.jpg">
 						</a>
 					</div>
 					<div class="carte-body">
@@ -85,7 +85,7 @@
 				<div class="carte pt-5" style="width: 70%;">
 					<div class="text-center">
 						<a href="{{ route('showpublic', ['id' => 5]) }}">
-							<img class="card-img-top" style="border-radius: 5px; border: 1px solid #AFAFAF; width: 85%;" src="/img/guyane-e-o.jpg">
+							<img class="card-img-top" style="border-radius: 2px; border: 1px solid #AFAFAF; width: 85%;" src="/img/guyane-e-o.jpg">
 						</a>
 					</div>
 					<div class="carte-body">
@@ -101,7 +101,7 @@
 				<div class="carte pt-5" style="width: 70%;">
 					<div class="text-center">
 						<a href="{{ route('showpublic', ['id' => 6]) }}">
-							<img class="card-img-top" style="border-radius: 5px; border: 1px solid #AFAFAF; width: 85%;" src="/img/guyane-ouest.jpg">
+							<img class="card-img-top" style="border-radius: 2px; border: 1px solid #AFAFAF; width: 85%;" src="/img/guyane-ouest.jpg">
 						</a>
 					</div>
 					<div class="carte-body">

@@ -10190,13 +10190,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var summernote_dist_summernote_bs4_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! summernote/dist/summernote-bs4.js */ "./node_modules/summernote/dist/summernote-bs4.js");
 /* harmony import */ var summernote_dist_summernote_bs4_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(summernote_dist_summernote_bs4_js__WEBPACK_IMPORTED_MODULE_3__);
 //window._ = require('lodash');
+window.jQuery = window.$ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
  //window.Popper = require('popper.js').default;
 
  //window.jQuery = require('jquery');
 
 
 
-window.jQuery = window.$ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
 jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_1___default()('#detail').summernote({
     callbacks: {
