@@ -14,7 +14,6 @@
 			<li data-target="#slides" data-slide-to="1"></li>
 		</ul>
 		<div class="carousel-inner">
-
 			<div class="carousel-item active">
 				<img class="carouselimg d-block mx-auto" src="/img/guyane3.jpg" data-holder-rendered="true">
 					<div class="carousel-caption">
