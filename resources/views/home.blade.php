@@ -20,7 +20,7 @@
 					<div class="carousel-caption">
 						<h1 class="carousel-titre1">Guyane</h1>
 						<h2 class="carousel-titre2">Plongez au coeur de la forêt amazonienne</h2>
-						<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='../guide-guyane';">Lire le guide</button>
+						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../guide-guyane';">Lire le guide</button>
 					</div>
 			</div>
 			<div class="carousel-item">
@@ -28,7 +28,7 @@
 					<div class="carousel-caption">
 						<h1 class="carousel-titre1">Guyane</h1>
 						<h2 class="carousel-titre2">Sur les traces de Dreyfus</h2>
-						<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='../guide-guyane';">Lire le guide</button>
+						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../guide-guyane';">Lire le guide</button>
 					</div>
 			</div>
 		</div>

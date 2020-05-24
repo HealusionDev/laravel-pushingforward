@@ -102,8 +102,18 @@ $(document).ready(function () {
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
       });
     });
-  } else {
-    document.getElementById("chapitre-article-g1").style.visibility = "hidden";
+  }
+
+  ;
+
+  if (document.location.href.indexOf('showpublic/3') > -1) {
+    document.getElementById("chapitre-article-g2").style.visibility = "visible";
+    $("#article-search-form").on("keyup", function () {
+      var value = $(this).val().toLowerCase();
+      $("#chapitre-article-g2 li").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+      });
+    });
   }
 });
 

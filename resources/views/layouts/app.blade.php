@@ -92,44 +92,80 @@
             
 
 
-            <div class="text-menu text-center d-flex align-items-end justify-content-center pt-3 pb-3">
+            <div class="text-center d-flex align-items-end justify-content-center pt-3 pb-3" id="text-menu">
                 <div class="dropdown">
-                    <li class="mainbutton-menu dropdown-toggle">Gastronomie</li>
+                    <li id="mainbutton-menu1" class="mainbutton-menu dropdown-toggle">Gastronomie</li>
                         <div class="dropdown-child">
-                            <a class="dropdown-child-link" href="{{ route('recettes') }}">Recettes</a>
-                            <div class="dropdown-divider m-0"></div>
-                            <a class="dropdown-child-link" href="{{ route('vin') }}">Vin</a>
-                            </div>
-                        </div>
-                <div class="dropdown">
-                    <li class="mainbutton-menu dropdown-toggle">Guide Voyage</li>
-                        <div class="dropdown-child">
-                            <a class="dropdown-child-link" href="{{ route('guide-australie') }}">Australie</a>
-                            <div class="dropdown-divider m-0"></div>
-                            <a class="dropdown-child-link" href="{{ route('guide-guyane') }}">Guyane</a>
-                            <div class="dropdown-divider m-0"></div>
-                            <a class="dropdown-child-link" href="{{ route('guide-maroc') }}">Maroc</a>
+                            <a class="dropdown-child-link" href="{{ route('recettes') }}">
+                                <div id="recettes-menu" class="d-flex justify-content-center align-items-center">
+                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Recettes</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-child-link" href="{{ route('vin') }}">
+                                <div id="vin-menu" class="d-flex justify-content-center align-items-center">
+                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Vin</p>
+                                </div>
+                            </a>
                         </div>
                 </div>
                 <div class="dropdown">
-                    <li class="mainbutton-menu dropdown-toggle">Expéditions</li>
-                        <div class="dropdown-child" style="width: text-size-adjust">
-                            <a class="dropdown-child-link" href="{{ route('corse-gr20') }}">Corse : GR20 </a>
-                            <div class="dropdown-divider m-0"></div>
-                            <a class="dropdown-child-link"  href="{{ route('expedition-7summits') }}">Seven Summits</a>
-                            <div class="dropdown-divider m-0"></div>
-                            <a class="dropdown-child-link"  href="{{ route('conseil-materiel') }}">Matériel</a>
+                    <li id="mainbutton-menu2" class="mainbutton-menu dropdown-toggle">Guide Voyage</li>
+                        <div class="dropdown-child">
+                            <a class="dropdown-child-link" href="{{ route('guide-australie') }}">
+                                <div id="australie-menu" class="d-flex justify-content-center align-items-center">    
+                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Australie</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-child-link" href="{{ route('guide-guyane') }}">
+                                <div id="guyane-menu" class="d-flex justify-content-center align-items-center">
+                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Guyane</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-child-link" href="{{ route('guide-maroc') }}">
+                                <div id="maroc-menu" class="d-flex justify-content-center align-items-center">    
+                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Maroc</p>
+                                </div>
+                            </a>
                         </div>
                 </div>
                 <div class="dropdown">
-                    <li class="mainbutton-menu dropdown-toggle">Randonnées</li>
-                        <div class="dropdown-child">
-                            <a class="dropdown-child-link" href="{{ route('rando-idf') }}">Ile de France</a>
-                            <div class="dropdown-divider m-0"></div>
-                            <a class="dropdown-child-link" href="{{ route('rando-pyrenees') }}">Pyrénées</a>
+                    <li id="mainbutton-menu3" class="mainbutton-menu dropdown-toggle">Expéditions</li>
+                        <div class="dropdown-child" style="right: 0%;">
+                            <a class="dropdown-child-link" href="{{ route('corse-gr20') }}">
+                                <div id="corse-menu" class="d-flex justify-content-center align-items-center">
+                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Corse : GR20</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-child-link"  href="{{ route('expedition-7summits') }}">
+                                <div id="summits-menu" class="d-flex justify-content-center align-items-center">
+                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">7 Summits</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-child-link"  href="{{ route('conseil-materiel') }}">
+                                <div id="materiel-menu" class="d-flex justify-content-center align-items-center">
+                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Matériel</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class="dropdown">
+                    <li id="mainbutton-menu4" class="mainbutton-menu dropdown-toggle">Randonnées</li>
+                        <div class="dropdown-child" style="right: 0%;">
+                            <a class="dropdown-child-link" href="{{ route('rando-idf') }}">
+                                <div id="idf-menu" class="d-flex justify-content-center align-items-center">
+                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Ile de France</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-child-link" href="{{ route('rando-pyrenees') }}">
+                                <div id="pyrenees-menu" class="d-flex justify-content-center align-items-center">
+                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Pyrénées</p>
+                                </div>
+                            </a>
                         </div>
                 </div>
             </div>
+
+            <script src="{{ mix('js/header.js') }}"></script>
 
             <main class="contenu container-fluid p-0" style="position: relative;">
                 @include('partials.alerts')

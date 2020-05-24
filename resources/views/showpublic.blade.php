@@ -1,6 +1,6 @@
 @extends ('layouts.app')
 
-@section('title', 'Guyane : Cayenne et ses environs')
+@section('title', 'Guyane')
 
 @section('header')
     @parent
@@ -26,19 +26,17 @@
                         <a href="#title-routemontsinery" id="back6" style="text-decoration: none;"><li class="list-group-item">Route de Montsinéry</li></a>
                         <a href="#title-macouria" id="back7" style="text-decoration: none;"><li class="list-group-item">Macouria</li></a>
                     </ul>
+                    <ul id="chapitre-article-g2" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-kourou" id="back1" style="text-decoration: none;"><li class="list-group-item">Kourou</li></a>
+                        <a href="#title-petitsaut" id="back2" style="text-decoration: none;"><li class="list-group-item">Petit Saut</li></a>
+                        <a href="#title-sinnamary" id="back3" style="text-decoration: none;"><li class="list-group-item">Sinnamary</li></a>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-7 pt-3 mr-auto" style="background-color: #f1f1f1">
             <div class="card-body p-0 m-0" style="position: relative;">
                 {!! $article->detail !!}
-                <div id="title-cayenne" onclick="window.location.hash='back1';"></div>
-                <div id="title-remire" onclick="window.location.hash='back2';"></div>
-                <div id="title-matoury" onclick="window.location.hash='back3';"></div>
-                <div id="title-routekaw" onclick="window.location.hash='back4';"></div>
-                <div id="title-maraiskaw" onclick="window.location.hash='back5';"></div>
-                <div id="title-routemontsinery" onclick="window.location.hash='back6';"></div>
-                <div id="title-macouria" onclick="window.location.hash='back7';"></div>
             </div>
         </div>
     </div>

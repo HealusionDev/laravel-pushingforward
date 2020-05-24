@@ -17,5 +17,6 @@ mix.js('resources/js/app.js', 'public/js')
 	.js('resources/js/summernote_create.js','public/js')
 	.js('resources/js/toast.js','public/js')
 	.js('resources/js/searchbar.js','public/js')
+	.js('resources/js/header.js','public/js')
 		.extract(['bootstrap','jquery','popper.js'])
    			.sass('resources/sass/app.scss', 'public/css');

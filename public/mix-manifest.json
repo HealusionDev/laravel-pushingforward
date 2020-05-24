@@ -1,6 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/js/header.js": "/js/header.js",
     "/js/manifest.js": "/js/manifest.js",
     "/js/searchbar.js": "/js/searchbar.js",
     "/js/summernote_create.js": "/js/summernote_create.js",

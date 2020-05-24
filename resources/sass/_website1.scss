@@ -28,12 +28,6 @@ html,body{
 }
 
 .imgheader {
-	width: 100%;
-	float: right;
-}
-
-
-.imgheader {
 	position: relative;
 	width: 100%;
 	float: right;
@@ -42,7 +36,6 @@ html,body{
 .dropdown{
 	text-decoration: none;
 	display: inline-block;
-	z-index: 2;
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 }
@@ -50,40 +43,106 @@ html,body{
 .mainbutton-menu{
 	list-style-type: none;
 	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.6;
 	padding: 0.8rem;
-	color : #343434;
 	background-color: transparent;
 	cursor: pointer;
 }
+
 .mainbutton-menu:hover{
-	background-color: #660000;
 	color: #fff;
+	opacity: 0.8;
 	transition: 0.6s all;
 }
 
 .dropdown-child{
 	position: absolute;
 	display: none;
-	width: 100%;
+	width: 20vw;
 	text-decoration: none;
-	background-color: #846565;
+	background-color: #222;
+	z-index: 10;
 }
 .dropdown-child-link{
 	color: #fff;
-	padding: 0.5rem;
-	font-size: 1rem;
+	padding: 0.2rem;
+	font-size: 2.8rem;
 	text-decoration: none;
 	display : block;
 }
 .dropdown-child-link:hover{
 	color: #fff;
-	background-color: #660000;
+	background-color: #fff;
 	text-decoration: none;
+	position: relative;
+	flex-grow: 1;
 }
 
 .dropdown:hover div.dropdown-child{
 	display : block;
 	transition: 0.5s all;
+}
+
+#recettes-menu {
+	height: 18vh;
+	background-image: url('/img/recettes-menu.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#vin-menu {
+	height: 18vh;
+	background-image: url('/img/vin-menu.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#australie-menu {
+	height: 18vh;
+	background-image: url('/img/vin-menu.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#guyane-menu {
+	height: 18vh;
+	background-image: url('/img/vin-menu.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#maroc-menu {
+	height: 18vh;
+	background-image: url('/img/vin-menu.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#corse-menu {
+	height: 18vh;
+	background-image: url('/img/vin-menu.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#summits-menu {
+	height: 18vh;
+	background-image: url('/img/vin-menu.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#materiel-menu {
+	height: 18vh;
+	background-image: url('/img/vin-menu.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#idf-menu {
+	height: 18vh;
+	background-image: url('/img/vin-menu.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#pyrenees-menu {
+	height: 18vh;
+	background-image: url('/img/pyrenees-menu.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .contenu{
@@ -102,6 +161,7 @@ html,body{
 	position: absolute;
 	top: 52%;
 	transform: translateY(-50%);
+	z-index: 5;
 }
 .carousel-titre1{
 	font-size: 450%;
@@ -109,6 +169,7 @@ html,body{
 	text-shadow: 1px 3px 15px #000;
 	font-weight: 400;
 	line-height: 1.4;
+	z-index: 5;
 }
 
 .carousel-titre2{
@@ -116,6 +177,7 @@ html,body{
 	font-weight: 500;
 	text-shadow: 1px 1px 10px #000;
 	padding-bottom: 1rem;
+	z-index: 5;
 }
 .btn-primary{
 	background-color: #6648b1;
@@ -172,6 +234,13 @@ html,body{
 	width: 450px;
 	margin-top: .3rem;
 }
+.style4 {
+	border-top: 2px solid #fff;
+	width: 90%;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+}
+
 
 
 .social-link{
@@ -381,42 +450,3 @@ html,body{
 		width: 90%;
 	}
 }
-
-@media (min-width: 1880px){
-	#title-cayenne {
-		position: absolute;
-		top: -1rem;
-		width: 20vw;
-	}
-	#title-remire {
-		position: absolute;
-		top: 146rem;
-		width: 20vw;
-	}
-	#title-matoury {
-		position: absolute;
-		top: 342rem;
-		width: 20vw;
-	}
-	#title-routekaw {
-		position: absolute;
-		top: 364rem;
-		width: 20vw;
-	}
-	#title-maraiskaw {
-		position: absolute;
-		top: 493rem;
-		width: 20vw;
-	}
-	#title-routemontsinery {
-		position: absolute;
-		top: 547rem;
-		width: 20vw;
-	}
-	#title-macouria {
-		position: absolute;
-		top: 640rem;
-		width: 20vw;
-	}
-}
-
