@@ -98,12 +98,12 @@
                         <div class="dropdown-child">
                             <a class="dropdown-child-link" href="{{ route('recettes') }}">
                                 <div id="recettes-menu" class="d-flex justify-content-center align-items-center">
-                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Recettes</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Recettes</p>
                                 </div>
                             </a>
                             <a class="dropdown-child-link" href="{{ route('vin') }}">
                                 <div id="vin-menu" class="d-flex justify-content-center align-items-center">
-                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Vin</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Vin</p>
                                 </div>
                             </a>
                         </div>
@@ -113,17 +113,17 @@
                         <div class="dropdown-child">
                             <a class="dropdown-child-link" href="{{ route('guide-australie') }}">
                                 <div id="australie-menu" class="d-flex justify-content-center align-items-center">    
-                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Australie</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Australie</p>
                                 </div>
                             </a>
                             <a class="dropdown-child-link" href="{{ route('guide-guyane') }}">
                                 <div id="guyane-menu" class="d-flex justify-content-center align-items-center">
-                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Guyane</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Guyane</p>
                                 </div>
                             </a>
                             <a class="dropdown-child-link" href="{{ route('guide-maroc') }}">
                                 <div id="maroc-menu" class="d-flex justify-content-center align-items-center">    
-                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Maroc</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Maroc</p>
                                 </div>
                             </a>
                         </div>
@@ -133,17 +133,17 @@
                         <div class="dropdown-child" style="right: 0%;">
                             <a class="dropdown-child-link" href="{{ route('corse-gr20') }}">
                                 <div id="corse-menu" class="d-flex justify-content-center align-items-center">
-                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Corse : GR20</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Corse : GR20</p>
                                 </div>
                             </a>
                             <a class="dropdown-child-link"  href="{{ route('expedition-7summits') }}">
                                 <div id="summits-menu" class="d-flex justify-content-center align-items-center">
-                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">7 Summits</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">7 Summits</p>
                                 </div>
                             </a>
                             <a class="dropdown-child-link"  href="{{ route('conseil-materiel') }}">
                                 <div id="materiel-menu" class="d-flex justify-content-center align-items-center">
-                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Matériel</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Matériel</p>
                                 </div>
                             </a>
                         </div>
@@ -153,12 +153,12 @@
                         <div class="dropdown-child" style="right: 0%;">
                             <a class="dropdown-child-link" href="{{ route('rando-idf') }}">
                                 <div id="idf-menu" class="d-flex justify-content-center align-items-center">
-                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Ile de France</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Ile de France</p>
                                 </div>
                             </a>
                             <a class="dropdown-child-link" href="{{ route('rando-pyrenees') }}">
                                 <div id="pyrenees-menu" class="d-flex justify-content-center align-items-center">
-                                    <p style="text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Pyrénées</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Pyrénées</p>
                                 </div>
                             </a>
                         </div>
