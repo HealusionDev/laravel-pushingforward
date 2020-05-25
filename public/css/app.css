@@ -11348,7 +11348,7 @@ body {
 
 .carousel-caption {
   position: absolute;
-  top: 52%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 5;
 }
