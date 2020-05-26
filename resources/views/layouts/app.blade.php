@@ -2,8 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
     <head>
-        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">  
-        <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet">   -->
+        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">   
+        <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet">  -->
         <script src="{{ mix('js/manifest.js') }}"></script>
         <script src="{{ mix('js/vendor.js') }}"></script>
         <script src="{{ mix('js/app.js') }}"></script>
@@ -21,8 +21,8 @@
         <!-- Barre de navigation -->
         <div id="app">
             <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-0">            
-                <div class="container-fluid" style="background-color: #e9ecef; height: 5vh;">
-                    <a href="{{ route('accueil') }}"><img id="logo" class="img-fluid" src="/img/pflogo2.png" style="position: absolute; left: 50%; transform: translateX(-50%); top: 0.4vh;"></a>
+                <div class="container-fluid" style="background-color: #e9ecef">
+                    <a href="{{ route('accueil') }}"><img id="logo" class="img-fluid sticky-top" src="/img/pflogo2.png" style="position: absolute; left: 50%; transform: translateX(-50%);"></a>
                     <div class="container pl-0">
                         <button id="button-menu1" class="navbar-toggler ml-auto" style="border-color: transparent;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                             <span>
