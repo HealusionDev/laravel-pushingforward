@@ -533,10 +533,6 @@ html,body{
 		top: 0;
 		color: #6a6a6a;
 	}
-	#logo{
-		left: 50%;
-		transform: translateX(-50%);
-	}
 	#dropdown-info{
 		float: right !important;
 	}
@@ -608,6 +604,9 @@ html,body{
 	}
 	.lead {
 		width: 90% !important;
+	}
+	.movies-title{
+		font-size: 2.5rem;
 	}
 }
 
