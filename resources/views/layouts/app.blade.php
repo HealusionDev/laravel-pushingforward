@@ -2,8 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
     <head>
-        <!-- <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">   -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">  
+        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">  
+        <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet">   -->
         <script src="{{ mix('js/manifest.js') }}"></script>
         <script src="{{ mix('js/vendor.js') }}"></script>
         <script src="{{ mix('js/app.js') }}"></script>
@@ -22,14 +22,19 @@
         <div id="app">
             <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-0">            
                 <div class="container-fluid" style="background-color: #e9ecef">
-                    <a href="{{ route('accueil') }}"><img class="img-fluid sticky-top" src="/img/pflogo2.png" style="position: absolute;"></a>
+                    <a href="{{ route('accueil') }}"><img id="logo" class="img-fluid sticky-top" src="/img/pflogo2.png" style="position: absolute; left: 50%; transform: translateX(-50%);"></a>
                     <div class="container pl-0">
-                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <button id="button-menu1" class="navbar-toggler ml-auto" style="border-color: transparent;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span>
+                                <i class="fa fa-info-circle" aria-hidden="true" style="color: #222; font-size: 30px;"></i>
+                            </span>
+                        </button>
+                        <button id="button-menu2" class="navbar-toggler mr-auto" style="border-color: transparent;"type="button" data-toggle="collapse" data-target="#text-menu-mobile">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
-                            <ul class="navbar-nav mr-auto" style="margin-left: 145px;">
+                            <ul class="navbar-nav mr-auto">
                             <!-- Authentication Links -->
                             @guest
                                 <li class="nav-item">
@@ -47,17 +52,17 @@
                                         {{ Auth::user()->name }} <span class="caret"></span>
                                     </a>
 
-                                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                                    <div id="dropdown-info" class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
                                         @can('manage-users')
-                                        <a class="dropdown-item" href="{{ route('admin.users.index') }}">
+                                        <a id="dropdown-info-item" class="dropdown-item" href="{{ route('admin.users.index') }}">
                                             Gestion des utilisateurs
                                         </a>
-                                        <a class="dropdown-item" href="{{ route('admin.articles.index') }}">
+                                        <a id="dropdown-info-item" class="dropdown-item" href="{{ route('admin.articles.index') }}">
                                             Gestion des articles
                                         </a>
                                         @endcan
 
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                        <a id="dropdown-info-item" class="dropdown-item" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">
                                             {{ __('Se déconnecter') }}
@@ -71,28 +76,68 @@
                              @endguest
                             </ul>
 
-
                             <!-- Right side of the bar -->
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>À propos<span class="caret"></span>
                                     </a>
 
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ route('team') }}">Equipe</a>
-                                        <a class="dropdown-item" href="{{ route('projet') }}">Projet Pushing Forward</a>
+                                    <div id="dropdown-info" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a id="dropdown-info-item" class="dropdown-item" href="{{ route('team') }}">Equipe</a>
+                                        <a id="dropdown-info-item" class="dropdown-item" href="{{ route('projet') }}">Projet Pushing Forward</a>
                                     </div>
                                 </li>
                             </ul>
+                        </div>
 
+                        <div class="collapse navbar-collapse" id="text-menu-mobile">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown mr-auto">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>Gastromomie<span class="caret"></span>
+                                    </a>
+
+                                    <div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('recettes') }}">Recettes</a>
+                                        <a class="dropdown-item" href="{{ route('vin') }}">Vin</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown mr-auto">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>Guide Voyage<span class="caret"></span>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('guide-australie') }}">Australie</a>
+                                        <a class="dropdown-item" href="{{ route('guide-guyane') }}">Guyane</a>
+                                        <a class="dropdown-item" href="{{ route('guide-maroc') }}">Maroc</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown mr-auto">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>Expéditions<span class="caret"></span>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('corse-gr20') }}">Corse : GR20</a>
+                                        <a class="dropdown-item" href="{{ route('expedition-7summits') }}">7 Summits</a>
+                                        <a class="dropdown-item" href="{{ route('conseil-materiel') }}">Matériel</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown mr-auto">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>Randonnées<span class="caret"></span>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('rando-idf') }}">Ile de France</a>
+                                        <a class="dropdown-item" href="{{ route('rando-pyrenees') }}">Pyrénées</a>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </nav>
             
 
-
-            <div class="text-center d-flex align-items-end justify-content-center pt-3 pb-3" id="text-menu">
+            <div id="text-menu" class="text-center d-flex align-items-end justify-content-center pt-3 pb-3">
                 <div class="dropdown">
                     <li id="mainbutton-menu1" class="mainbutton-menu dropdown-toggle">Gastronomie</li>
                         <div class="dropdown-child">
@@ -165,6 +210,7 @@
                 </div>
             </div>
 
+            
             <script src="{{ mix('js/header.js') }}"></script>
 
             <main class="contenu container-fluid p-0" style="position: relative;">

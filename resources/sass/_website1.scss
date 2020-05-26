@@ -241,8 +241,6 @@ html,body{
 	margin-bottom: 0rem;
 }
 
-
-
 .social-link{
 	font-size: 3.5rem;
 }
@@ -458,10 +456,10 @@ html,body{
 		top: 50%;
 	}
 	.carousel-caption h1{
-		font-size: 360%;
+		font-size: 380%;
 	}
 	.carousel-caption h2{
-		font-size: 150%;
+		font-size: 160%;
 		padding-bottom: .2rem;
 	}
 	.carousel-caption .btn{
@@ -490,21 +488,24 @@ html,body{
 	.social-link a{
 		padding: 2rem;
 	}
+	#text-menu-mobile{
+		display: none !important;
+	}
 }
 
 @media (max-width: 992px){
 	.carousel-caption{
-		top: 50%;
+		top: 45%;
 	}
 	.carousel-caption h1{
 		font-size: 320%;
 	}
 	.carousel-caption h2{
-		font-size: 120%;
+		font-size: 130%;
 		padding-bottom: .2rem;
 	}
 	.carousel-caption .btn{
-		font-size: 85%;
+		font-size: 90%;
 		padding: 8px 14px;
 	}
 	.carte-title-article{
@@ -521,32 +522,65 @@ html,body{
 		font-size: 1.6rem !important;
 		padding-top: 0rem !important;
 	}
+	#text-menu{
+		display: none !important;
+	}
+	#header-bar {
+		display: none !important;
+	}
+	#button-menu2{
+		position: absolute;
+		top: 0;
+		color: #6a6a6a;
+	}
+	#logo{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#dropdown-info{
+		float: right !important;
+	}
+	#dropdown-menu{
+		float: left !important;
+	}
+	#dropdown-info-item{
+		text-align: right;
+	}
+	#article-show{
+		padding: 0 !important;
+		margin: 0 !important;
+		max-width: 85%;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#article-show-menu{
+		display: none !important;
+	}
 }
 
 @media (max-width: 790px){
 	.carousel-caption{
-		top: 50%;
+		top: 45%;
 	}
 	.carousel-caption h1{
-		font-size: 280%;
+		font-size: 320%;
 	}
 	.carousel-caption h2{
-		display: none;
+		font-size: 120%;
+		padding-bottom: .2rem;
 	}
 	.carousel-caption .btn{
-		font-size: 85%;
+		font-size: 90%;
 		padding: 6px 12px;
 	}
 	.lead {
-		width: 90%;
-	}
-	#text-menu{
-		font-size: 1.4rem !important;
+		width: 90% !important;
 	}
 	#article{
 		display: inline-block !important;
 		padding-right: 0 !important;
-		max-width: 65%;
+		max-width: 85%;
 		position: relative;
 		left: 50%;
 		transform: translateX(-50%);
@@ -558,23 +592,27 @@ html,body{
 		display: flex;
 		float: right;
 	}
+	.movies-title{
+		font-size: 3rem;
+	}
 }
 
-@media (max-width: 540px){
-	.carousel-caption{
-		top: 40%;
-	}
+@media (max-width: 600px){
 	.carousel-caption h1{
-		font-size: 220%;
+		font-size: 280%;
+		margin-bottom: 0;
+		padding-bottom: 0;
 	}
 	.carousel-caption h2{
 		display: none;
 	}
-	.carousel-caption .btn{
-		font-size: 85%;
-		padding: 6px 12px;
-	}
 	.lead {
-		width: 90%;
+		width: 90% !important;
+	}
+}
+
+@media (max-width: 450px){
+	.carousel-caption{
+		top: 35%;
 	}
 }
