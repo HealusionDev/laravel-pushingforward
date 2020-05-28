@@ -1,13 +1,14 @@
-//window._ = require('lodash');
+window._ = require('lodash');
 window.jQuery=window.$=$;
 
-import 'popper.js';
-//window.Popper = require('popper.js').default;
+import 'popper.js/dist/popper.js';
+//window.Popper = require('popper.js');
 import $ from 'jquery';
 //window.jQuery = require('jquery');
 
-import 'bootstrap';
+import 'bootstrap/dist/js/bootstrap.js';
 import 'summernote/dist/summernote-bs4.js';
+
 
 
 $(document).ready(function() {

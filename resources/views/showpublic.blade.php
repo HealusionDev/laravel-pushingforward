@@ -31,6 +31,24 @@
                         <a href="#title-petitsaut" id="back2" style="text-decoration: none;"><li class="list-group-item">Petit Saut</li></a>
                         <a href="#title-sinnamary" id="back3" style="text-decoration: none;"><li class="list-group-item">Sinnamary</li></a>
                     </ul>
+                    <ul id="chapitre-article-g3" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-saul" id="back1" style="text-decoration: none;"><li class="list-group-item">Saül</li></a>
+                        <a href="#title-maripasoula" id="back2" style="text-decoration: none;"><li class="list-group-item">Maripasoula</li></a>
+                    </ul>
+                    <ul id="chapitre-article-g4" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-cacao" id="back1" style="text-decoration: none;"><li class="list-group-item">Cacao</li></a>
+                        <a href="#title-regina" id="back2" style="text-decoration: none;"><li class="list-group-item">Régina</li></a>
+                        <a href="#title-saintgeorge" id="back3" style="text-decoration: none;"><li class="list-group-item">Saint George de l'Oyapock</li></a>
+                        <a href="#title-ouanary" id="back4" style="text-decoration: none;"><li class="list-group-item">Ouanary</li></a>
+                        <a href="#title-oiapoque" id="back5" style="text-decoration: none;"><li class="list-group-item">Oiapoque</li></a>
+                    </ul>
+                    <ul id="chapitre-article-g5" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-iracoubo" id="back1" style="text-decoration: none;"><li class="list-group-item">Iracoubo</li></a>
+                        <a href="#title-saintlau" id="back2" style="text-decoration: none;"><li class="list-group-item">Saint-Laurent du Maroni</li></a>
+                        <a href="#title-voltaire" id="back3" style="text-decoration: none;"><li class="list-group-item">Chutes Voltaire</li></a>
+                        <a href="#title-mana" id="back4" style="text-decoration: none;"><li class="list-group-item">Mana</li></a>
+                        <a href="#title-awala" id="back5" style="text-decoration: none;"><li class="list-group-item">Awala</li></a>
+                    </ul>
                 </div>
             </div>
         </div>

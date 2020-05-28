@@ -75,4 +75,37 @@ $(document).ready(function(){
             });
         });
     }
+
+    if (document.location.href.indexOf('showpublic/4') > -1){
+        document.getElementById("chapitre-article-g3").style.visibility="visible";
+        
+        $("#article-search-form").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+            $("#chapitre-article-g3 li").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    }
+
+    if (document.location.href.indexOf('showpublic/5') > -1){
+        document.getElementById("chapitre-article-g4").style.visibility="visible";
+        
+        $("#article-search-form").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+            $("#chapitre-article-g4 li").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    }
+
+    if (document.location.href.indexOf('showpublic/6') > -1){
+        document.getElementById("chapitre-article-g5").style.visibility="visible";
+        
+        $("#article-search-form").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+            $("#chapitre-article-g5 li").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    }
 });

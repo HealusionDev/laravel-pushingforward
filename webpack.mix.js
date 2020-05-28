@@ -14,6 +14,7 @@ const mix = require('laravel-mix');
 mix.copyDirectory('resources/img', 'public/img');
 
 mix.js('resources/js/app.js', 'public/js')
+	.js('node_modules/popper.js/dist/popper.js', 'public/js').sourceMaps()
 	.js('resources/js/summernote_create.js','public/js')
 	.js('resources/js/toast.js','public/js')
 	.js('resources/js/searchbar.js','public/js')

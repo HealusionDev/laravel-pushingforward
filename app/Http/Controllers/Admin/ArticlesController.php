@@ -27,7 +27,7 @@ class ArticlesController extends Controller
 
     public function index()
     {
-        $articles = Article::orderBy('id')->paginate(5);
+        $articles = Article::orderBy('id')->paginate(10);
         return view('admin.articles.index')->with('articles', $articles);
     }
 

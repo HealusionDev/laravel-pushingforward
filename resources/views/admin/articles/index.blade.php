@@ -28,7 +28,7 @@
                                         <a href="{{ route('admin.articles.show', $article->id) }}"><button type="button" class="btn btn-success float-left">Afficher</button></a>
                                         <a href="{{ route('admin.articles.edit', $article->id) }}"><button type="button" class="btn btn-primary float-left">Modifier</button></a>
                                         
-                                        <form action="{{ route('admin.articles.destroy', $article->id) }}" method="DELETE" class="float-left">
+                                        <form action="{{ route('admin.articles.destroy', $article->id) }}" method="POST" class="float-left">
                                             @csrf
                                             {{ method_field('DELETE') }}
                                             <button type="submit" class="btn btn-danger">Supprimer</button>

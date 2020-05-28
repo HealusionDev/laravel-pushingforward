@@ -51,8 +51,7 @@
 			
 			<div class="col-12 d-flex justify-content-center pt-3">
 				<p class="lead text-center" style="width: 75%;">
-					La dernière expédition en date remonte à l'année 2019 lors de mon voyage en Guyane.<br/>
-					Pour un contenu vidéo il faudra revenir à l'aventure Australienne en 2017.<br/>
+					En attendant la série sur la préparation à l'ascension du Kilimandjaro, je vous propose un retour en images sur l'aventure Australienne.<br>
 				</p>
 			</div>
 			<div class="col-12 d-flex justify-content-center pt-3"> 
