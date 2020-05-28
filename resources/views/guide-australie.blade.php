@@ -33,43 +33,43 @@
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 2]) }}">
+				<a href="{{ route('showpublic', ['id' => 8]) }}">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/australie-menu1.jpg">
 				</a>
 			</div>
 			<div id="text-guyane" class="col-lg-3 mx-auto" style="display: flex; flex: 1 1 auto; flex-direction: column; justify-content: center; background-color: #e9ecef; padding-top: 1rem; padding-bottom: 1rem; margin: auto;">
 				<h4 class="carte-title-article">Sydney à Brisbane</h4>
-				<p class="carte-text-article">Découvrez Cayenne, Rémire-Montjoly, Matoury, la route de Montsinéry ainsi que les renommés et très sauvages Marais de Kaw.</p>
+				<p class="carte-text-article">Venez découvrir un fabuleux road-trip sur l'Australian East Coast, aussi dénommée Surfer Paradise. Découverte de spots de renoms Byron Bay, Gold Coast, Brisbane et retour in-lands.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 2]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 8]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 3]) }}">
+				<a href="{{ route('showpublic', ['id' => 9]) }}">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/australie-menu2.jpg">
 				</a>
 			</div>
 			<div id="text-guyane" class="col-lg-3 mx-auto" style="display: flex; flex: 1 1 auto; flex-direction: column; justify-content: center; background-color: #e9ecef; padding-top: 1rem; padding-bottom: 1rem; margin: auto;">
 				<h4 class="carte-title-article">Wollongong à Port-Campbell</h4>
-				<p class="carte-text-article">Le centre spatial Guyanais, les îles du Salut, le lac de Petit Saut... Venez découvrir les surprises de la région de Kourou.</p>
+				<p class="carte-text-article">Partez à la découverte, de Canberra, du Kosciusko National Park et des trésors du Victoria. Parcours riche en surprise et en paysage à couper le souffle! </p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 3]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 9]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 4]) }}">
+				<a href="{{ route('showpublic', ['id' => 10]) }}">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/australie-menu3.jpg">
 				</a>
 			</div>
 			<div id="text-guyane" class="col-lg-3 mx-auto" style="display: flex; flex: 1 1 auto; flex-direction: column; justify-content: center; background-color: #e9ecef; padding-top: 1rem; padding-bottom: 1rem; margin: auto;">
 				<h4 class="carte-title-article">Darwin à Uluru Kata Tjuta</h4>
-				<p class="carte-text-article">Saül et Maripasoula, zones reculées au fond de l'amazonie, sauront ravir les aventuriers les plus téméraires!</p>
+				<p class="carte-text-article">Les contrées sauvages vous fascinent? Alors le Northern Territory a tout pour vous plaire! Venez découvrir les marais du Kakadu National Park et le désert rouge du centre australien.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 4]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 10]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>

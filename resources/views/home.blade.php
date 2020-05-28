@@ -12,9 +12,27 @@
 		<ul class="carousel-indicators">
 			<li data-target="#slides" data-slide-to="0" class="active"></li>
 			<li data-target="#slides" data-slide-to="1"></li>
+			<li data-target="#slides" data-slide-to="2"></li>
+			<li data-target="#slides" data-slide-to="3"></li>
 		</ul>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
+				<img class="carouselimg d-block mx-auto" src="/img/guyane4.jpg" data-holder-rendered="true">
+					<div class="carousel-caption">
+						<h1 class="carousel-titre1">Guyane</h1>
+						<h2 class="carousel-titre2">Sur les traces de Dreyfus</h2>
+						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../guide-guyane';">Lire le guide</button>
+					</div>
+			</div>
+			<div class="carousel-item">
+				<img class="carouselimg d-block mx-auto" src="/img/australia-home1.png" data-holder-rendered="true">
+					<div class="carousel-caption">
+						<h1 class="carousel-titre1">Australie</h1>
+						<h2 class="carousel-titre2">Sea, surf & fun ?</h2>
+						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../guide-australie';">Lire le guide</button>
+					</div>
+			</div>
+			<div class="carousel-item">
 				<img class="carouselimg d-block mx-auto" src="/img/guyane3.jpg" data-holder-rendered="true">
 					<div class="carousel-caption">
 						<h1 class="carousel-titre1">Guyane</h1>
@@ -23,11 +41,11 @@
 					</div>
 			</div>
 			<div class="carousel-item">
-				<img class="carouselimg d-block mx-auto" src="/img/guyane4.jpg" data-holder-rendered="true">
+				<img class="carouselimg d-block mx-auto" src="/img/australia-home2.jpg" data-holder-rendered="true">
 					<div class="carousel-caption">
-						<h1 class="carousel-titre1">Guyane</h1>
-						<h2 class="carousel-titre2">Sur les traces de Dreyfus</h2>
-						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../guide-guyane';">Lire le guide</button>
+						<h1 class="carousel-titre1">Australie</h1>
+						<h2 class="carousel-titre2">Découvrez ses contrées sauvages</h2>
+						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../guide-australie';">Lire le guide</button>
 					</div>
 			</div>
 		</div>
@@ -49,8 +67,8 @@
 				<hr class="style1">
 			</div>
 			
-			<div class="col-12 d-flex justify-content-center pt-3">
-				<p class="lead text-center" style="width: 75%;">
+			<div class="col-lg-12 d-flex justify-content-center pt-3">
+				<p class="lead text-center" style="width: 60%;">
 					En attendant la série sur la préparation de l'ascension du Kilimandjaro, je vous propose un retour en images sur l'aventure Australienne.<br>
 				</p>
 			</div>
