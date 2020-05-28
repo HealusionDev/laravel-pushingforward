@@ -51,7 +51,7 @@
 			
 			<div class="col-12 d-flex justify-content-center pt-3">
 				<p class="lead text-center" style="width: 75%;">
-					En attendant la série sur la préparation à l'ascension du Kilimandjaro, je vous propose un retour en images sur l'aventure Australienne.<br>
+					En attendant la série sur la préparation de l'ascension du Kilimandjaro, je vous propose un retour en images sur l'aventure Australienne.<br>
 				</p>
 			</div>
 			<div class="col-12 d-flex justify-content-center pt-3"> 
