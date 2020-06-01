@@ -33,10 +33,6 @@ Route::get('vin', function () { #requete http avec address se terminant par /rec
     return view('vin');
 })->name('vin');
 
-Route::get('guide-maroc', function () { #requete http avec address se terminant par /recettes
-    return view('guide-maroc');
-})->name('guide-maroc');
-
 Route::get('guide-guyane', function () { #requete http avec address se terminant par /recettes
     return view('guide-guyane');
 })->name('guide-guyane');
@@ -45,17 +41,13 @@ Route::get('guide-australie', function () { #requete http avec address se termin
     return view('guide-australie');
 })->name('guide-australie');
 
-Route::get('corse-gr20', function () { #requete http avec address se terminant par /recettes
-    return view('expedition-corse');
-})->name('corse-gr20');
+Route::get('expedition-gr', function () { #requete http avec address se terminant par /recettes
+    return view('expedition-gr');
+})->name('expedition-gr');
 
 Route::get('expedition-7summits', function () { #requete http avec address se terminant par /recettes
-    return view('kilimandjaro');
+    return view('seven-summits');
 })->name('expedition-7summits');
-
-Route::get('conseil-materiel', function () { #requete http avec address se terminant par /recettes
-    return view('materiel');
-})->name('conseil-materiel');
 
 Route::get('rando-idf', function () { #requete http avec address se terminant par /recettes
     return view('rando-idf');

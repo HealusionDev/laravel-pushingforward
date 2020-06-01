@@ -2,8 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
     <head>
-        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">  
-        <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet">   --> 
+        <!-- <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">  --> 
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">   
         <script src="{{ mix('js/manifest.js') }}"></script>
         <script src="{{ mix('js/vendor.js') }}"></script>
         <script src="{{ mix('js/app.js') }}"></script>
@@ -105,7 +105,6 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="{{ route('guide-australie') }}">Australie</a>
                                         <a class="dropdown-item" href="{{ route('guide-guyane') }}">Guyane</a>
-                                        <a class="dropdown-item" href="{{ route('guide-maroc') }}">Maroc</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown mr-auto">
@@ -113,9 +112,8 @@
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ route('corse-gr20') }}">Corse : GR20</a>
-                                        <a class="dropdown-item" href="{{ route('expedition-7summits') }}">7 Summits</a>
-                                        <a class="dropdown-item" href="{{ route('conseil-materiel') }}">Matériel</a>
+                                        <a class="dropdown-item" href="{{ route('expedition-gr') }}">Les Grandes Randonnées</a>
+                                        <a class="dropdown-item" href="{{ route('expedition-7summits') }}">Seven Summits</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown mr-auto">
@@ -163,29 +161,19 @@
                                     <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Guyane</p>
                                 </div>
                             </a>
-                            <a class="dropdown-child-link" href="{{ route('guide-maroc') }}">
-                                <div id="maroc-menu" class="d-flex justify-content-center align-items-center">    
-                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Maroc</p>
-                                </div>
-                            </a>
                         </div>
                 </div>
                 <div class="dropdown">
                     <li id="mainbutton-menu3" class="mainbutton-menu dropdown-toggle">Expéditions</li>
                         <div class="dropdown-child" style="right: 0%;">
-                            <a class="dropdown-child-link" href="{{ route('corse-gr20') }}">
+                            <a class="dropdown-child-link" href="{{ route('expedition-gr') }}">
                                 <div id="corse-menu" class="d-flex justify-content-center align-items-center">
-                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Corse : GR20</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Les Grandes Randonnées</p>
                                 </div>
                             </a>
                             <a class="dropdown-child-link"  href="{{ route('expedition-7summits') }}">
                                 <div id="summits-menu" class="d-flex justify-content-center align-items-center">
-                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">7 Summits</p>
-                                </div>
-                            </a>
-                            <a class="dropdown-child-link"  href="{{ route('conseil-materiel') }}">
-                                <div id="materiel-menu" class="d-flex justify-content-center align-items-center">
-                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Matériel</p>
+                                    <p id="text-menu" style="font-size: 2.6rem; text-shadow: 1px 3px 15px #000; font-weight: 400; line-height: 1.6; margin: 0;">Seven Summits</p>
                                 </div>
                             </a>
                         </div>

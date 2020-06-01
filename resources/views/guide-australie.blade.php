@@ -26,7 +26,7 @@
 	<!-- Contenu -->
 
 	<div class="col-12 d-flex justify-content-center">
-		<p class="lead text-center" style="width: 70%;">
+		<p class="lead text-justify" style="width: 65%;">
 		L'Australie, cette île continent située down-under comme le décrive les Aussies, est un territoire immense aux milles-et-unes facettes. La diversité biologique y est gigantesque. Vous y trouverez tout type de climat (hormis polaire évidemment) et des paysages fabuleux. C'est le pays de l'aventure en road-trip! Equipez-vous d'un 4x4 et partez à la rencontre de cette contrée à la fois unique et surprenante. </p>
 	</div>
 	

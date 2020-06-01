@@ -49,6 +49,16 @@
                         <a href="#title-mana" id="back4" style="text-decoration: none;"><li class="list-group-item">Mana</li></a>
                         <a href="#title-awala" id="back5" style="text-decoration: none;"><li class="list-group-item">Awala</li></a>
                     </ul>
+                    <ul id="chapitre-article-g6" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-video" id="back1" style="text-decoration: none;"><li class="list-group-item">Vidéo</li></a>
+                        <a href="#title-byron" id="back2" style="text-decoration: none;"><li class="list-group-item">Byron Bay</li></a>
+                        <a href="#title-goldcoast" id="back3" style="text-decoration: none;"><li class="list-group-item">Gold Coast</li></a>
+                        <a href="#title-brisbane" id="back4" style="text-decoration: none;"><li class="list-group-item">Brisbane</li></a>
+                        <a href="#title-bonus" id="back5" style="text-decoration: none;"><li class="list-group-item">Bonus</li></a>
+                    </ul>
+                    <ul id="chapitre-article-g7" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-video" id="back1" style="text-decoration: none;"><li class="list-group-item">Vidéo</li></a>
+                    </ul>
                 </div>
             </div>
         </div>

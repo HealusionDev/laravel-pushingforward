@@ -11084,13 +11084,6 @@ body {
   background-size: cover;
 }
 
-#materiel-menu {
-  height: 18vh;
-  background-image: url("/img/materiel-menu.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #idf-menu {
   height: 18vh;
   background-image: url("/img/idf-menu.png");

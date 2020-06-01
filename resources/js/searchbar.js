@@ -108,4 +108,26 @@ $(document).ready(function(){
             });
         });
     }
+
+    if (document.location.href.indexOf('showpublic/8') > -1){
+        document.getElementById("chapitre-article-g6").style.visibility="visible";
+        
+        $("#article-search-form").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+            $("#chapitre-article-g6 li").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    }
+
+    if (document.location.href.indexOf('showpublic/9') > -1){
+        document.getElementById("chapitre-article-g7").style.visibility="visible";
+        
+        $("#article-search-form").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+            $("#chapitre-article-g7 li").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    }
 });
