@@ -34,7 +34,7 @@
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 8]) }}">
+				<a href="{{ route('showpublic', ['id' => 11]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/volume-seche.jpg">
 				</a>
 			</div>
@@ -42,13 +42,13 @@
 				<h4 class="carte-title-article">Opti' volume et calories</h4>
 				<p class="carte-text-article">Vous manquez d'idées pour des recettes à fort volume alimentaire, faibles en calories et optimisées en macro et micro nutriment? Découvrez mes recettes!</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 8]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 11]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 8]) }}">
+				<a href="{{ route('showpublic', ['id' => 12]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/energie-proteines.jpg">
 				</a>
 			</div>
@@ -56,7 +56,7 @@
 				<h4 class="carte-title-article">Opti' énergie et protéines</h4>
 				<p class="carte-text-article">Un plat ou une colation qui vous donne un maximum d'énergie tout en maintenant votre synthèse protéique optimale pendant et après vos séances de sport? C'est par ici!</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 8]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 12]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>

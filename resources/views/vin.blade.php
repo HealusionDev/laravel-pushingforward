@@ -27,15 +27,15 @@
 
 	<div class="col-12 d-flex justify-content-center">
 		<p class="lead text-justify" style="width: 65%;">
-			Le partage est l'essence même du projet Pushing Forward. Dans cette idée, le vin, qui est une passion qui nous rassemble, occupe une place priviligiée.<br>
-			Le vin est un nectar fédérateur aux milles-et-unes facettes. Cette passion pour ce produit se trouve également dans le partage des émotions que chaque bouteille suscite. J'aimerais donc vous partagez nos découvertes, nos surprises ainsi que nos coups de coeur.
+			Le partage et la découverte sont les piliers du projet Pushing Forward. Dans cette idée, le vin, qui est un nectar fédérateur aux milles-et-unes facettes, occupe une place priviligiée.<br>
+			Cette passion pour ce produit se trouve également dans le partage des émotions que chaque bouteille suscite. J'aimerais donc partager avec vous nos découvertes, nos surprises ainsi que nos coups de coeur.
 		</p>
 	</div>
 	
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 8]) }}">
+				<a href="{{ route('showpublic', ['id' => 13]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/accord-mets-vins.jpg">
 				</a>
 			</div>
@@ -43,13 +43,13 @@
 				<h4 class="carte-title-article">Mets et vins : mariages coups de coeur</h4>
 				<p class="carte-text-article">Le vin et les mets se marient parfois de manière surprenante pour le notre plus grand plaisir! Venez découvrir ces étonnantes liaisons.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 8]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 13]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 8]) }}">
+				<a href="{{ route('showpublic', ['id' => 14]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/vin-selection.jpg">
 				</a>
 			</div>
@@ -57,7 +57,7 @@
 				<h4 class="carte-title-article">Notre sélection : 2020</h4>
 				<p class="carte-text-article">Découvrez les vins qui nous ont marqué cette année.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 8]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 14]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>

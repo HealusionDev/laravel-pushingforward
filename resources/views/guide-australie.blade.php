@@ -33,7 +33,7 @@
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 8]) }}">
+				<a href="{{ route('showpublic', ['id' => 8]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/australie-menu1.jpg">
 				</a>
 			</div>
@@ -41,13 +41,13 @@
 				<h4 class="carte-title-article">Sydney à Brisbane</h4>
 				<p class="carte-text-article">Venez découvrir un fabuleux road-trip sur l'Australian East Coast, aussi dénommée Surfer Paradise. Découverte de spots de renoms Byron Bay, Gold Coast, Brisbane et retour in-lands.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 8]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 8]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 9]) }}">
+				<a href="{{ route('showpublic', ['id' => 9]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/australie-menu2.jpg">
 				</a>
 			</div>
@@ -55,13 +55,13 @@
 				<h4 class="carte-title-article">Wollongong à Port-Campbell</h4>
 				<p class="carte-text-article">Partez à la découverte, de Canberra, du Kosciusko National Park et des trésors du Victoria. Parcours riche en surprise et en paysage à couper le souffle! </p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 9]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 9]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 10]) }}">
+				<a href="{{ route('showpublic', ['id' => 10]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/australie-menu3.jpg">
 				</a>
 			</div>
@@ -69,7 +69,7 @@
 				<h4 class="carte-title-article">Darwin à Uluru Kata Tjuta</h4>
 				<p class="carte-text-article">Les contrées sauvages vous fascinent? Alors le Northern Territory a tout pour vous plaire! Venez découvrir les marais du Kakadu National Park et le désert rouge du centre australien.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 10]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 10]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>

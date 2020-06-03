@@ -28,13 +28,13 @@
 
 	<div class="col-12 d-flex justify-content-center">
 		<p class="lead text-justify" style="width: 65%;">
-		Seven Summits. Une aventure de rêve à l'assaut des plus hauts sommets de chaque continent. A l'honneur sur cette liste, nous retrouvons le mont Kosciusko, le mont Blanc, l'Elbrouz, le Kilimandjaro, le Denali, l'Aconcagua et l'Everest. L'Antartique étant exclue (massif Vinson), je l'ai subsistué à un second sommet à la frontière de l'Europe et de l'Asie. Que l'aventure commence !</p>
+		Seven Summits. Une aventure de rêve à l'assaut des plus hauts sommets de chaque continent. A l'honneur sur cette liste, nous retrouvons le mont Kosciusko, le mont Blanc, l'Elbrouz, le Kilimandjaro, le Denali, l'Aconcagua et l'Everest. L'Antartique étant exclue (massif Vinson), je l'ai subsistué au plus haut sommets d'Europe orientale, l'Elbrouz. Que l'aventure commence !</p>
 	</div>
 	
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 8]) }}">
+				<a href="{{ route('showpublic', ['id' => 17]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/kilimandjaro.jpg">
 				</a>
 			</div>
@@ -42,13 +42,13 @@
 				<h4 class="carte-title-article">Kilimandjaro</h4>
 				<p class="carte-text-article">Le Kilimandjaro, plus haut sommet du continent africain, sera notre première étape dans la conquête des Seven Summits. Découvrez l'aventure, de la préparation à l'expédition!</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 8]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 17]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 8]) }}">
+				<a href="{{ route('showpublic', ['id' => 18]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/materiel.jpg">
 				</a>
 			</div>
@@ -56,7 +56,7 @@
 				<h4 class="carte-title-article">Le Matériel</h4>
 				<p class="carte-text-article">Découvrez le matériel que nous avons utilisé pour l'ascension des Sevens Summits attentés.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 8]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 18]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>

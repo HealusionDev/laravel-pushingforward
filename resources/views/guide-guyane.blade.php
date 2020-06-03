@@ -32,7 +32,7 @@
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 2]) }}">
+				<a href="{{ route('showpublic', ['id' => 2]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/guyane-ce.jpg">
 				</a>
 			</div>
@@ -40,13 +40,13 @@
 				<h4 class="carte-title-article">Cayenne et ses environs</h4>
 				<p class="carte-text-article">Découvrez Cayenne, Rémire-Montjoly, Matoury, la route de Montsinéry ainsi que les renommés et très sauvages Marais de Kaw.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 2]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 2]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 3]) }}">
+				<a href="{{ route('showpublic', ['id' => 3]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/guyane-ke.jpg">
 				</a>
 			</div>
@@ -54,13 +54,13 @@
 				<h4 class="carte-title-article">Kourou et ses environs</h4>
 				<p class="carte-text-article">Le centre spatial Guyanais, les îles du Salut, le lac de Petit Saut... Venez découvrir les surprises de la région de Kourou.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 3]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 3]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 4]) }}">
+				<a href="{{ route('showpublic', ['id' => 4]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/guyane-saul.jpg">
 				</a>
 			</div>
@@ -68,13 +68,13 @@
 				<h4 class="carte-title-article">Le coeur de la Guyane</h4>
 				<p class="carte-text-article">Saül et Maripasoula, zones reculées au fond de l'amazonie, sauront ravir les aventuriers les plus téméraires!</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 4]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 4]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 5]) }}">
+				<a href="{{ route('showpublic', ['id' => 5]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/guyane-e-o.jpg">
 				</a>
 			</div>
@@ -82,13 +82,13 @@
 				<h4 class="carte-title-article">L'est</h4>
 				<p class="carte-text-article">Ce terrain sauvage en direction du Brésil propose de nombreux terrains de jeux! Venez vous aventurer sur le sentier Molokoï et Savane Roche ou vous régaler au marché de Cacao.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 5]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 5]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 6]) }}">
+				<a href="{{ route('showpublic', ['id' => 6]) }}/">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/guyane-ouest.jpg">
 				</a>
 			</div>
@@ -96,7 +96,7 @@
 				<h4 class="carte-title-article">L'ouest</h4>
 				<p class="carte-text-article">Le Maroni, ses secrets et ses rivages chargés d'histoire, saura vous surprendre! Lancez-vous à la découverte du Camp de la Transportation, des plages de sable blanc d'Awala-Yalimapo et des chutes Voltaire.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 6]) }}"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 6]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>

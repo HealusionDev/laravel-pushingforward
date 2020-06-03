@@ -1,6 +1,6 @@
 @extends ('layouts.app')
 
-@section('title', 'Guyane')
+@section('title', 'Article')
 
 @section('header')
     @parent
@@ -57,7 +57,14 @@
                         <a href="#title-bonus" id="back5" style="text-decoration: none;"><li class="list-group-item">Bonus</li></a>
                     </ul>
                     <ul id="chapitre-article-g7" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
-                        <a href="#title-video" id="back1" style="text-decoration: none;"><li class="list-group-item">Vidéo</li></a>
+                        <a href="#title-video" id="back1" style="text-decoration: none;"><li class="list-group-item">Le périple</li></a>
+                    </ul>
+                    <ul id="chapitre-article-g8" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-video" id="back1" style="text-decoration: none;"><li class="list-group-item">Le périple</li></a>
+                    </ul>
+                    <ul id="chapitre-article-g10" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-bbanchoc" id="back1" style="text-decoration: none;"><li class="list-group-item">Barre banane chocolat</li></a>
+                        <a href="#title-bbannois" id="back2" style="text-decoration: none;"><li class="list-group-item">Barre banane noisette</li></a>
                     </ul>
                 </div>
             </div>

@@ -27,7 +27,7 @@ class ArticlesController extends Controller
 
     public function index()
     {
-        $articles = Article::orderBy('id')->paginate(15);
+        $articles = Article::orderBy('id')->paginate(25);
         return view('admin.articles.index')->with('articles', $articles);
     }
 
@@ -76,13 +76,11 @@ class ArticlesController extends Controller
                 $mimetype = $groups['mime'];
                 
                 // Generating a random filename
-                $filename = openssl_random_pseudo_bytes ();
+                $filename = uniqid('php_');
                 $filepath = "/img/articles/$filename . '.' . $mimetype";
     
                 // @see http://image.intervention.io/api/
                 $image = Image::make($src)
-                  // resize if required
-                  //->resize(300, 200)
                     ->encode($mimetype, 100)  // encode file to the specified mimetype
                     ->save(public_path($filepath));
                 
