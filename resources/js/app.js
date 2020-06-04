@@ -7,10 +7,6 @@
 import './bootstrap';
 import '@fortawesome/fontawesome-free/js/all.js';
 
-var slash = require('express-slash');
-
-app.use(slash()); // set slash middleware
-
 //window.Vue = require('vue');
 
 /**
