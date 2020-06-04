@@ -34,7 +34,7 @@
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 19]) }}/">
+				<a href="{{ route('showpublic', ['id' => 19]) }}#">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/valdoise.jpg">
 				</a>
 			</div>
@@ -42,13 +42,13 @@
 				<h4 class="carte-title-article">Le Val d'Oise</h4>
 				<p class="carte-text-article">L'Île de France dissimule bien des surprises concernant les itinéraires de randonnées. Venez découvrir ses chemins méconnus!</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 19]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 19]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 20]) }}/">
+				<a href="{{ route('showpublic', ['id' => 20]) }}#">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/vexin.jpg">
 				</a>
 			</div>
@@ -56,7 +56,7 @@
 				<h4 class="carte-title-article">Le Vexin français</h4>
 				<p class="carte-text-article">A quelques pas de la région Île de France, le vexin offre de magnifiques itiniréaires sur ses terres vallonnées proches des rives de la Seine.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 20]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 20]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>

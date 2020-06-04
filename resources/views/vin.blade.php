@@ -35,7 +35,7 @@
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 13]) }}/">
+				<a href="{{ route('showpublic', ['id' => 13]) }}#">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/accord-mets-vins.jpg">
 				</a>
 			</div>
@@ -43,13 +43,13 @@
 				<h4 class="carte-title-article">Mets et vins : mariages coups de coeur</h4>
 				<p class="carte-text-article">Le vin et les mets se marient parfois de manière surprenante pour le notre plus grand plaisir! Venez découvrir ces étonnantes liaisons.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 13]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 13]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 14]) }}/">
+				<a href="{{ route('showpublic', ['id' => 14]) }}#">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/vin-selection.jpg">
 				</a>
 			</div>
@@ -57,7 +57,7 @@
 				<h4 class="carte-title-article">Notre sélection : 2020</h4>
 				<p class="carte-text-article">Découvrez les vins qui nous ont marqué cette année.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 14]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 14]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>

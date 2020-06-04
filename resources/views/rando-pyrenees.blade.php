@@ -34,7 +34,7 @@
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 21]) }}/">
+				<a href="{{ route('showpublic', ['id' => 21]) }}#">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/pouchergues.jpg">
 				</a>
 			</div>
@@ -42,7 +42,7 @@
 				<h4 class="carte-title-article">Les lacs de Pouchergues et Caillauas</h4>
 				<p class="carte-text-article">Deux rafraichissants lacs d'altitudes cloturant une magnifique et longue ascension à travers un paysage pyrénéen fabuleux.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 21]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 21]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>

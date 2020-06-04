@@ -32,7 +32,7 @@
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 15]) }}/">
+				<a href="{{ route('showpublic', ['id' => 15]) }}#">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/corse.jpg">
 				</a>
 			</div>
@@ -40,13 +40,13 @@
 				<h4 class="carte-title-article">Corse : le GR20</h4>
 				<p class="carte-text-article">Itinéraire mythique traversant la Corse du nord au sud sur plus de 170 kms et 13000 mètres de dénivelé positif. Une randonnée rude qui offre un décor et une expérience inoubliable!</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 15]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 15]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 16]) }}/">
+				<a href="{{ route('showpublic', ['id' => 16]) }}#">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/materiel.jpg">
 				</a>
 			</div>
@@ -54,7 +54,7 @@
 				<h4 class="carte-title-article">Le Matériel</h4>
 				<p class="carte-text-article">Découvrez le matériel que nous avons utilisé pour nos expéditions sur les parcours de Grandes Randonnées.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 16]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 16]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>

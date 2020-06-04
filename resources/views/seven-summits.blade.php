@@ -34,7 +34,7 @@
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 17]) }}/">
+				<a href="{{ route('showpublic', ['id' => 17]) }}#">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/kilimandjaro.jpg">
 				</a>
 			</div>
@@ -42,13 +42,13 @@
 				<h4 class="carte-title-article">Kilimandjaro</h4>
 				<p class="carte-text-article">Le Kilimandjaro, plus haut sommet du continent africain, sera notre première étape dans la conquête des Seven Summits. Découvrez l'aventure, de la préparation à l'expédition!</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 17]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 17]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
-				<a href="{{ route('showpublic', ['id' => 18]) }}/">
+				<a href="{{ route('showpublic', ['id' => 18]) }}#">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/materiel.jpg">
 				</a>
 			</div>
@@ -56,7 +56,7 @@
 				<h4 class="carte-title-article">Le Matériel</h4>
 				<p class="carte-text-article">Découvrez le matériel que nous avons utilisé pour l'ascension des Sevens Summits attentés.</p>
 				<div>
-					<a href="{{ route('showpublic', ['id' => 18]) }}/"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+					<a href="{{ route('showpublic', ['id' => 18]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
 				</div>
 			</div>
 		</div>
