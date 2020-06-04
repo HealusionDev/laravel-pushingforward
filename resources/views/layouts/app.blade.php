@@ -12,6 +12,8 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>@yield('title')</title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="/img/mountain.ico" /> 
     </head>
 
     <body>                   
