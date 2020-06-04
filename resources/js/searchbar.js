@@ -54,7 +54,7 @@ $(document).ready(function(){
     };
     $('#chapitre-article').followTo(212);
 
-    if (document.location.href.indexOf('showpublic/2/') > -1){
+    if (document.location.href.indexOf('showpublic/2#') > -1){
         document.getElementById("chapitre-article-g1").style.visibility="visible";
         
         $("#article-search-form").on("keyup", function () {
@@ -65,7 +65,7 @@ $(document).ready(function(){
         });
     };
 
-    if (document.location.href.indexOf('showpublic/3/') > -1){
+    if (document.location.href.indexOf('showpublic/3#') > -1){
         document.getElementById("chapitre-article-g2").style.visibility="visible";
         
         $("#article-search-form").on("keyup", function () {
@@ -76,7 +76,7 @@ $(document).ready(function(){
         });
     }
 
-    if (document.location.href.indexOf('showpublic/4/') > -1){
+    if (document.location.href.indexOf('showpublic/4#') > -1){
         document.getElementById("chapitre-article-g3").style.visibility="visible";
         
         $("#article-search-form").on("keyup", function () {
@@ -87,7 +87,7 @@ $(document).ready(function(){
         });
     }
 
-    if (document.location.href.indexOf('showpublic/5/') > -1){
+    if (document.location.href.indexOf('showpublic/5#') > -1){
         document.getElementById("chapitre-article-g4").style.visibility="visible";
         
         $("#article-search-form").on("keyup", function () {
@@ -98,7 +98,7 @@ $(document).ready(function(){
         });
     }
 
-    if (document.location.href.indexOf('showpublic/6/') > -1){
+    if (document.location.href.indexOf('showpublic/6#') > -1){
         document.getElementById("chapitre-article-g5").style.visibility="visible";
         
         $("#article-search-form").on("keyup", function () {
@@ -109,7 +109,7 @@ $(document).ready(function(){
         });
     }
 
-    if (document.location.href.indexOf('showpublic/8/') > -1){
+    if (document.location.href.indexOf('showpublic/8#') > -1){
         document.getElementById("chapitre-article-g6").style.visibility="visible";
         
         $("#article-search-form").on("keyup", function () {
@@ -120,7 +120,7 @@ $(document).ready(function(){
         });
     }
 
-    if (document.location.href.indexOf('showpublic/9/') > -1){
+    if (document.location.href.indexOf('showpublic/9#') > -1){
         document.getElementById("chapitre-article-g7").style.visibility="visible";
         
         $("#article-search-form").on("keyup", function () {
@@ -131,7 +131,7 @@ $(document).ready(function(){
         });
     }
 
-    if (document.location.href.indexOf('showpublic/10/') > -1){
+    if (document.location.href.indexOf('showpublic/10#') > -1){
         document.getElementById("chapitre-article-g8").style.visibility="visible";
         
         $("#article-search-form").on("keyup", function () {
@@ -142,7 +142,7 @@ $(document).ready(function(){
         });
     };
 
-    if (document.location.href.indexOf('showpublic/12/') > -1){
+    if (document.location.href.indexOf('showpublic/12#') > -1){
         document.getElementById("chapitre-article-g10").style.visibility="visible";
         
         $("#article-search-form").on("keyup", function () {
