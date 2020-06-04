@@ -77,6 +77,6 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware(['can:man
     Route::resource('articles','ArticlesController');
 });
 
-Route::get('/showpublic/{id}','ArticlesPublicController@showpublic')->name('showpublic');
+Route::get('/showpublic/{id}/','ArticlesPublicController@showpublic')->name('showpublic');
 
 Route::post('uploadimg','ImageController@uploadimage')->name('img');
