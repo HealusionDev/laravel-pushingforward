@@ -24,9 +24,15 @@
 	<div class="container-fluid p-0">
 		<div class="jumbotron">
 			<div class="col-12 d-flex justify-content-center">
-				<p class="lead text-justify" style="width: 75%;">Pushing Forward est une philosophie nous invitant à repousser nos limites et à toujours découvrir davantage.</br></br>
+				<p class="lead text-justify" style="width: 75%;">
+				</br>
+				Pushing Forward est une philosophie nous invitant à repousser nos limites et à toujours vouloir en découvrir davantage.</br></br>
+				Pourquoi ce projet ?
 				Parce que la nature et les bons mets sont des sources d'inspiration inépuisables.<br/><br/>
-				Parce que le partage d'itinéaires de trekking, d'astuces voyages, de délicieuses recettes et d'expériences oenologiques sont essentielles à notre épanouissement.
+				Parce que le partage d'expériences autour d'expéditions en haute montagne, d'itinéraires de randonnées, d'astuces voyages, de délicieuses recettes et d'expériences oenologiques sont essentielles à notre épanouissement.<br/><br/>
+				Le fil rouge de ce projet pour l'année 2020 et début 2021 sera le premier des Seven Summits : le Kilimandjaro.<br/><br/>
+				Découvrez cette aventure hors du commun.
+				</br></br>
 				</p>
 			</div>
 			<div class="col-12 d-flex justify-content-center">

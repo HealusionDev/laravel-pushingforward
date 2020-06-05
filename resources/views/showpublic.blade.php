@@ -66,6 +66,13 @@
                         <a href="#title-bbanchoc" id="back1" style="text-decoration: none;"><li class="list-group-item">Barre banane chocolat</li></a>
                         <a href="#title-bbannois" id="back2" style="text-decoration: none;"><li class="list-group-item">Barre banane noisette</li></a>
                     </ul>
+                    <ul id="chapitre-article-g11" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-pc1" id="back1" style="text-decoration: none;"><li class="list-group-item">La prépration</li></a>
+                        <a href="#title-pc2" id="back2" style="text-decoration: none;"><li class="list-group-item">Premier jour</li></a>
+                        <a href="#title-pc3" id="back3" style="text-decoration: none;"><li class="list-group-item">Arrivée au refuge</li></a>
+                        <a href="#title-pc4" id="back4" style="text-decoration: none;"><li class="list-group-item">Lacs de Pouchergues et Caillauas</li></a>
+                        <a href="#title-pc5" id="back5" style="text-decoration: none;"><li class="list-group-item">Le retour</li></a>
+                    </ul>
                 </div>
             </div>
         </div>
