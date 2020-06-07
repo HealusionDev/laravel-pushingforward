@@ -16,7 +16,7 @@
 	</div>
 	@endcan
 	
-	<div class="container-fluid pt-3">
+	<div class="container-fluid pt-5">
 		<div class="row team-box text-center">
 			<div class="col-12 p-0">
 				<h1 class="article-title1 pb-5">Seven Summits</h1>

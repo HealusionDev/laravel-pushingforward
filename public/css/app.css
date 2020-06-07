@@ -11475,6 +11475,7 @@ body {
 
   .lead {
     font-size: 1rem;
+    width: 85% !important;
   }
 
   .carte-title-article {
@@ -11601,10 +11602,6 @@ body {
     padding: 6px 12px;
   }
 
-  .lead {
-    width: 90% !important;
-  }
-
   #article {
     display: inline-block !important;
     padding-right: 0 !important;
@@ -11637,10 +11634,6 @@ body {
 
   .carousel-caption h2 {
     display: none;
-  }
-
-  .lead {
-    width: 90% !important;
   }
 
   .movies-title {

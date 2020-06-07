@@ -469,6 +469,7 @@ html,body{
 	}
 	.lead {
 		font-size: 1rem;
+		width: 85% !important;
 	}
 	.carte-title-article{
 		font-size: 1.4rem;
@@ -571,9 +572,6 @@ html,body{
 		font-size: 90%;
 		padding: 6px 12px;
 	}
-	.lead {
-		width: 90% !important;
-	}
 	#article{
 		display: inline-block !important;
 		padding-right: 0 !important;
@@ -602,9 +600,6 @@ html,body{
 	}
 	.carousel-caption h2{
 		display: none;
-	}
-	.lead {
-		width: 90% !important;
 	}
 	.movies-title{
 		font-size: 2.5rem;
