@@ -18,7 +18,7 @@ html,body{
 	position: relative;
 	padding: .3rem;
 }
-.nav-item {
+.nav-item-r {
 	padding-right: 20px;
 	text-align: right;
 }
@@ -39,7 +39,13 @@ html,body{
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 }
-
+.dropdown-menu{
+	border-radius: 0;
+}
+.dropdown-item{
+	font-weight: 500;
+	line-height: 1.6;
+}
 .mainbutton-menu{
 	list-style-type: none;
 	font-size: 1.2rem;
@@ -505,11 +511,11 @@ html,body{
 	.carte-title-article{
 		font-size: 1.2rem;
 	}
-	.carte-text-article {
+	.carte-text-article{
 		font-size: 1rem;
 		justify-content: left;
 	}
-	#discover-button {
+	#discover-button{
 		display: none;
 	}
 	#text-menu{
@@ -519,7 +525,7 @@ html,body{
 	#text-menu{
 		display: none !important;
 	}
-	#header-bar {
+	#header-bar{
 		display: none !important;
 	}
 	#button-menu2{

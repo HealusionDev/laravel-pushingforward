@@ -11,6 +11,9 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+        <!-- Bootstrap Responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>@yield('title')</title>
 
         <link rel="shortcut icon" type="image/x-icon" href="/img/mountain.ico" /> 
@@ -32,21 +35,21 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Left Side Of Navbar -->
+                        <!-- Right Side Of Navbar -->
                             <ul class="navbar-nav mr-auto">
                             <!-- Authentication Links -->
                             @guest
-                                <li class="nav-item">
+                                <li class="nav-item-r">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
                                 </li>
                                 @if (Route::has('register'))
-                                    <li class="nav-item">
+                                    <li class="nav-item-r">
                                         <a class="nav-link" href="{{ route('register') }}">{{ __('Inscrivez-vous') }}</a>
                                     </li>
                                 @endif
                                 @else
 
-                                <li class="nav-item dropdown">
+                                <li class="nav-item-r dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                         {{ Auth::user()->name }} <span class="caret"></span>
                                     </a>
@@ -75,9 +78,8 @@
                              @endguest
                             </ul>
 
-                            <!-- Right side of the bar -->
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item dropdown">
+                                <li class="nav-item-r dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>À propos<span class="caret"></span>
                                     </a>
 
@@ -89,6 +91,8 @@
                             </ul>
                         </div>
 
+
+                        <!-- Left side of the bar -->
                         <div class="collapse navbar-collapse" id="text-menu-mobile">
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown mr-auto">

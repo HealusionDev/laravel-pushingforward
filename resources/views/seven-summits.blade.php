@@ -8,7 +8,7 @@
 
 @section('content')
 	<!-- L'équipe -->
-	<hr class="style3" style="position: absolute; top: 0px; left: 50%; transform: translate(-50%, 0%);">
+	<hr id="header-bar" class="style3" style="position: absolute; top: 0px; left: 50%; transform: translate(-50%, 0%);">
 	
 	@can('manage-users')
 	<div class="col-12 d-flex justify-content-right pt-3">

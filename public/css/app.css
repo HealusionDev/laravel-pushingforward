@@ -10966,7 +10966,7 @@ body {
   padding: .3rem;
 }
 
-.nav-item {
+.nav-item-r {
   padding-right: 20px;
   text-align: right;
 }
@@ -10987,6 +10987,15 @@ body {
   display: inline-block;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
+
+.dropdown-item {
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .mainbutton-menu {
