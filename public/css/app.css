@@ -10994,8 +10994,9 @@ body {
 }
 
 .dropdown-item {
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.6;
+  font-size: 1.1rem;
 }
 
 .mainbutton-menu {
@@ -11587,7 +11588,7 @@ body {
   }
 
   .carousel-caption h1 {
-    font-size: 320%;
+    font-size: 300%;
   }
 
   .carousel-caption h2 {
@@ -11629,7 +11630,7 @@ body {
 
 @media (max-width: 600px) {
   .carousel-caption h1 {
-    font-size: 280%;
+    font-size: 240%;
     margin-bottom: 0;
     padding-bottom: 0;
   }
@@ -11650,6 +11651,10 @@ body {
 @media (max-width: 450px) {
   .carousel-caption {
     top: 35%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 220%;
   }
 }
 
