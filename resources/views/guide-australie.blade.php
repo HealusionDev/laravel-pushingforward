@@ -20,7 +20,6 @@
 			<div class="col-12 p-0">
 				<h1 class="article-title1 pb-5">Australie</h1>
 			</div>
-			<hr>
 		</div>
 	</div>
 	<!-- Contenu -->

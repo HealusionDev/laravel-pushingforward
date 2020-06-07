@@ -19,11 +19,10 @@
 			<div class="col-12 p-0">
 				<h1 class="article-title1 pb-5">Guyane</h1>
 			</div>
-			<hr>
 		</div>
 	</div>
+	
 	<!-- Contenu -->
-
 	<div class="col-12 d-flex justify-content-center">
 		<p class="lead text-justify" style="width: 65%;">
 		La Guyane, vaste territoire Français situé au coeur de l'amazonie propose mille et une richesses. Ce guide, construit et enrichit par Vincent Taconnat, vous présente les lieux remarquables de cette contrée sauvage et vous propose l'essentiel des activités à réaliser.</p>
