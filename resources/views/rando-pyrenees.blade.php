@@ -27,6 +27,7 @@
 
 	<div class="col-12 d-flex justify-content-center">
 		<p class="lead text-justify" style="width: 65%;">
+			Chaine de montagnes unique en son genre, les Pyrénées sont un lieu de repos, de découvertes et d'aventures sportives. 
 		</p>
 	</div>
 	

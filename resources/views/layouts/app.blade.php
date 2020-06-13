@@ -213,7 +213,7 @@
             <footer>
                 <div class="container-fluid p-0 m-0">
                     <div class="boxfooter text-center">
-                        <h5 class="footertext text-center">&copy; pushing-forward.herokuapp.com</h5>
+                        <h5 class="footertext text-center">&copy; pushing-forward.com</h5>
                     </div>
                 </div>
             </footer>

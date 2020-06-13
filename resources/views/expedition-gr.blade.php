@@ -27,6 +27,7 @@
 
 	<div class="col-12 d-flex justify-content-center">
 		<p class="lead text-justify" style="width: 65%;">
+			Les chemins de Grandes Randonnées sillonnent la France et nous emmènent sur des terrains inconnus aux richesses parfois insoupçonnées.
 		</p>
 	</div>
 	

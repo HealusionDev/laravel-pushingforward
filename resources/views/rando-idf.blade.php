@@ -27,6 +27,7 @@
 
 	<div class="col-12 d-flex justify-content-center">
 		<p class="lead text-justify" style="width: 65%;">
+			Le Val d'Oise, la Seine et Marne ou encore l'Essonne. Autant de département de la région Ile de France qui regorgent de sentiers à découvrir. Le tout, à quelques pas de Paris!
 		</p>
 	</div>
 	

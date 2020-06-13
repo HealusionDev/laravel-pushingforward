@@ -29,9 +29,15 @@
                                         <a href="{{ route('admin.articles.edit', $article->id) }}"><button type="button" class="btn btn-primary float-left">Modifier</button></a>
                                         
                                         <form action="{{ route('admin.articles.destroy', $article->id) }}" method="POST" class="float-left">
-                                            @csrf
-                                            {{ method_field('DELETE') }}
-                                            <button type="submit" class="btn btn-danger">Supprimer</button>
+                                          <div id="dialog-confirm" title="Confirmation de la suppression" style="display:none;">
+                                              <p>
+                                                <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>
+                                                Etes-vous sûr de vouloir supprimer cet élément ?
+                                              </p>
+                                          </div>
+                                          @csrf
+                                          {{ method_field('DELETE') }}
+                                          <button type="submit" class="btn btn-danger">Supprimer</button>
                                         </form>
                                       </td>
                                   </tr>
