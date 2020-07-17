@@ -70,17 +70,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-        ]);
-
-        // Send register Email
-        $email = $data['email'];
-        $messageData = ['email' => $data['email'],'name' => $data['name']];
-        Mail::send('email.register',$messageData,function($message) use($email){
-            $message->to($email)->subject('Création de votre espace Pushing Forward');
-        });
-        
-        $role = Role::select('id')->where('name', 'utilisateur')->first();
-        $user->roles()->attach($role);  
+        ]);  
 
         return $user;
     }
