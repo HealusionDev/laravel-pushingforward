@@ -83,8 +83,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'nextadventurecontact@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'Contact Next Adventure'),
+        'address' => env('MAIL_FROM_ADDRESS', ' contact.pfwd@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'Contact Pushing Forward'),
     ],
 
     /*
