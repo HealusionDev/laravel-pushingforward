@@ -76,7 +76,7 @@ class RegisterController extends Controller
         $email = $data['email'];
         $messageData = ['email' => $data['email'],'name' => $data['name']];
         Mail::send('email.register',$messageData,function($message) use($email){
-            $message->to($email)->subject('Création de compte Next Adventure');
+            $message->to($email)->subject('Création de votre espace Pushing Forward');
         });
         
         $role = Role::select('id')->where('name', 'utilisateur')->first();
