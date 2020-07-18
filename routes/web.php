@@ -67,7 +67,7 @@ Route::get('create-articles', function(){
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('accueil');
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware(['can:manage-users','verified'])->group(function(){
     Route::resource('users','UsersController', ['except' => ['show', 'create', 'store']]);
