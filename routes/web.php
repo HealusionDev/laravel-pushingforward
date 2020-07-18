@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('', function () { #requete http avec address se terminant par /
+Route::get('/', function () { #requete http avec address se terminant par /
     return view('home');
 })->name('accueil');
 
