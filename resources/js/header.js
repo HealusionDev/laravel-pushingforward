@@ -24,7 +24,7 @@ $(document).ready(function(){
         document.getElementById("mainbutton-menu3").style.textShadow="1px 3px 15px #000";
         document.getElementById("mainbutton-menu4").style.color="#fff";
         document.getElementById("mainbutton-menu4").style.textShadow="1px 3px 15px #000";
-    }else if (document.location.href.indexOf('/') > -1){
+    }else if (document.location.href.indexOf('') > -1){
         document.getElementById("text-menu").style.visibility="visible";
         document.getElementById("text-menu").style.position="absolute";
         document.getElementById("text-menu").style.left="50%";
