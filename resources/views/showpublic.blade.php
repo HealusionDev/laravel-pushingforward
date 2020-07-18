@@ -73,6 +73,9 @@
                         <a href="#title-pc4" id="back4" style="text-decoration: none;"><li class="list-group-item">Lacs de Pouchergues et Caillauas</li></a>
                         <a href="#title-pc5" id="back5" style="text-decoration: none;"><li class="list-group-item">Le retour</li></a>
                     </ul>
+                    <ul id="chapitre-article-g12" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-rtk1" id="back1" style="text-decoration: none;"><li class="list-group-item">Episode 1</li></a>
+                    </ul>
                 </div>
             </div>
         </div>

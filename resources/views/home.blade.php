@@ -13,30 +13,21 @@
 			<li data-target="#slides" data-slide-to="0" class="active"></li>
 			<li data-target="#slides" data-slide-to="1"></li>
 			<li data-target="#slides" data-slide-to="2"></li>
-			<li data-target="#slides" data-slide-to="3"></li>
 		</ul>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
+				<img class="carouselimg d-block mx-auto" src="/img/rtk1.png" data-holder-rendered="true">
+					<div class="carousel-caption">
+						<h1 class="carousel-titre3">Road to Kilimandjaro</h1>
+						<h2 class="carousel-titre4">Episode 1</h2>
+						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../expedition-7summits';">Suivez l'aventure</button>
+					</div>
+			</div>
+			<div class="carousel-item">
 				<img class="carouselimg d-block mx-auto" src="/img/guyane4.jpg" data-holder-rendered="true">
 					<div class="carousel-caption">
 						<h1 class="carousel-titre1">Guyane</h1>
 						<h2 class="carousel-titre2">Sur les traces de Dreyfus</h2>
-						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../guide-guyane';">Lire le guide</button>
-					</div>
-			</div>
-			<div class="carousel-item">
-				<img class="carouselimg d-block mx-auto" src="/img/australia-home1.png" data-holder-rendered="true">
-					<div class="carousel-caption">
-						<h1 class="carousel-titre1">Australie</h1>
-						<h2 class="carousel-titre2">Sea, surf & fun ?</h2>
-						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../guide-australie';">Lire le guide</button>
-					</div>
-			</div>
-			<div class="carousel-item">
-				<img class="carouselimg d-block mx-auto" src="/img/guyane3.jpg" data-holder-rendered="true">
-					<div class="carousel-caption">
-						<h1 class="carousel-titre1">Guyane</h1>
-						<h2 class="carousel-titre2">Plongez au coeur de la forêt amazonienne</h2>
 						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../guide-guyane';">Lire le guide</button>
 					</div>
 			</div>
@@ -68,11 +59,19 @@
 			</div>
 			
 			<div class="col-lg-12 d-flex justify-content-center pt-3">
-				<p class="lead text-center" style="width: 60%;">
-					En attendant la série sur la préparation de l'ascension du Kilimandjaro, je vous propose un retour en images sur l'aventure Australienne.<br>
+				<p class="lead text-center" style="width: 55%;">
+					La série Road to Kilimandjaro fait ses débuts sur Youtube. Suivez-moi dans cette longue et éprouvante préparation. Au programme, des randonnées au quatre coins de la France et une préparation physique à la hauteur du challenge!<br>
 				</p>
 			</div>
-			<div class="col-12 d-flex justify-content-center pt-3"> 
+			<div class="col-12 d-flex justify-content-center pt-3">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/vJYST00XHQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+			</div>
+			<div class="col-lg-12 d-flex justify-content-center pt-3">
+				<p class="lead text-center" style="width: 55%;"><br><br>
+					Retrouvez également les derniers épisodes sur l'aventure australienne.<br>
+				</p>
+			</div>
+			<div class="col-12 d-flex justify-content-center pt-3">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/59QYI9U9I2s" frameborder="0" SameSite="none" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>

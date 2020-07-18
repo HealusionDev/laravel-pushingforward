@@ -34,6 +34,20 @@
 	<div class="container-fluid">
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
+				<a href="{{ route('showpublic', ['id' => 22]) }}#">
+					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/miniature1.png">
+				</a>
+			</div>
+			<div id="text-guyane" class="col-lg-3 mx-auto" style="display: flex; flex: 1 1 auto; flex-direction: column; justify-content: center; background-color: #e9ecef; padding-top: 1rem; padding-bottom: 1rem; margin: auto;">
+				<h4 class="carte-title-article">Road to Kilimandjaro : Episode 1</h4>
+				<p class="carte-text-article">Premier épisode de la série Road to Kilimandjaro. Suivez ma préparation de l'ascension du plus haut sommet d'Afrique. Aujourd'hui, partez à la découverte du GR652 avec moi! </p>
+				<div>
+					<a href="{{ route('showpublic', ['id' => 22]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+				</div>
+			</div>
+		</div>
+		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
+			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
 				<a href="{{ route('showpublic', ['id' => 17]) }}#">
 					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/kilimandjaro.jpg">
 				</a>

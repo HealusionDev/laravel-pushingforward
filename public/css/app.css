@@ -11146,6 +11146,25 @@ body {
   z-index: 5;
 }
 
+.carousel-titre3 {
+  font-size: 320%;
+  text-transform: uppercase;
+  text-shadow: 1px 3px 15px #000;
+  font-weight: 600;
+  line-height: 1.2;
+  z-index: 5;
+  font-family: 'Papyrus', sans-serif;
+  padding-bottom: 1rem;
+}
+
+.carousel-titre4 {
+  font-size: 250%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+  z-index: 5;
+}
+
 .btn-primary {
   background-color: #6648b1;
   border: 1px solid #563d7c;

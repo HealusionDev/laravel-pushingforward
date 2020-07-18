@@ -164,5 +164,16 @@ $(document).ready(function(){
         });
     };
 
+    if (document.location.href.indexOf('showpublic/22#') > -1){
+        document.getElementById("chapitre-article-g12").style.visibility="visible";
+        
+        $("#article-search-form").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+            $("#chapitre-article-g12 li").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    };
+
 
 });
