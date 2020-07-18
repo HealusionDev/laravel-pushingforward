@@ -18,8 +18,8 @@
 			<div class="carousel-item active">
 				<img class="carouselimg d-block mx-auto" src="/img/rtk1.png" data-holder-rendered="true">
 					<div class="carousel-caption">
-						<h1 class="carousel-titre3">Road to Kilimandjaro</h1>
-						<h2 class="carousel-titre4">Episode 1</h2>
+						<h1 class="carousel-titre1">Road to Kilimandjaro</h1>
+						<h2 class="carousel-titre2">Episode 1</h2>
 						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../expedition-7summits';">Suivez l'aventure</button>
 					</div>
 			</div>
