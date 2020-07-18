@@ -9,7 +9,7 @@ import $ from 'jquery';
 import 'bootstrap';
 
 $(document).ready(function(){
-   	if ((document.location.href.indexOf('/accueil') > -1) || (document.location.href.indexOf('/') > -1)){
+   	if ((document.location.href.indexOf('/') > -1) || (document.location.href.indexOf('/accueil') > -1)){
    		document.getElementById("text-menu").style.visibility="visible";
         document.getElementById("text-menu").style.position="absolute";
         document.getElementById("text-menu").style.left="50%";
