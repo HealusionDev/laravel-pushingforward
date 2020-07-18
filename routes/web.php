@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { #requete http avec address se terminant par /
     return view('home');
-});
+})->name('accueil');
 
 Route::get('accueil', function () { #requete http avec address se terminant par /home
     return view('home');
@@ -67,7 +67,7 @@ Route::get('create-articles', function(){
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('accueil');
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware(['can:manage-users','verified'])->group(function(){
     Route::resource('users','UsersController', ['except' => ['show', 'create', 'store']]);
