@@ -46,6 +46,48 @@
 				</div>
 			</div>
 		</div>
+				<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
+			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
+				<a href="{{ route('showpublic', ['id' => 23]) }}#">
+					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/miniature2.png">
+				</a>
+			</div>
+			<div id="text-guyane" class="col-lg-3 mx-auto" style="display: flex; flex: 1 1 auto; flex-direction: column; justify-content: center; background-color: #e9ecef; padding-top: 1rem; padding-bottom: 1rem; margin: auto;">
+				<h4 class="carte-title-article">Road to Kilimandjaro : Episode 2</h4>
+				<p class="carte-text-article">Aujourd'hui, nous partons à l'assaut du Grand Barbat pour cette introduction à l'escapade pyrénéenne.</p>
+				<div>
+					<a href="{{ route('showpublic', ['id' => 23]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+				</div>
+			</div>
+		</div>
+				<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
+			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
+				<a href="{{ route('showpublic', ['id' => 24]) }}#">
+					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/miniature3.png">
+				</a>
+			</div>
+			<div id="text-guyane" class="col-lg-3 mx-auto" style="display: flex; flex: 1 1 auto; flex-direction: column; justify-content: center; background-color: #e9ecef; padding-top: 1rem; padding-bottom: 1rem; margin: auto;">
+				<h4 class="carte-title-article">Road to Kilimandjaro : Episode 3</h4>
+				<p class="carte-text-article">À l'assaut du Moun Né, pic situé à 2724 m d'altitude et surplombant la vallée de Cauterets.</p>
+				<div>
+					<a href="{{ route('showpublic', ['id' => 24]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+				</div>
+			</div>
+		</div>
+				<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
+			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
+				<a href="{{ route('showpublic', ['id' => 25]) }}#">
+					<img class="img-top" style="max-width: 100%; height: auto;" src="/img/miniature4.png">
+				</a>
+			</div>
+			<div id="text-guyane" class="col-lg-3 mx-auto" style="display: flex; flex: 1 1 auto; flex-direction: column; justify-content: center; background-color: #e9ecef; padding-top: 1rem; padding-bottom: 1rem; margin: auto;">
+				<h4 class="carte-title-article">Road to Kilimandjaro : Episode 4</h4>
+				<p class="carte-text-article">Au programme de cette expédition de haute voltige, la Brèche de Roland suivi du Pic du Taillon situé à 3144m. Vue imprenable sur le Cirque de Gavarnie!</p>
+				<div>
+					<a href="{{ route('showpublic', ['id' => 25]) }}#"><button id="discover-button" type="button" class="btn btn-success">Découvrir</button></a>
+				</div>
+			</div>
+		</div>
 		<div id="article" class="col-lg-8 mx-auto pl-0" style="display: flex; background-color: #e9ecef;">
 			<div class="col-lg-5 pl-0 pr-0" style="flex: 1 1 auto; flex-direction: column;">
 				<a href="{{ route('showpublic', ['id' => 17]) }}#">

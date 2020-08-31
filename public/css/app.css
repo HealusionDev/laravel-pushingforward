@@ -11138,6 +11138,15 @@ body {
   z-index: 5;
 }
 
+.carousel-titre3 {
+  font-size: 450%;
+  text-transform: uppercase;
+  text-shadow: 1px 3px 15px #000;
+  font-weight: 400;
+  line-height: 1.4;
+  z-index: 5;
+}
+
 .carousel-titre2 {
   font-size: 200%;
   font-weight: 500;
