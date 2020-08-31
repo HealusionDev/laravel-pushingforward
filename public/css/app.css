@@ -11139,7 +11139,7 @@ body {
 }
 
 .carousel-titre3 {
-  font-size: 450%;
+  font-size: 410%;
   text-transform: uppercase;
   text-shadow: 1px 3px 15px #000;
   font-weight: 400;
@@ -11651,6 +11651,10 @@ body {
 }
 
 @media (max-width: 450px) {
+  .carousel-titre3 {
+    font-size: 180%;
+  }
+
   .carousel-caption {
     top: 35%;
   }
