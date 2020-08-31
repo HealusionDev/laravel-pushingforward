@@ -175,5 +175,37 @@ $(document).ready(function(){
         });
     };
 
+    if (document.location.href.indexOf('showpublic/23#') > -1){
+        document.getElementById("chapitre-article-g13").style.visibility="visible";
+        
+        $("#article-search-form").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+            $("#chapitre-article-g13 li").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    };
+
+    if (document.location.href.indexOf('showpublic/24#') > -1){
+        document.getElementById("chapitre-article-g14").style.visibility="visible";
+        
+        $("#article-search-form").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+            $("#chapitre-article-g14 li").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    };
+
+    if (document.location.href.indexOf('showpublic/25#') > -1){
+        document.getElementById("chapitre-article-g15").style.visibility="visible";
+        
+        $("#article-search-form").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+            $("#chapitre-article-g15 li").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    };
 
 });

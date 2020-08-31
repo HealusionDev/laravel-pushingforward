@@ -76,6 +76,15 @@
                     <ul id="chapitre-article-g12" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
                         <a href="#title-rtk1" id="back1" style="text-decoration: none;"><li class="list-group-item">Episode 1</li></a>
                     </ul>
+                    <ul id="chapitre-article-g13" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-rtk2" id="back1" style="text-decoration: none;"><li class="list-group-item">Episode 2</li></a>
+                    </ul>
+                    <ul id="chapitre-article-g14" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-rtk3" id="back1" style="text-decoration: none;"><li class="list-group-item">Episode 3</li></a>
+                    </ul>
+                    <ul id="chapitre-article-g15" style="position: absolute; top: 18vh; left: 1.2vw; padding: 0; visibility: hidden;">
+                        <a href="#title-rtk4" id="back1" style="text-decoration: none;"><li class="list-group-item">Episode 4</li></a>
+                    </ul>
                 </div>
             </div>
         </div>
