@@ -11148,9 +11148,9 @@ body {
 }
 
 .carousel-titre2 {
-  font-size: 200%;
+  font-size: 250%;
   font-weight: 500;
-  text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 2px 12px #000;
   padding-bottom: 1rem;
   z-index: 5;
 }
