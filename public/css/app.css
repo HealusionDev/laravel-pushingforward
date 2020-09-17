@@ -11675,10 +11675,11 @@ body {
 @media (max-width: 450px) {
   .carousel-titre3 {
     font-size: 180%;
+    top: 30%;
   }
 
-  .carousel-caption {
-    top: 30%;
+  .carousel-titre2 {
+    top: 35%;
   }
 }
 
