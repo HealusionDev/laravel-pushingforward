@@ -11674,12 +11674,12 @@ body {
 
 @media (max-width: 450px) {
   .carousel-titre3 {
-    font-size: 180%;
-    top: 30%;
+    font-size: 180% !important;
+    top: 30% !important;
   }
 
   .carousel-titre2 {
-    top: 35%;
+    top: 35% !important;
   }
 }
 
