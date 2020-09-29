@@ -84,7 +84,7 @@
                                     </a>
 
                                     <div id="dropdown-info" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a id="dropdown-info-item" class="dropdown-item" href="{{ route('team') }}">Equipe</a>
+                                        <a id="dropdown-info-item" class="dropdown-item" href="{{ route('team') }}">Équipe</a>
                                         <a id="dropdown-info-item" class="dropdown-item" href="{{ route('projet') }}">Projet Pushing Forward</a>
                                     </div>
                                 </li>
