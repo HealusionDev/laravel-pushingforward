@@ -36,7 +36,7 @@
 				</p>
 			</div>
 			<div class="col-12 d-flex justify-content-center">
-				<button type="button" class="btn btn-outline-secondary btn-lg" onclick="window.location.href='../team';">En savoir plus</button>
+				<button type="button" class="btn btn-outline-secondary btn-lg" onclick="window.location.href='../expedition-7summits';">En savoir plus</button>
 			</div>
 		</div>
 	</div>
