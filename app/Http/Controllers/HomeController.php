@@ -26,6 +26,6 @@ class HomeController extends Controller
 
         $request->session()->flash('success', 'Connexion réussie!');
 
-        return view('home');
+        return view('accueil');
     }
 }
