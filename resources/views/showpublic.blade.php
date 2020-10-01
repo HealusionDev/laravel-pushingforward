@@ -79,6 +79,7 @@
                         <a href="#title-rtk3" id="back1" style="text-decoration: none;"><li class="list-group-item">Episode 3</li></a>
                         <a href="#title-rtk4" id="back1" style="text-decoration: none;"><li class="list-group-item">Episode 4</li></a>
                         <a href="#title-rtk5" id="back1" style="text-decoration: none;"><li class="list-group-item">Episode 5</li></a>
+                        <a href="#title-rtk6" id="back1" style="text-decoration: none;"><li class="list-group-item">Episode 6</li></a>
                     </ul>
                 </div>
             </div>
