@@ -12,15 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('', function () { #requete http avec address se terminant par /
-    return view('accueil');
-})->name('accueil');
 
 Route::get('/', function () { #requete http avec address se terminant par /
     return view('accueil');
 })->name('accueil');
 
-Route::get('accueil', function () { #requete http avec address se terminant par /home
+Route::get('accueil', function () { #requete http avec address se terminant par /accueil
     return view('accueil');
 })->name('accueil');
 
