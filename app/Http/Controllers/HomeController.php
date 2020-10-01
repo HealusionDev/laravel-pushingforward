@@ -24,8 +24,10 @@ class HomeController extends Controller
     public function index(Request $request)
     {
 
-        $request->session()->flash('success', 'Connexion réussie!');
-
+        if ($this->middleware(['auth','verified'])){
+             $request->session()->flash('success', 'Connexion réussie!');
+        }
+       
         return view('accueil');
     }
 }
