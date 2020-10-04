@@ -28,7 +28,7 @@
 
 	<div class="col-12 d-flex justify-content-center">
 		<p class="lead text-justify" style="width: 65%;">
-		Seven Summits. Une aventure de rêve à l'assaut des plus hauts sommets de chaque continent. A l'honneur sur cette liste, nous retrouvons le mont Kosciusko, le mont Blanc, l'Elbrouz, le Kilimandjaro, le Denali, l'Aconcagua et l'Everest. L'Antartique étant exclue (massif Vinson), je l'ai subsistué au plus haut sommets d'Europe orientale, l'Elbrouz. Que l'aventure commence !</p>
+		Seven Summits. Une aventure de rêve à l'assaut des plus hauts sommets de chaque continent. A l'honneur sur cette liste, nous retrouvons le mont Kosciusko, le mont Blanc, l'Elbrouz, le Kilimandjaro, le Denali, l'Aconcagua et l'Everest. L'Antartique étant exclue (massif Vinson), je l'ai subsistué au plus haut sommets d'Europe orientale, l'Elbrouz. Que l'aventure commence ! </p>
 	</div>
 	
 	<div class="container-fluid">
