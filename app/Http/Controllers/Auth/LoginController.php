@@ -51,4 +51,10 @@ class LoginController extends Controller
         $request->session()->flash('success', 'Connexion réussie!');
         return redirect('/accueil');
     }
+
+    protected function loggedOut(Request $request)
+    {
+        $request->session()->flash('success', 'Déconnexion réussie!');
+        return redirect('/accueil');
+    }
 }
