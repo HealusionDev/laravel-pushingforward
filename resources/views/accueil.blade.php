@@ -19,7 +19,7 @@
 				<img class="carouselimg d-block mx-auto" src="/img/rtk4.png" data-holder-rendered="true">
 					<div class="carousel-caption">
 						<h1 class="carousel-titre3">Road to Kilimandjaro</h1>
-						<h2 class="carousel-titre2">Épisode 5</h2>
+						<h2 class="carousel-titre2">Épisode 7</h2>
 						<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='../expedition-7summits';">Suivez l'aventure</button>
 					</div>
 			</div>
@@ -74,7 +74,7 @@
 				</p>
 			</div>
 			<div class="col-12 d-flex justify-content-center pt-3">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/59QYI9U9I2s" frameborder="0" SameSite="none" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/watch?v=vJYST00XHQU&list=PLZroa0H8RfiPbvoP7kXu11i9SJ1_POkyr" frameborder="0" SameSite="none" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

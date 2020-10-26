@@ -11,6 +11,9 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+        <meta name="description" content="Pushing Forward est une communauté de passionnés de randonnées, d'alpinisme et de découverte d'espaces naturels. Rejoignez-nous pour participer à cette aventure!">
+        <meta name="keywords" content="randonnées, alpinisme, pushing, forward, pushing-forward, pushing forward, voyage, guide, sport, musculation, nutrition, effort, physique, dépassement, soit, humain, découverte">
+    
         <!-- Bootstrap Responsiveness -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
